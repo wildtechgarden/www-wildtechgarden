@@ -1,0 +1,73 @@
+{{- $ctx := . -}}
+{{- $matchType := .matchType -}}
+{{- $actual := .actual -}}
+{{- $expected := .expected -}}
+{{- $checkMessage := .checkMessage -}}
+{{- $skip := .skip -}}
+{{- $noLog := .noLog -}}
+{{- $noPrint := .noPrint -}}
+{{- $logOnError := .logOnError -}}
+{{- $noFailError := .noFailError -}}
+{{- $scratch := newScratch -}}
+{{- $pass := $scratch.Get "nil-value" -}}
+{{- $passString := "SKIP" -}}
+{{- $match := false -}}
+{{- $output := "" -}}
+
+{{- if ne $skip true -}}
+	{{- if eq $matchType "eq" -}}
+		{{- if eq $actual $expected -}}
+			{{- $match = true -}}
+		{{- end -}}
+	{{- end -}}
+	{{- if eq $matchType "regexMatch" -}}
+		{{- if findRE $expected $actual -}}
+			{{- $match = true -}}
+		{{- end -}}
+	{{- end -}}
+	{{- if eq $matchType "sliceGt0" -}}
+		{{- $match = false -}}
+		{{- range $actual -}}
+			{{- if gt (int .) 0 -}}
+				{{- $match = true -}}
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+	{{- if eq $matchType "sliceEq" -}}
+		{{- $match = eq (apply $actual "string" ".") (apply $expected "string" ".") -}}
+	{{- end -}}
+	{{- if or (eq $match true) $noFailError -}}
+		{{- $pass = true -}}
+		{{- $passString = "PASS" -}}
+	{{- else -}}
+		{{- $pass = false -}}
+		{{- $passString = "FAIL" -}}
+	{{- end -}}
+{{- end -}}
+{{- if reflect.IsSlice $actual -}}
+	{{- $actual = apply $actual "string" "." -}}
+{{- end -}}
+{{- if reflect.IsSlice $expected -}}
+	{{- $expected = apply $expected "string" "." -}}
+{{- end -}}
+
+{{- if eq $matchType "regexMatch" -}}
+	{{- $expected = printf "regex '%s'" $expected -}}
+{{- else -}}
+	{{- $expected = printf "'%s'" $expected -}}
+{{- end -}}
+
+
+{{- if or (ne $noLog true) (and (not $match) $logOnError) -}}
+	{{- warnf "%s: Check %s%s (got '%s', expected %s)" $passString $checkMessage (cond (eq $noFailError true) " WOULD FAIL" "") $actual $expected -}}
+{{- end -}}
+{{- if or (ne $noPrint true) (and (not $match) $logOnError) -}}
+	{{- $output = printf "%s: Check %s%s (got '%s', expected %s)" $passString $checkMessage (cond (and (eq $noFailError true) (not $match)) " WOULD FAIL" "") $actual $expected -}}
+{{- end -}}
+
+{{- if or $skip (not $pass) -}}
+	{{- $skip = true -}}
+	{{- $pass = false -}}
+{{- end -}}
+
+{{- return (dict "pass" $pass "skip" $skip "output" $output) -}}

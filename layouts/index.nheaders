@@ -1,0 +1,4 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: default-src 'self' {{ site.BaseURL }}; connect-src 'self' {{ site.BaseURL }}; frame-ancestors 'self' {{ site.BaseURL }}; img-src 'self' {{ site.BaseURL }}'; script-src 'self' {{ site.BaseURL }}; script-src-elem 'self' {{ site.BaseURL }}; script-src-attr 'self' {{ site.BaseURL }}; style-src 'self' {{ site.BaseURL }}; style-src-elem 'self' {{ site.BaseURL }}; style-src-attr 'self' {{ site.BaseURL }}
+  X-Content-Type-Options: nosniff

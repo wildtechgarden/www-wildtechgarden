@@ -1,0 +1,173 @@
+baseURL = "https://www.wildtechgarden.ca/"
+disableAliases = true
+enableGitInfo = true
+title = "Wild Tech 'Garden'"
+languageCode = "en-CA" # Set your language code (only needed for non-multilingual sites).
+paginate = 10
+paginatePath = "page"
+pluralizelisttitles = false
+rssLimit = 20
+theme ="github.com/frjo/hugo-theme-zen/v3"
+timeout = 100000
+
+[taxonomies]
+tag = "tags"
+series = "series"
+
+[frontmatter]
+lastmod = [":git", "lastmod", ":fileModTime", "date", "publishDate"]
+
+[permalinks]
+"/" = "/:sections/:slug"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 5
+
+[outputFormats]
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
+
+[outputFormats.nredirects]
+baseName = "_redirects"
+isPlainText = true
+mediaType = "text/nredirects"
+
+[outputFormats.nheaders]
+baseName = "_headers"
+isPlainText = true
+mediaType = "text/nheaders"
+
+[mediaTypes]
+[mediaTypes."text/nredirects"]
+suffixes = [""]
+
+[mediaTypes."text/nheaders"]
+suffixes = [""]
+
+[outputs]
+home = ["HTML", "RSS", "JSON", "SearchIndex", "nredirects", "nheaders"]
+section = ["HTML", "RSS", "JSON"]
+
+[params]
+contact = "dfdpublic@wildtechgarden.ca"
+copyright = """\
+	This site is licensed under a \
+	[Creative Commons Attribution-ShareAlike 4.0 International \
+	License](https://creativecommons.org/licenses/by-sa/4.0/).\
+"""
+description = "Where the wild tech grows" # Set site description, used in meta tags and JSON-LD
+favicon = "apple-touch-icon.png" # Relative path to favicon in json feed, no leading slash.
+feedlinks = true # Show feed links in the footer.
+footer = "[Sitemap](/about/sitemap) | [Tags](/tags) | [Series](/series) | [Search](/search)"
+icon = "apple-touch-icon.png" # Relative path to icon in json feed and JSON-LD, no leading slash.
+image = "images/corner-rock-garden-pixelized-2400x1260-text-overlay.png" # Relative path to site image in JSON-LD, no leading slash.
+#imageMaxWidth = 400 # Max width for images added via figure shortcode.
+logo = true # Turn off the logo.
+logoPath= "android-chrome-512x512.png"
+logoHeight = 64
+logoWidth = 64
+mainSections= ["deploy-admin", "devel", "education-academic"] # The sections you want to have listed on the front page # Default to the section with most content if not set.
+mobileMenu = true # Turn on a mobile menu on small screens, default false.
+poweredby = true # Show powered by hugo in footer
+privacyPolicyUrl = "" # If set, add link to cookie consent form.
+realfavicongenerator = true # If full set of favicons, site manifest etc. exists, default false.
+relatedposts = true # Show related posts under a "See also" section, default false.
+sassTranspiler = "libsass" # The Sass transpiler to use, default "libsass".
+sidebar = true # Show a sidebar to the right, default false.
+submitted = true # Show author and date information for a post.
+#themeColor = "#acdcec" # Hex color value, used in meta tags, default "#ffffff".
+pageCanonical = false # Until we deploy this site to primary domain, do not make any page on this site canonical
+useBaseURL = false
+
+[menu]
+[[menu.main]]
+name = "Home"
+pageref = "/"
+weight = 1
+[[menu.main]]
+name = "Building"
+pageref = "devel/"
+weight = 10
+[[menu.main]]
+name = "Ops"
+pageref = "deploy-admin/"
+weight = 20
+[[menu.main]]
+name = "Learning"
+pageref = "education-academic/"
+weight = 30
+[[menu.main]]
+name = "About"
+pageref = "about/"
+weight = 60
+[[menu.main]]
+name = "Search"
+pageref = "search"
+weight = 70
+
+[privacy]
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+disable = true
+
+[privacy.instagram]
+disable = true
+
+[privacy.twitter]
+disable = true
+
+[privacy.vimeo]
+disable = true
+
+[privacy.youtube]
+disable = true
+
+[module]
+[[module.imports]]
+path = "github.com/danielfdickinson/server-alpine-linux-docs4web"
+
+[[module.imports.mounts]]
+source = 'src'
+target = 'content/deploy-admin/server-alpine-linux-docs4web'
+
+[[module.mounts]]
+source = 'content'
+target = 'content'
+
+[[module.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.mounts]]
+source = "i18n"
+target = "i18n"
+
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.imports]]
+path = "github.com/danielfdickinson/wpxr-to-static"
+
+[[module.imports.mounts]]
+source = "README.md"
+target = "assets/README-wpxr.md"

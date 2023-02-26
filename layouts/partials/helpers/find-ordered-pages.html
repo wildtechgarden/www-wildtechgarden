@@ -1,0 +1,23 @@
+{{- $siblings := (slice) -}}
+{{- $ignoreWeight := .ignoreWeight | default false -}}
+{{- $omitableList := .omitableList | default false -}}
+{{- with .Pages -}}
+	{{- $siblingsTop := (.ByWeight).GroupBy "Weight" -}}
+	{{- if $ignoreWeight -}}
+		{{- range (.ByPublishDate).Reverse -}}
+			{{- if or (ne .Params.omitFromList true) (ne $omitableList true) -}}
+				{{- $siblings = $siblings | append . -}}
+			{{- end -}}
+		{{- end -}}
+	{{- else -}}
+		{{- range $siblingsTop -}}
+			{{- range (.Pages.ByPublishDate).Reverse -}}
+				{{- if or (ne .Params.omitFromList true) (ne $omitableList true) -}}
+					{{- $siblings = $siblings | append . -}}
+				{{- end -}}
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+{{- return $siblings -}}
+{{- /* Remove trailing newlines */ -}}

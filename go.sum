@@ -1,0 +1,6 @@
+github.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20220801020442-ec73b8724eac h1:LiOW/LNuWT2C3VmA/mq/Bd3Wl8y+8cgrSw03WID85zc=
+github.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20220801020442-ec73b8724eac/go.mod h1:fh9kthBtZ8AbsCLaM8f4WNLyqo2u+NMlp9SLDZ7+hdA=
+github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 h1:EtDR0V3i7HcP0XRuIHPTJ7+nHVEPnrfLRRRFLHNeFr0=
+github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361/go.mod h1:8ArFjp0rvMTCvY0zPTv8nsKvDBJKvWJ1pyE2NJezQdI=
+github.com/frjo/hugo-theme-zen/v3 v3.0.0-20230225154423-cc537ae55e9d h1:s+Uv//U+mUulFiEaZJQ3AYqO6+4rzohRPtYIrFoqp94=
+github.com/frjo/hugo-theme-zen/v3 v3.0.0-20230225154423-cc537ae55e9d/go.mod h1:hwFwwEwrOoL2Z8t11M3jqQyr0yOp7tpBRnp58S6gPYk=

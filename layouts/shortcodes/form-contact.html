@@ -1,0 +1,11 @@
+<form class="contact-form" name="{{ .Get "name" }}" accept-charset="UTF-8" method="post" data-netlify="true" netlify-honeypot="non-human-field">
+	<label class="contact-label" for="name">{{ i18n "yourName" | default "Name" }}<span class="input-required"> *</span></label><input type="text" id="name" name="name" class="contact-input" required="true" placeholder="{{ i18n "nameRequiredNote" }}" aria-labelledby="name">
+	<label class="contact-label" for="email">{{ i18n "emailAddress" | default "Email address" }}<span class="input-required"> *</span></label><input type="email" id="email" name="email" required="true" placeholder="{{ i18n "emailRequiredNote" }}" class="contact-input" aria-labelledby="email">
+	<label class="contact-label" for="message">{{ i18n "message" | default "Message" }}<span class="input-required"> *</span></label>
+	<textarea id="message" name="message" class="contact-input contact-textarea" required="true" placeholder="{{ i18n "messageRequiredNote" }}" aria-labelledby="message" minlength="40"></textarea>
+	<p class="contact-non-human"><label for="non-human-field">Don't fill this out if you are human</label><input name="non-human-field">
+	</p>
+	<button class="contact-button" type="submit" value="{{ i18n "send" | default "Send" }}">{{ i18n "send" | default "Send" }}</button>
+	<span class="required-note"><span class="input-required">*</span> {{ i18n "requiredEndNote" | default "indicates a required field" }}</span>
+</form>
+{{- /* Remove trailing newlines */ -}}

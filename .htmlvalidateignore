@@ -1,0 +1,7 @@
+public/**
+!public/blog/
+public/blog/page/
+!public/about/
+!public/index.html
+!public/about-midland-2018-qa/
+!public/search/

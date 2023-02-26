@@ -1,0 +1,29 @@
+---
+# yamllint disable rule:key-ordering
+stages:
+- checks
+
+image: danielfdickinson/gitlab-debian-hugo-pre-commit:0.2.2
+
+workflow:
+  rules:
+  - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  - if: $CI_COMMIT_TAG
+  - if: $CI_COMMIT_REF_PROTECTED
+
+checks_a:
+  variables:
+    HUGO_ENV: ${CI_ENVIRONMENT_NAME:-development}
+  cache:
+    paths:
+    - ${CI_PROJECT_DIR}/hugo-cache
+    - ${CI_PROJECT_DIR}/resources
+  stage: checks
+  script:
+  - >
+      pre-commit install --install-hooks
+  - >
+      pre-commit run --all-files
+  - >
+      tests/scripts/hugo-audit.sh
+...

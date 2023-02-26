@@ -1,0 +1,472 @@
+$contact-form-background-colour: #d0d0d0;
+$contact-form-button-border-colour: #444;
+$contact-form-border-colour: #777;
+$contact-form-colour: #1f1f1f;
+$contact-form-required-colour: #c00;
+
+$black:                 #010101;
+$nearblack:             lighten($black, 20%); // #333
+
+$grey-light:            lighten($black, 80%); // #ccc
+$grey-extra-light:      lighten($black, 93.33%); // #eee
+
+$green:                 #43a808;
+$green-medium:          #53aa18;
+$green-light:           #9ed;
+$green-extra-light:     #a8f9ef;
+
+$base-font-size: 20;
+
+@mixin spacing($property, $spacing) {
+  $converted-list: ();
+
+  @each $x in $spacing {
+    $spacing: #{$x * $base-line-height + 'rem'};
+    $converted-list: join($converted-list, $spacing, $separator: space);
+  }
+
+  #{$property}: $converted-list;
+}
+
+@mixin padding-right($x) {
+  @include spacing(padding-right, $x);
+}
+
+.header.layout__header {
+  background-color: inherit;
+}
+
+// Lists with a straight left margin and no bullets
+
+%ul-bulletless-straight-left {
+  display: table;
+  list-style: none;
+  padding: 0;
+
+  > li {
+    display: table-row;
+
+    &::before {
+      @include padding-right(1);
+      content: ' ';
+      display: table-cell;
+      font-size: var(--fs-s);
+    }
+  }
+}
+
+%ul-straight-left {
+  display: table;
+  list-style: none;
+  padding: 0;
+
+  > li {
+    display: table-row;
+
+    &::before {
+      @include padding-right(1);
+      content: '\2022';
+      display: table-cell;
+      font-size: var(--fs-s);
+    }
+  }
+}
+
+.walk-page-list {
+  .walk-page-list-item {
+    list-style-type: none;
+  }
+}
+
+article > .content {
+  .walk-page-list {
+    @extend %ul-bulletless-straight-left;
+  }
+
+  ul:not(.walk-page-list) {
+    @extend %ul-straight-left;
+  }
+}
+
+.presentation-pdf {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-pdf {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume-pdf-object {
+  height: calc(1.4 * (100% - 1rem));
+  max-width: 100%;
+  min-height: 490px;
+  min-width: 360px;
+  width: 100%;
+}
+
+.presentation-pdf-object {
+  height: calc(.75 * (100% - 1rem));
+  max-width: 100%;
+  min-height: 240px;
+  min-width: 360px;
+  width: 100%;
+}
+
+@media screen and (min-width: 48rem) {
+  .resume-pdf-object {
+    height: calc(1.34 * 36rem);
+  }
+
+  .presentation-pdf-object {
+    height: calc(.61 * 36rem);
+  }
+}
+
+@media screen and (min-width: 84rem) {
+  .resume-pdf-object {
+    height: calc(1.1 * 48rem);
+  }
+
+  .presentation-pdf-object {
+    height: calc(.51 * 48rem);
+  }
+}
+
+.image.about-photo {
+  display: block;
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-top: .4em;
+}
+
+.image.side-by {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-top: .4em;
+  max-width: 49%;
+  vertical-align: middle;
+
+  ~ p {
+    display: inline-block;
+    max-width: 49%;
+  }
+}
+
+blockquote {
+  border-left: solid 4px;
+  padding-left: 1rem;
+  padding-right: 1em;
+
+  p {
+    margin-bottom: 0;
+
+    ~ p {
+      margin-top: 1em;
+    }
+  }
+}
+
+code,
+pre {
+  tab-size: 3;
+}
+
+a,
+code {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+pre,
+pre code {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+pre,
+.pre {
+  white-space: pre-wrap;
+}
+
+pre code {
+  display: block;
+  line-height: 2;
+  white-space: pre-wrap;
+}
+
+pre:not(.chroma) code,
+p > code,
+li > code {
+  color: $nearblack;
+}
+
+td > code {
+  color: $black;
+}
+
+.contact-form {
+  background-color: var(--contact-form-background-colour, $contact-form-background-colour);
+  border: 3px solid var(--contact-form-border-colour, $contact-form-border-colour);
+  border-radius: 3rem;
+  color: var(--contact-form-colour, $contact-form-colour);
+  display: block;
+  height: auto;
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.contact-label {
+  width: auto;
+}
+
+.contact-input[type="text"],
+.contact-input[type="email"] {
+  font-size: 1.2rem;
+  height: 1.75em;
+  width: 100%;
+}
+
+.contact-input {
+  display: block;
+  margin-bottom: .4rem;
+  max-width: 100%;
+
+  &.contact-textarea {
+    display: block;
+    flex: unset;
+    font-size: 1.2rem;
+    height: 6em;
+    overflow: auto;
+    width: 100%;
+  }
+}
+
+.contact-button {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+  margin-left: auto;
+  margin-right: 0;
+  min-height: 48px;
+  min-width: 48px;
+  padding-left: .8rem;
+  padding-right: .8rem;
+}
+
+.contact-input,
+.contact-button {
+  border: solid 1px $contact-form-button-border-colour;
+  border-radius: .4rem;
+}
+
+.input-required {
+  color: var(--contact-form-required-colour, $contact-form-required-colour);
+}
+
+.required-note {
+  font-style: italic;
+}
+
+.contact-non-human {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+.main .introduction-card {
+    flex: 1 1 45%;
+    margin-bottom: 1rem;
+}
+
+.main .introduction-card a, .main .about-photo a {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main .introduction-card img, .main .about-photo img {
+    border: 1px solid black;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main .about-photo {
+    flex: 1 1 45%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.two-image-wrapper {
+    align-content: flex-start;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: max-content;
+    width: 100%;
+    overflow: clip;
+}
+
+@media screen and (min-width: 48em) {
+  .two-image-wrapper {
+    align-content: space-between;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+
+  .main .about-photo {
+    margin-right: 1rem;
+  }
+}
+
+.main .content li a {
+  display: inline-block;
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.main .highlight > .chroma > code {
+  white-space: pre-wrap;
+}
+
+.main .highlight > .chroma > code > span {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+main table {
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+main table tr th {
+    background-color: var(--table-heading-bg-colour, $green-medium);
+    border-bottom: 4px ridge;
+    border-left: 4px ridge;
+    border-top: 4px ridge;
+    color: var(--table-heading-text-colour, $black);
+    text-align: left;
+    width: max-content;
+}
+
+@supports (text-align: start) {
+    main table tr th {
+        text-align: start;
+    }
+}
+
+main table tr th:last-of-type {
+    border-right: 4px ridge;
+}
+
+main table tr td {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    width: max-content;
+}
+
+main table tr td:last-of-type {
+    border-right: 2px solid;
+    min-width: 50%;
+}
+
+main table tbody tr:nth-of-type(even) {
+    background-color: var(--table-even-row-bg-colour, $green-light);
+}
+
+/* Background */ .bg { color: #f8f8f2; background-color: #000 }
+/* PreWrapper */ .chroma { color: #f8f8f2; background-color: #000; }
+/* Other */ /* .chroma .x {  } */
+/* Error */ /* .chroma .err {  } */
+/* CodeLine */ /* .chroma .cl {  } */
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; }
+/* LineHighlight */ .chroma .hl { background-color: #ffc }
+/* LineNumbersTable */ .chroma .lnt { white-space: pre-wrap; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7c7c79 }
+/* LineNumbers */ .chroma .ln { white-space: pre; user-select: none; margin-right: 0.4em; padding: 0 0.4em 0 0.4em;color: #7c7c79 }
+/* Line */ .chroma .line { display: flex; border: 1px dashed #9c9c99; }
+/* Keyword */ .chroma .k { color: #f66 }
+/* KeywordConstant */ .chroma .kc { color: #f66 }
+/* KeywordDeclaration */ .chroma .kd { color: #f66 }
+/* KeywordNamespace */ .chroma .kn { color: #f66 }
+/* KeywordPseudo */ .chroma .kp { color: #f66 }
+/* KeywordReserved */ .chroma .kr { color: #f66 }
+/* KeywordType */ .chroma .kt { color: #ee82ee }
+/* Name */ /* .chroma .n {  } */
+/* NameAttribute */ /* .chroma .na {  } */
+/* NameBuiltin */ /* .chroma .nb {  } */
+/* NameBuiltinPseudo */ /* .chroma .bp {  } */
+/* NameClass */ /* .chroma .nc {  } */
+/* NameConstant */ .chroma .no { color: #7fffd4 }
+/* NameDecorator */ /* .chroma .nd {  } */
+/* NameEntity */ /* .chroma .ni {  } */
+/* NameException */ /* .chroma .ne {  } */
+/* NameFunction */ .chroma .nf { color: #ffff00 }
+/* NameFunctionMagic */ /* .chroma .fm {  } */
+/* NameLabel */ /* .chroma .nl {  } */
+/* NameNamespace */ /* .chroma .nn {  } */
+/* NameOther */ /* .chroma .nx {  } */
+/* NameProperty */ /* .chroma .py {  } */
+/* NameTag */ /* .chroma .nt {  } */
+/* NameVariable */ .chroma .nv { color: #eedd82 }
+/* NameVariableClass */ /* .chroma .vc {  } */
+/* NameVariableGlobal */ /* .chroma .vg {  } */
+/* NameVariableInstance */ /* .chroma .vi {  } */
+/* NameVariableMagic */ /* .chroma .vm {  } */
+/* Literal */ /* .chroma .l {  } */
+/* LiteralDate */ /* .chroma .ld {  } */
+/* LiteralString */ .chroma .s { color: #87ceeb }
+/* LiteralStringAffix */ .chroma .sa { color: #87ceeb }
+/* LiteralStringBacktick */ .chroma .sb { color: #87ceeb }
+/* LiteralStringChar */ .chroma .sc { color: #87ceeb }
+/* LiteralStringDelimiter */ .chroma .dl { color: #87ceeb }
+/* LiteralStringDoc */ .chroma .sd { color: #87ceeb }
+/* LiteralStringDouble */ .chroma .s2 { color: #87ceeb }
+/* LiteralStringEscape */ .chroma .se { color: #87ceeb }
+/* LiteralStringHeredoc */ .chroma .sh { color: #87ceeb }
+/* LiteralStringInterpol */ .chroma .si { color: #87ceeb }
+/* LiteralStringOther */ .chroma .sx { color: #87ceeb }
+/* LiteralStringRegex */ .chroma .sr { color: #87ceeb }
+/* LiteralStringSingle */ .chroma .s1 { color: #87ceeb }
+/* LiteralStringSymbol */ .chroma .ss { color: #f60 }
+/* LiteralNumber */ .chroma .m { color: #f60 }
+/* LiteralNumberBin */ .chroma .mb { color: #f60 }
+/* LiteralNumberFloat */ .chroma .mf { color: #f60 }
+/* LiteralNumberHex */ .chroma .mh { color: #f60 }
+/* LiteralNumberInteger */ .chroma .mi { color: #f60 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #f60 }
+/* LiteralNumberOct */ .chroma .mo { color: #f60 }
+/* Operator */ /* .chroma .o {  } */
+/* OperatorWord */ /* .chroma .ow {  } */
+/* Punctuation */ /* .chroma .p {  } */
+/* Comment */ .chroma .c { color: #6f6 }
+/* CommentHashbang */ .chroma .ch { color: #6f6 }
+/* CommentMultiline */ .chroma .cm { color: #6f6 }
+/* CommentSingle */ .chroma .c1 { color: #6f6 }
+/* CommentSpecial */ .chroma .cs { color: #6f6 }
+/* CommentPreproc */ .chroma .cp { color: #e5e5e5 }
+/* CommentPreprocFile */ .chroma .cpf { color: #e5e5e5 }
+/* Generic */ /* .chroma .g {  } */
+/* GenericDeleted */ /* .chroma .gd {  } */
+/* GenericEmph */ /* .chroma .ge {  } */
+/* GenericError */ /* .chroma .gr {  } */
+/* GenericHeading */ /* .chroma .gh {  } */
+/* GenericInserted */ /* .chroma .gi {  } */
+/* GenericOutput */ /* .chroma .go {  } */
+/* GenericPrompt */ /* .chroma .gp {  } */
+/* GenericStrong */ /* .chroma .gs {  } */
+/* GenericSubheading */ /* .chroma .gu {  } */
+/* GenericTraceback */ /* .chroma .gt {  } */
+/* GenericUnderline */ /* .chroma .gl {  } */
+/* TextWhitespace */ /* .chroma .w {  } */
+
