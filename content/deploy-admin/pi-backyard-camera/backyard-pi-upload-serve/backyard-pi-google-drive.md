@@ -18,8 +18,6 @@ tags:
     - technology
 description: Copying backyard camera videos and pictures to Google Drive using rclone
 summary: Copying backyard camera videos and pictures to a Google Drive using rclone
-toc: true
-weight: 400
 ---
 
 {{< details summary="What is in this article" >}}

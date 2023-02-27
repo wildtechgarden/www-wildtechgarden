@@ -21,7 +21,6 @@ description = "Observations on what you need to build a website that will be fou
 summary = """\
 Observations on what you need to build a website that will be found: a presentation for the [Midland MakerPlace](https://midlandlibrary.com/the-mpl-makerplace/).\
 """
-weight = 900
 +++
 
 {{< details summary="What is in this article" >}}

@@ -17,7 +17,6 @@ tags:
 - windows-and-linux
 description: Obtaining and/or creating Windows install media
 summary: Obtaining and/or creating Windows install media
-weight: 100
 ---
 
 * Get [Windows 10 Pro installation media](https://www.microsoft.com/en-ca/software-download/windows10) or a product key (if you don't already have one) and download.
