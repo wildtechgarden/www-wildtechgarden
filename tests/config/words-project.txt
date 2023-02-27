@@ -14,11 +14,13 @@ Puser
 SAMEORIGIN
 Sabbata
 Suter
+TDEWOLFF
 Vipin
 Wari
 Wray
 Wray's
 Xover
+Zgotmpl
 aarch64
 allpages
 attrlink
@@ -33,6 +35,7 @@ davidsneighbour
 disqus
 dnsutils
 dontbreakthebackbutton
+dpkg
 eamodio
 errorf
 favicons
@@ -44,6 +47,8 @@ frontmatter
 gecos
 gohugo
 goldmark
+hahahugo
+inor
 inplace
 isset
 lastmod
