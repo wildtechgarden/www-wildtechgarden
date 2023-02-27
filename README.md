@@ -1,4 +1,4 @@
-# Wild "Tech" Garden
+# Wild Tech "Garden"
 
 ## Status
 
