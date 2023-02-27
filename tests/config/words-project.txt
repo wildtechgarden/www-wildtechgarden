@@ -6,6 +6,7 @@ Grzegorz
 Kilius
 Kondrak
 Kools
+MPLMP
 Mancala
 Nucl
 Oware

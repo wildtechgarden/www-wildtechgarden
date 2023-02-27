@@ -1,6 +1,7 @@
 +++
 title = "Additional resources"
 slug = "resources"
+author = "Daniel F. Dickinson"
 aliases = [
 	"/docs/education-academic/making-the-postmodern-web/resources/",
 	"/education-academic/making-the-postmodern-web/resources/"
@@ -20,10 +21,13 @@ description = """\
 Links to additional resources for 'Making the postmodern web'\
 """
 summary = """\
-Links to additional resources for ['Making the postmodern web'](_index.md)\
+Links to additional resources for ['Making the postmodern web'](making-the-postmodern-web-updated.md)\
 """
-toc = true
 +++
+
+{{< details summary="What is in this article" >}}
+{{< toc >}}
+{{< /details >}}
 
 ## Introductory
 

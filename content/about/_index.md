@@ -1,18 +1,6 @@
-+++
-author = "Daniel F. Dickinson"
-date = 2021-03-07T14:38:01+00:00
-publishDate = 2020-12-29T01:58:21+00:00
-title = "About Wild Tech 'Garden'"
-weight = 90000
-+++
-
-A technical documentation website on a variety of topics, projects, and
-presentations, currently all by [Daniel F. Dickinson](https://www.danielfdickinson.ca/). Daniel is prone to using 'we' in documentation because he doesn't
-feel that 'I' has the right tone.
-
-If you came here expecting to see a garden, you may be interested in [the
-garden that inspired the name of this site](https://www.princesandmadmen.ca/blog/garden-gallery/) (when combined with Daniel being a 'techie').
-
--------
-
-## Administrivia, and more
+---
+title: "About"
+date: 2023-02-26T22:04:35-05:00
+publishDate: 2023-02-26T22:04:35-05:00
+weight: 90000
+---

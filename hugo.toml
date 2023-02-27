@@ -111,7 +111,7 @@ pageref = "education-academic/"
 weight = 30
 [[menu.main]]
 name = "About"
-pageref = "about/"
+pageref = "about/about"
 weight = 60
 [[menu.main]]
 name = "Search"
@@ -139,7 +139,7 @@ disable = true
 
 [module]
 [[module.imports]]
-path = "github.com/danielfdickinson/server-alpine-linux-docs4web"
+path = "gitlab.com/danielfdickinson/server-alpine-linux-docs4web"
 
 [[module.imports.mounts]]
 source = 'src'

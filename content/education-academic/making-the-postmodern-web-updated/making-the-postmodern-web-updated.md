@@ -2,7 +2,6 @@
 title = "Making the postmodern web (updated)"
 slug = "making-the-postmodern-web-updated"
 aliases = [
-	"/docs/education-academic/making-the-postmodern-web/",
 	"/education-academic/making-the-postmodern-web/",
 	"/docs/education-academic/making-the-postmodern-web-updated/"
 ]
@@ -22,7 +21,7 @@ description = "Observations on what you need to build a website that will be fou
 summary = """\
 Observations on what you need to build a website that will be found: a presentation for the [Midland MakerPlace](https://midlandlibrary.com/the-mpl-makerplace/).\
 """
-staticFallback = true
+weight = 900
 +++
 
 {{< details summary="What is in this article" >}}
@@ -36,8 +35,8 @@ Observations on what you need to build a website that will be found: a presentat
 ### Alternative formats
 
 * [Presentation as a LibreOffice Impress Document (compatible with Microsoft
-PowerPoint)](/files/making-the-postmodern-web-updated/Making-the-postmodern-web.odp)
-* [Presentation as a PDF Document](/files/making-the-postmodern-web-updated/Making-the-postmodern-web.pdf)
+PowerPoint)](Making-the-postmodern-web.odp)
+* [Presentation as a PDF Document](Making-the-postmodern-web.pdf)
 
 ### Additional resources
 
