@@ -25,7 +25,6 @@ tags:
 title: Raspberry Pi OS as a server
 summary: "You may find yourself in need of a 'bare metal' server. If the workload is not too demanding, a Raspberry Pi can be a good choice."
 description: "You may find yourself in need of a 'bare metal' server. If the workload is not too demanding, a Raspberry Pi can be a good choice."
-toc: true
 ---
 
 {{< details summary="What is in this article" >}}

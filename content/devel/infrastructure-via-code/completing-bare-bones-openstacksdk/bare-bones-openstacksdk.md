@@ -65,4 +65,4 @@ The scripts described on this page are available in a Git repo @ <https://github
 
 As you can see the experiments have gone surprisingly smoothly, and we've been able to concentrate in iteratively improving our script. Since this is an experimental process we haven't been using TDD or CI (Test Driven Development or Continuous Integration). Adding those will require some thought as it will need to be able to spin up instances during the test process, and may not be something we want to do on a public cloud offering.
 
-For those who read this, we hope find the process we've shown proves informative, useful, and interesting. Of course we're not done yet, so we hope you will keep watching for update.
+For those who read this, we hope find the process we've shown proves informative, useful, and interesting. Of course we're not done yet, so we hope you will keep watching for updates.

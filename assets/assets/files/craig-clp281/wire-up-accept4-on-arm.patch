@@ -1,0 +1,24 @@
+diff -Naur unix-clean/ANDROID_2.6.32/arch/arm/include/asm/unistd.h unix-patched/ANDROID_2.6.32/arch/arm/include/asm/unistd.h
+--- unix-clean/ANDROID_2.6.32/arch/arm/include/asm/unistd.h	2019-12-02 23:55:01.113333073 -0500
++++ unix-patched/ANDROID_2.6.32/arch/arm/include/asm/unistd.h	2019-12-03 00:00:06.172406642 -0500
+@@ -391,6 +391,7 @@
+ #define __NR_pwritev			(__NR_SYSCALL_BASE+362)
+ #define __NR_rt_tgsigqueueinfo		(__NR_SYSCALL_BASE+363)
+ #define __NR_perf_event_open		(__NR_SYSCALL_BASE+364)
++#define __NR_accept4			(__NR_SYSCALL_BASE+366)
+ 
+ /*
+  * The following SWIs are ARM private.
+diff -Naur unix-clean/ANDROID_2.6.32/arch/arm/kernel/calls.S unix-patched/ANDROID_2.6.32/arch/arm/kernel/calls.S
+--- unix-clean/ANDROID_2.6.32/arch/arm/kernel/calls.S	2019-12-02 23:55:01.257334534 -0500
++++ unix-patched/ANDROID_2.6.32/arch/arm/kernel/calls.S	2019-12-03 00:01:18.745137064 -0500
+@@ -374,6 +374,9 @@
+ 		CALL(sys_pwritev)
+ 		CALL(sys_rt_tgsigqueueinfo)
+ 		CALL(sys_perf_event_open)
++/* 365 */	CALL(sys_ni_syscall)
++		CALL(sys_accept4)
++
+ #ifndef syscalls_counted
+ .equ syscalls_padding, ((NR_syscalls + 3) & ~3) - NR_syscalls
+ #define syscalls_counted

@@ -1,0 +1,181 @@
+diff -ruNa ANDROID_2.6.32/drivers/input/touchscreen/vt1603a_ts/Kconfig _ANDROID_2.6.32/drivers/input/touchscreen/vt1603a_ts/Kconfig
+--- ANDROID_2.6.32/drivers/input/touchscreen/vt1603a_ts/Kconfig	2011-11-09 06:50:55.000000000 +0100
++++ _ANDROID_2.6.32/drivers/input/touchscreen/vt1603a_ts/Kconfig	2012-06-13 22:05:20.427072403 +0200
+@@ -22,3 +22,19 @@
+         ---help---
+           Say Y here if you want to use I2C bus.
+ endchoice
++
++config VT1603_TS_ENABLE
++	bool "Touchscreen driver supports touchscreen"
++	depends on WMT_VT1603A_TOUCHSCREEN
++	default y
++
++config VT1603_BATTERY_ENABLE
++	bool "Touchscreen driver supports battery measurement"
++	depends on WMT_VT1603A_TOUCHSCREEN
++	default n
++
++config VT1603_TEMPERATURE_ENABLE
++	bool "Touchscreen driver supports temperature measurement"
++	depends on WMT_VT1603A_TOUCHSCREEN
++	default n
++
+diff -ruNa ANDROID_2.6.32/drivers/net/arm/rhine_main.c _ANDROID_2.6.32/drivers/net/arm/rhine_main.c
+--- ANDROID_2.6.32/drivers/net/arm/rhine_main.c	2011-11-09 06:51:00.000000000 +0100
++++ _ANDROID_2.6.32/drivers/net/arm/rhine_main.c	2012-06-24 13:00:14.143442731 +0200
+@@ -682,7 +682,7 @@
+ 	extern int wmt_getsyspara(char *varname, unsigned char *varval, int *varlen);
+ 	if(wmt_getsyspara(eth_env_name,eth_env_val,&varlen) == 0) {
+ 		sscanf(eth_env_val,"%X",&eth);
+-		if(!(eth & 0x10)) {
++		if (eth != 0x10 && eth != 0x01){
+ 			printk("Configure VIA Rhine driver disabled \n");
+ 			return -ENODEV;
+ 		}
+diff -ruNa ANDROID_2.6.32/drivers/power/wmt_battery.c _ANDROID_2.6.32/drivers/power/wmt_battery.c
+--- ANDROID_2.6.32/drivers/power/wmt_battery.c	2011-11-09 06:51:00.000000000 +0100
++++ _ANDROID_2.6.32/drivers/power/wmt_battery.c	2012-06-24 20:50:08.261287656 +0200
+@@ -99,6 +99,7 @@
+ int polling_interval= 5000;
+ extern int wmt_getsyspara(char *varname, char *varval, int *varlen);
+ extern unsigned short wmt_read_batstatus_if(void);
++extern short vt1603_get_bat_info(void);
+ 
+ struct wmt_batgpio_set{ 
+      int  name;        
+@@ -174,7 +175,7 @@
+ 			spi_mode = 1;
+ 		}
+     }else{
+-			spi_mode = 1;
++			spi_mode = 0;
+ 	}
+ 
+ 	/*printk("Bow: spi_mode =%d,tsused=%d, is_cs7146 = 0x%x  \n",spi_mode,tsused,is_cs7146);*/
+@@ -338,12 +339,14 @@
+ 	char buf[128];
+ 	char varname[] = "wmt.io.bat";
+ 	int varlen = 128;
++	int wmt_adc;
+ 
+-	printk("Bow: wmt_batt_init  \n");
++	/*printk("Bow: wmt_batt_init  \n");*/
+ 
+ 	if (wmt_getsyspara(varname, buf, &varlen) == 0){
+-		sscanf(buf,"%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x",
++		sscanf(buf,"%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x:%x",
+ 			    &wmt_operation,
++				&wmt_adc,
+ 			    &batt_update_time,
+ 			    &batt_charge_max,
+ 			    &batt_charge_min,
+@@ -370,6 +373,10 @@
+ 				batt_operation = 1;
+ 				ADC_USED= 1;
+ 				break;
++			case 3: /* WMT8650 netbook & maybe also for tablets */
++				batt_operation = 1;
++				ADC_USED= wmt_adc;
++				break;
+ 			default:
+ 				batt_operation = 1;
+ 				ADC_USED= 0;
+@@ -515,7 +522,10 @@
+ 		spi_write_and_read_data(spi_user_rec_b, wbuf, rbuf, 3);
+ 		spi_buf = (rbuf[1] << 5) | (rbuf[2] >> 3);
+ 	}else{
+-		spi_buf = wmt_read_batstatus_if();
++		if (ADC_USED == 2)
++			spi_buf = vt1603_get_bat_info();
++		else
++			spi_buf = wmt_read_batstatus_if();
+ 	}
+     /*printk("spi_buf = 0x%x \n ",spi_buf);*/
+ 	return spi_buf;
+@@ -1021,7 +1031,7 @@
+ 
+      /*************     AC     ************/
+ 	
+-	printk("Bow: Probe...0\n");
++	/*printk("Bow: Probe...0\n");*/
+ 	ret = power_supply_register(&dev->dev, &ac_ps);
+ 	if (!ret)
+ 		schedule_work(&ac_work);
+diff -ruNa ANDROID_2.6.32/drivers/rtc/wmt-rtc.c _ANDROID_2.6.32/drivers/rtc/wmt-rtc.c
+--- ANDROID_2.6.32/drivers/rtc/wmt-rtc.c	2011-11-09 06:51:00.000000000 +0100
++++ _ANDROID_2.6.32/drivers/rtc/wmt-rtc.c	2012-06-17 12:54:10.971798381 +0200
+@@ -309,7 +309,7 @@
+ 		wmt_rtc_interrupt,
+ 		IRQF_DISABLED,
+ 		"rtc_ticks",
+-		NULL);
++		dev);
+ 	if (ret) {
+ 		printk(KERN_ERR "rtc: IRQ%d already in use.\n", IRQ_RTC_UPDATE);
+ 		goto fail_update;
+@@ -319,7 +319,7 @@
+ 		wmt_rtc_interrupt,
+ 		IRQF_DISABLED,
+ 		"rtc_alarm",
+-		NULL);
++		dev);
+ 	if (ret) {
+ 		printk(KERN_ERR "rtc: IRQ%d already in use.\n", IRQ_RTC_ALARM);
+ 		goto fail_alarm;
+@@ -328,7 +328,7 @@
+ 	return 0;
+ 
+ fail_alarm:
+-	free_irq(IRQ_RTC_UPDATE, NULL);
++	free_irq(IRQ_RTC_UPDATE, dev);
+ fail_update:
+ 	return ret;
+ }
+@@ -349,8 +349,8 @@
+ 	/*
+ 	 * Release IRQ resource.
+ 	 */
+-	free_irq(IRQ_RTC_UPDATE, NULL);
+-	free_irq(IRQ_RTC_ALARM, NULL);
++	free_irq(IRQ_RTC_UPDATE, dev);
++	free_irq(IRQ_RTC_ALARM, dev);
+ }
+ 
+ static int wmt_rtc_ioctl(struct device *dev, unsigned int cmd, unsigned long arg)
+@@ -407,7 +407,7 @@
+ 	case RTC_IRQP_SET:      /* Set IRQ rate               */
+ 		return -EINVAL;
+ 	}
+-	return -EINVAL;
++	return -ENOIOCTLCMD;
+ }
+ 
+ static int wmt_rtc_read_time(struct device *dev, struct rtc_time *tm)
+diff -ruNa ANDROID_2.6.32/drivers/video/wmt/govrh.c _ANDROID_2.6.32/drivers/video/wmt/govrh.c
+--- ANDROID_2.6.32/drivers/video/wmt/govrh.c	2011-11-09 06:51:06.000000000 +0100
++++ _ANDROID_2.6.32/drivers/video/wmt/govrh.c	2012-06-24 18:45:34.688442142 +0200
+@@ -924,12 +924,12 @@
+ void govrh_CUR_set_colfmt(vdo_color_fmt colfmt)
+ {
+ 	colfmt = (colfmt < VDO_COL_FMT_ARGB)? VDO_COL_FMT_YUV444:VDO_COL_FMT_ARGB;
+-	DPRINT("[CUR] set colfmt %s\n",vpp_colfmt_str[colfmt]);
++//	DPRINT("[CUR] set colfmt %s\n",vpp_colfmt_str[colfmt]);
+ 	if( p_cursor->fb_p->fb.col_fmt == colfmt )
+ 		return;
+ 
+ 	vppif_reg32_out(REG_GOVRH_CUR_ADDR,(p_cursor->colfmt==colfmt)? p_cursor->cursor_addr1:p_cursor->cursor_addr2);
+-	DPRINT("[CUR] %s --> %s chg fb %d\n",vpp_colfmt_str[p_cursor->fb_p->fb.col_fmt],vpp_colfmt_str[colfmt],(p_cursor->colfmt==colfmt)?1:2);
++//	DPRINT("[CUR] %s --> %s chg fb %d\n",vpp_colfmt_str[p_cursor->fb_p->fb.col_fmt],vpp_colfmt_str[colfmt],(p_cursor->colfmt==colfmt)?1:2);
+ 	p_cursor->fb_p->fb.col_fmt = colfmt;	
+ }
+ 
+@@ -1010,7 +1010,7 @@
+ 
+ void govrh_CUR_set_framebuffer(vdo_framebuf_t *fb)
+ {
+-	DPRINT("[CUR] govrh_CUR_set_framebuffer\n");
++//	DPRINT("[CUR] govrh_CUR_set_framebuffer\n");
+ 
+ 	vppif_reg32_out(REG_GOVRH_CUR_ADDR,fb->y_addr);
+ 	vppif_reg32_write(GOVRH_CUR_WIDTH,fb->img_w);

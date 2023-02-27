@@ -200,12 +200,22 @@ pre code {
 
 pre:not(.chroma) code,
 p > code,
-li > code {
-  color: $nearblack;
+li > code,
+del > code {
+  color: $black;
 }
 
 td > code {
   color: $black;
+}
+
+li > del {
+  text-decoration-color: $white;
+}
+
+li > p {
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .contact-form {
@@ -328,10 +338,27 @@ td > code {
   }
 }
 
-.main .content li a {
+.main .content li ~ li a {
   display: inline-block;
-  min-height: 48px;
-  min-width: 48px;
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.side-by-figure.image {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+
+.side-by-figure.image a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.side-by-figure.image img {
+    height: auto;
+    width: 100%;
 }
 
 .main .highlight > .chroma > code {

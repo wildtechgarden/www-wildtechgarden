@@ -116,5 +116,10 @@ https://www.thewildtechgarden.com/ https://www.wildtechgarden.ca/ 301!
 /docs/devel/hugo/hugo-metadata-images/ https://github.com/danielfdickinson/metadata-image-mod-hugo-dfd 301!
 /devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!
 /docs/devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!
+/projects/defunct/armshorian/ / 410
+/develop-design/arm-development/armshorian/ / 410
+/devel/armshorian/ / 410
+/devel/arm-devel/armshorian/ / 410
+/docs/devel/arm-devel/armshorian/ / 410
 /docs/devel/* /devel/:splat 301!
 /docs/deploy-admin/* /deploy-admin/:splat 301!

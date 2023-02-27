@@ -51,7 +51,7 @@ repos:
     # here means that keys are sorted and indented.
     args: [--autofix, --indent, "	"]
   - id: trailing-whitespace
-    exclude: ^(_vendor)
+    exclude: ^(_vendor|assets/assets/files/)
     args: [--markdown-linebreak-ext=md]
 
 - repo: "https://github.com/pre-commit/mirrors-csslint"
@@ -98,7 +98,7 @@ repos:
     alias: ec
     args:
     - -no-color
-    exclude: ^(LICENSE|package(-lock)?.json$|static/|content/|layouts/index.nheaders)
+    exclude: ^(LICENSE|package(-lock)?.json$|static/|content/|layouts/index.nheaders$|assets/assets/files/)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
   rev: v6.12.0
