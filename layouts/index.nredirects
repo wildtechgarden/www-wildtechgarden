@@ -114,5 +114,7 @@ https://www.thewildtechgarden.com/ https://www.wildtechgarden.ca/ 301!
 /docs/devel/hugo/dananke-theme-hugo-dfd/ https://github.com/danielfdickinson/dananke-theme-hugo-dfd 301!
 /devel/hugo/hugo-metadata-images/ https://github.com/danielfdickinson/metadata-image-mod-hugo-dfd 301!
 /docs/devel/hugo/hugo-metadata-images/ https://github.com/danielfdickinson/metadata-image-mod-hugo-dfd 301!
+/devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!
+/docs/devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!
 /docs/devel/* /devel/:splat 301!
 /docs/deploy-admin/* /deploy-admin/:splat 301!

@@ -55,6 +55,9 @@
 			{{- end -}}
 		{{- else -}}
 			{{- $finalDestination = $pageResource.RelPermalink -}}
+			{{- if $absLink -}}
+				{{- $finalDestination = $pageResource.Permalink -}}
+			{{- end -}}
 		{{- end -}}
 	{{- else if hasPrefix $destination "#" -}}
 		{{- $finalResource = $page -}}
