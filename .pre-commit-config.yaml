@@ -114,6 +114,6 @@ repos:
     - --show-context
     - --show-suggestions
     - --validate-directives
-    exclude: ^(LICENSE|tests/config/cspell.json|assets/.*|tests/scripts/.*|assets/sass/_extra.scss$|static/|.*.svg$) # yamllint disable-line
+    exclude: ^(LICENSE|tests/config/cspell.json|assets/.*|tests/scripts/.*|assets/sass/_extra.scss$|static/|.*.svg$|.*/2008-11-30-debian-custom-media\.md$) # yamllint disable-line
 # yamllint enable rule:key-ordering
 ...

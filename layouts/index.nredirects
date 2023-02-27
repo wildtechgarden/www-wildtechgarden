@@ -121,5 +121,9 @@ https://www.thewildtechgarden.com/ https://www.wildtechgarden.ca/ 301!
 /devel/armshorian/ / 410
 /devel/arm-devel/armshorian/ / 410
 /docs/devel/arm-devel/armshorian/ / 410
+/projects/defunct/msmtp-scripts/ / 410
+/deploy-admin/msmtp-scripts/ / 410
+/sysadmin-devops/self-host/msmtp-scripts/ / 410
+/docs/deploy-admin/sysadmin-devops/msmtp-scripts/ / 410
 /docs/devel/* /devel/:splat 301!
 /docs/deploy-admin/* /deploy-admin/:splat 301!

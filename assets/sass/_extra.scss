@@ -338,6 +338,11 @@ li > p {
   }
 }
 
+.main .content li sup a {
+  min-height: unset;
+  min-width: unset;
+}
+
 .main .content li a {
   display: inline-block;
   min-height: 48px;
