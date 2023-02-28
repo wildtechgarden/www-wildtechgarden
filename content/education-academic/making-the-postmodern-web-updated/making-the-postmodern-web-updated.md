@@ -2,7 +2,6 @@
 title = "Making the postmodern web (updated)"
 slug = "making-the-postmodern-web-updated"
 aliases = [
-	"/education-academic/making-the-postmodern-web/",
 	"/docs/education-academic/making-the-postmodern-web-updated/"
 ]
 author = "Daniel F. Dickinson"

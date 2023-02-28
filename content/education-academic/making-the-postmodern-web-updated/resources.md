@@ -3,8 +3,7 @@ title = "Additional resources"
 slug = "resources"
 author = "Daniel F. Dickinson"
 aliases = [
-	"/docs/education-academic/making-the-postmodern-web/resources/",
-	"/education-academic/making-the-postmodern-web/resources/"
+	"/docs/education-academic/making-the-postmodern-web/resources/"
 ]
 date = "2023-02-11T19:30:22Z"
 publishDate = "2023-02-11T19:30:22Z"
