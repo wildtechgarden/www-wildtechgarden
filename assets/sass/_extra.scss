@@ -416,6 +416,14 @@ main table tbody tr:nth-of-type(even) {
     background-color: var(--table-even-row-bg-colour, $green-light);
 }
 
+.image.half-width {
+  width: 50%;
+}
+
+.image.three-quarter-width {
+  width: 75%;
+}
+
 /* Background */ .bg { color: #f8f8f2; background-color: #000 }
 /* PreWrapper */ .chroma { color: #f8f8f2; background-color: #000; }
 /* Other */ /* .chroma .x {  } */

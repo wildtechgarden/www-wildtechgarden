@@ -8,7 +8,7 @@ paginatePath = "page"
 pluralizelisttitles = false
 rssLimit = 20
 theme ="github.com/frjo/hugo-theme-zen/v3"
-timeout = 100000
+timeout = 500000
 
 [taxonomies]
 tag = "tags"
@@ -75,6 +75,7 @@ footer = "[Sitemap](/about/sitemap) | [Tags](/tags) | [Series](/series) | [Searc
 icon = "apple-touch-icon.png" # Relative path to icon in json feed and JSON-LD, no leading slash.
 image = "images/corner-rock-garden-pixelized-2400x1260-text-overlay.png" # Relative path to site image in JSON-LD, no leading slash.
 #imageMaxWidth = 400 # Max width for images added via figure shortcode.
+imageSrcSet = "480 720 1080 1280 1600 2048"
 logo = true # Turn off the logo.
 logoPath= "android-chrome-512x512.png"
 logoHeight = 64

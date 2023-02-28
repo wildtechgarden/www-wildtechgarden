@@ -35,7 +35,7 @@ description: "You may find yourself in need of a 'bare metal' server. If the wor
 
 For small deployments (or home or small office use) you may find yourself in need of a 'bare metal' server, but not want or need the expense of an x64 machine. If the workload is not too demanding, a Raspberry Pi can be a good choice. The Pi has the benefit of being inexpensive, using little electricity and taking minimal space.
 
-{{< figure alt="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" caption="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" src="/assets/images/PiBoardOfficialCase.jpg" size="400x">}}
+{{< figure alt="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" caption="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" src="/assets/images/PiBoardOfficialCase.jpg" class="three-quarter-width">}}
 
 ### Hardware / Base OS
 

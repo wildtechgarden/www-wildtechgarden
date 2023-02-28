@@ -48,7 +48,7 @@ This is based on, but not a conversion of, a PowerPoint presentation I created f
 * Very popular amongst hobbyists due to low price while still being fully functional (even ignoring the appeal of easy electronics integration).
 * Not designed for industrial or mission-critical applications.
 
-{{< figure alt="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" caption="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" src="/assets/images/PiBoardOfficialCase.jpg" size="400x" >}}
+{{< figure class="three-quarter-width" alt="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" caption="Raspberry Pi 2 in an official strawberry red and white case in the palm of a human hand, with top cover removed and Pi 2 circuit board showing" src="/assets/images/PiBoardOfficialCase.jpg" >}}
 
 ## About Raspberry Pi OS
 
@@ -105,7 +105,7 @@ This is based on, but not a conversion of, a PowerPoint presentation I created f
   3. Selecting ‘Enable’ beside ‘VNC’
   4. Clicking OK
 
-{{< figure alt="Screenshots of selecting Preferences from the Application Menu and Raspberry Pi 'Configuration Dialogue' open to the 'Interfaces' tab" caption="Screenshots of selecting Preferences from the Application Menu and Raspberry Pi 'Configuration Dialogue' open to the 'Interfaces' tab" src="/assets/images/2020/09/PiScreens-1-798x1024.jpg" size="400x" >}}
+{{< figure alt="Screenshots of selecting Preferences from the Application Menu and Raspberry Pi 'Configuration Dialogue' open to the 'Interfaces' tab" caption="Screenshots of selecting Preferences from the Application Menu and Raspberry Pi 'Configuration Dialogue' open to the 'Interfaces' tab" src="/assets/images/2020/09/PiScreens-1-798x1024.jpg" class="three-quarter-width" >}}
 Author: Jonathon Killing
 
 * After a little time you will see a Vnc icon beside the network icon on the top right hand side of the screen.
