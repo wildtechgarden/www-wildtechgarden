@@ -2,7 +2,7 @@
 slug: results-for-solving-zebra-and-sherlock
 aliases:
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/
-- /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/
+- /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/
 title: "Results for solving Zebra and Sherlock"
 author: Daniel F. Dickinson
 tags:

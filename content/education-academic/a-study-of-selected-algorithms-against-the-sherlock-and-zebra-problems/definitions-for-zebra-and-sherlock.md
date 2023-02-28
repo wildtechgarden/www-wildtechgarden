@@ -2,7 +2,7 @@
 slug: definitions-for-zebra-and-sherlock
 aliases:
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/
-- /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/
+- /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/
 title: "Definitions for Zebra and Sherlock"
 author: Daniel F. Dickinson
 tags:

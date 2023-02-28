@@ -2,7 +2,7 @@
 slug: generate-random-problems
 aliases:
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/generate-random-problems/
-- /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/generate-random-problems/
+- /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/generate-random-problems/
 title: "Generate random problems"
 author: Daniel F. Dickinson
 tags:

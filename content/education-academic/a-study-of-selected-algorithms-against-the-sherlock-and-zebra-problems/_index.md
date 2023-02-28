@@ -3,7 +3,7 @@ slug: a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems
 aliases:
 - /2003/02/09/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/
 - /post/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/
-- /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/
+- /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/
 - /a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/
 author: Daniel F. Dickinson

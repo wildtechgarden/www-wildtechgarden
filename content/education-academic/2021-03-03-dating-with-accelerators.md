@@ -4,7 +4,7 @@ aliases:
 - /1992/10/28/dating-with-accelerators/
 - /dating-with-accelerators/
 - /post/dating-with-accelerators/
-- /education-academic/dating-with-accelerators/
+- /docs/education-academic/dating-with-accelerators/
 author: Daniel F. Dickinson
 date: '2021-03-03T21:09:27+00:00'
 publishDate: '1992-10-29T04:04:00+00:00'

@@ -3,7 +3,7 @@ slug: algorithms-for-solving-bcsp
 aliases:
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/
-- /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/
+- /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/
 title: "Algorithms for solving Zebra and Sherlock"
 author: Daniel F. Dickinson
 tags:

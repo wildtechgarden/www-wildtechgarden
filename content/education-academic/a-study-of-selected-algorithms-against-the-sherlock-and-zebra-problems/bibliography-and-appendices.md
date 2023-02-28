@@ -2,7 +2,7 @@
 slug: bibliography-and-appendices
 aliases:
 - /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/
-- /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/
+- /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/
 title: "Bibliography and Appendices"
 author: Daniel F. Dickinson
 tags:
