@@ -33,7 +33,7 @@
 
 {{ if $resource -}}
 	{{ if $size -}}
-		{{ $image := $resource.Resize $size -}}
+		{{ $image := $resource.Resize (printf "%s webp" $size) -}}
 		{{ $src = $image.RelPermalink -}}
 		{{ $width = $image.Width -}}
 		{{ $height = $image.Height -}}
