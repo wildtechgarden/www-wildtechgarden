@@ -144,7 +144,7 @@ See Also: ~~\[A Windows-centric approach to setting up Windows and Linux combine
 
 ## Using Hugo with Netlify CLI with WSL/WSL2
 
-* ~~The easiest way for building Hugo modules is to use a 'starter' repo such as \[DFD Hugo Module Starter]\(`https://github.com/danielfdickinson/hugo-dfd-module-starter`)~~ \[_AUTHOR's NOTE:_ The module starter repository has been removed] and follow the instructions in [Hugo Module Development With Netlify](2021-10-12-hugo-module-dev-netlify.md).
+* ~~The easiest way for building Hugo modules is to use a 'starter' repo such as \[DFD Hugo Module Starter]\(`https://github.com/danielfdickinson/hugo-dfd-module-starter`)~~ \[*AUTHOR's NOTE:* The module starter repository has been removed] and follow the instructions in [Hugo Module Development With Netlify](2021-10-12-hugo-module-dev-netlify.md).
 * If you are building a site the steps are similar but you need to remove the references to ``exampleSite`` because the site is the project.
 
 ### A Summary of the Steps Involved for Starting from Scratch
