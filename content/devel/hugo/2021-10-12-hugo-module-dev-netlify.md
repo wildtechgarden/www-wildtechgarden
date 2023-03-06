@@ -26,7 +26,10 @@ ARCHIVED: This repo is no longer maintained and may have problems (including sec
 
 ## GitHub Repo
 
-<https://github.com/danielfdickinson/hugo-dfd-module-starter>
+`https://github.com/danielfdickinson/hugo-dfd-module-starter`
+
+Repository no longer exists, but the information below is still may prove useful
+for other purposes.
 
 ## Features
 

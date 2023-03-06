@@ -25,9 +25,9 @@ I've switched to Azure Storage Blob containers for my static website needs (usin
 
 ### Essentials
 
-[Install WSL(2) for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install) & \[Configure WSL(2) launch settings]\(`/deploy-admin/windows-and-linux/a-more-windows-centric-approach/tweaks-and-recommendations.md\#configuring-wsl-so-windows-filesystems-have-proper-unix-permissions`).
+[Install WSL(2) for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install) & ~~\[Configure WSL(2) launch settings]\(`/deploy-admin/windows-and-linux/a-more-windows-centric-approach/tweaks-and-recommendations.md\#configuring-wsl-so-windows-filesystems-have-proper-unix-permissions`)~~.
 
-See Also: \[A Windows-centric approach to setting up Windows and Linux combined]\(`/deploy-admin/windows-and-linux/a-more-windows-centric-approach/`)
+See Also: ~~\[A Windows-centric approach to setting up Windows and Linux combined]\(`/deploy-admin/windows-and-linux/a-more-windows-centric-approach/`)~~
 
 ### Recommended
 
@@ -144,7 +144,7 @@ See Also: \[A Windows-centric approach to setting up Windows and Linux combined]
 
 ## Using Hugo with Netlify CLI with WSL/WSL2
 
-* The easiest way for building Hugo modules is to use a 'starter' repo such as [DFD Hugo Module Starter](https://github.com/danielfdickinson/hugo-dfd-module-starter) and follow the instructions in [Hugo Module Development With Netlify](2021-10-12-hugo-module-dev-netlify.md).
+* ~~The easiest way for building Hugo modules is to use a 'starter' repo such as \[DFD Hugo Module Starter]\(`https://github.com/danielfdickinson/hugo-dfd-module-starter`)~~ \[_AUTHOR's NOTE:_ The module starter repository has been removed] and follow the instructions in [Hugo Module Development With Netlify](2021-10-12-hugo-module-dev-netlify.md).
 * If you are building a site the steps are similar but you need to remove the references to ``exampleSite`` because the site is the project.
 
 ### A Summary of the Steps Involved for Starting from Scratch

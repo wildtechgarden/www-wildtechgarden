@@ -204,7 +204,7 @@ function noonehere() {
 * Can your reader understand you with less than a PhD?
 * Images: 'alt' text and universal design
 * Navigation: [Not breaking the back
-button](https://wildtechgarden.ca/blog/accessible-design-no-blank/)
+button](https://www.danielfdickinson.ca/blog/accessible-design-no-blank/)
 and more (especially for less tech savvy viewers)
 * Videos: subtitles / DV (descriptive video)
 * PDF: use a text-based not image-based PDF
