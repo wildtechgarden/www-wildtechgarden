@@ -1,18 +1,18 @@
-http://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
-https://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
-http://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
-https://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
-http://thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
-https://thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
-http://thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
-https://thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
-http://www.wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
-http://www.wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
-https://www.wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
 http://www.thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
 https://www.thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
 http://www.thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
 https://www.thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
+http://www.wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
+http://www.wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
+https://www.wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
+http://thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
+https://thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
+http://thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
+https://thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
+http://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
+https://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
+http://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
+https://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
 {{- range site.Pages -}}
 	{{- if .Aliases -}}
 		{{- $rTarget := .RelPermalink -}}
