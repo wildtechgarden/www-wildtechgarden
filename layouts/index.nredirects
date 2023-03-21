@@ -13,14 +13,16 @@ http://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
 https://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!
 http://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
 https://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!
-{{- range site.Pages -}}
+
+{{ range site.Pages -}}
 	{{- if .Aliases -}}
 		{{- $rTarget := .RelPermalink -}}
 		{{- range .Aliases -}}
 {{ . }} {{ $rTarget }} 301
 {{ end -}}
 	{{- end -}}
-{{- end -}}
+{{- end }}
+
 /feed/ /index.xml 301
 /post/feed/ /blog/index.xml 301
 /blog/* https://www.danielfdickinson.ca/blog/:splat 301
