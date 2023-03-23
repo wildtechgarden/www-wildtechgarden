@@ -8,7 +8,7 @@ aliases:
 author: Daniel F. Dickinson
 date: '2021-03-08T10:23:50+00:00'
 publishDate: '2021-01-29T21:14:43+00:00'
-title: Setup
+title: Initial WordPress Setup
 description: "Setting up a WordPress blog on a VPS-hosted instance"
 summary: "Setting up a WordPress blog on a VPS-hosted instance"
 series:

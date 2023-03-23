@@ -1,5 +1,5 @@
 ---
-title: "Basic blog"
+title: "Basic blog on WordPress"
 slug: basic-blog
 author: Daniel F. Dickinson
 date: 2021-01-29T15:55:14+00:00

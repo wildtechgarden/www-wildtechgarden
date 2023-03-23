@@ -8,7 +8,7 @@ aliases:
 author: Daniel F. Dickinson
 date: '2021-01-29T15:21:09+00:00'
 publishDate: '2021-01-29T15:21:09+00:00'
-title: A note on maintenance
+title: A note on WordPress maintenance
 description: "Maintaining a WordPress site host on a VPS on OVHcloud"
 summary: "Maintaining a WordPress site host on a VPS on OVcloud"
 series:

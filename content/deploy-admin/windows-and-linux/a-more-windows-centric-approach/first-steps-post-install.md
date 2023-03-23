@@ -6,7 +6,7 @@ aliases:
     - /docs/sysadmin-devops/windows-and-linux/a-more-windows-centric-approach/first-steps-post-install/
     - /deploy-admin/a-more-windows-centric-approach/first-steps-post-install/
     - /docs/deploy-admin/windows-and-linux/a-more-windows-centric-approach/first-steps-post-install/
-title: "First steps, post install"
+title: "Windows 10 first steps, post install"
 author: Daniel F. Dickinson
 date: '2021-07-14T11:12:00-04:00'
 publishDate: '2021-07-15T06:04:00-04:00'

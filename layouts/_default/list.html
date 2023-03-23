@@ -1,9 +1,11 @@
 {{ define "title" }}
-{{- $pageTitle := printf "%s - %s" .Title site.Title -}}
+{{- $pageTitle := .Title -}}
 {{- if gt (len ($pageTitle | htmlEscape)) 70 -}}
-{{- $pageTitle = .Title -}}
+	{{- errorf "%s title '%'s > 70 characters" .TranslationKey $pageTitle -}}
 {{- end -}}
-{{- if .IsHome }}{{ site.Title }}{{ else }}{{ $pageTitle }}{{ end }}{{ end }}
+{{- $pageTitle = .Title -}}
+{{- if .IsHome }}{{ site.Title }}{{ else }}{{ $pageTitle }}{{ end }}
+{{- end -}}
 
 {{ define "main" -}}
 {{- $pmctx := . -}}

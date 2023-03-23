@@ -6,7 +6,7 @@ aliases:
     - /docs/devel/arm-devel/arm-libvirt-kvm-virtualization/uefi-automated-arm/create-image-and-boot-files/
     - /develop-design/arm-development/arm-libvirt-kvm-virtualization/uefi-automated-arm/create-image-and-boot-files/
     - /devel/uefi-automated-arm/create-image-and-boot-files/
-title: "Create the image and boot files"
+title: "Create the UEFI ARM image and boot files"
 author: Daniel F. Dickinson
 date: '2020-11-16T12:32:00+00:00'
 publishDate: '2020-11-16T12:32:00+00:00'

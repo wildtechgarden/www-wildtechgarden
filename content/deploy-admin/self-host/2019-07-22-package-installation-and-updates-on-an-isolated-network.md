@@ -22,7 +22,7 @@ tags:
 - security
 - self-host
 - sysadmin-devops
-title: "ARCHIVED: Isolation and packages"
+title: "Network isolation and package management"
 toc: true
 weight: 80000
 ---

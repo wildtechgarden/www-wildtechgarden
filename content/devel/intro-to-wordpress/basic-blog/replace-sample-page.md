@@ -7,7 +7,7 @@ aliases:
 author: Daniel F. Dickinson
 date: 2021-03-03T22:08:19+00:00
 publishDate: 2021-01-29T20:23:42+00:00
-title: Replace sample page
+title: Replace WordPress sample page
 description: "Replacing the sample page from a WordPress install with a real page"
 series:
     - intro-to-wordpress

@@ -5,7 +5,7 @@ aliases:
     - /docs/devel/arm-devel/arm-libvirt-kvm-virtualization/uefi-automated-arm/use-the-image/
     - /develop-design/arm-development/arm-libvirt-kvm-virtualization/uefi-automated-arm/use-the-image/
     - /devel/uefi-automated-arm/use-the-image/
-title: "Use the image"
+title: "Use the UEFI ARM image"
 author: Daniel F. Dickinson
 series:
     - arm-libvirt-kvm-virtualization

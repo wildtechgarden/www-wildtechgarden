@@ -1,5 +1,5 @@
 +++
-title = "Additional resources"
+title = "Additional resources for web developers"
 slug = "resources"
 author = "Daniel F. Dickinson"
 aliases = [

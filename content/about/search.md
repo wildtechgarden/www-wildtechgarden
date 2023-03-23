@@ -1,5 +1,5 @@
 +++
-title = "Search"
+title = "Searching Wild Tech 'Garden'"
 description = "JavaScript based search for content on www.wildtechgarden.ca"
 summary = "JavaScript based search for content on www.wildtechgarden.ca"
 pageCanonical = false

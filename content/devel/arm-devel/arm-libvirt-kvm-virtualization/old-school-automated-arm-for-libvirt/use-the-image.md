@@ -5,7 +5,7 @@ aliases:
     - /docs/devel/arm-devel/arm-libvirt-kvm-virtualization/old-school-automated-arm-for-libvirt/use-the-image/
     - /develop-design/arm-development/arm-libvirt-kvm-virtualization/old-school-automated-arm-for-libvirt/use-the-image/
     - /devel/old-school-automated-arm-for-libvirt/use-the-image/
-title: "Use the image (and boot files)"
+title: "Use the old school ARM image (and boot files)"
 author: Daniel F. Dickinson
 series:
     - arm-libvirt-kvm-virtualization

@@ -5,7 +5,7 @@ aliases:
     - /docs/devel/arm-devel/arm-libvirt-kvm-virtualization/old-school-automated-arm-for-libvirt/create-image-and-boot-files/
     - /develop-design/arm-development/arm-libvirt-kvm-virtualization/old-school-automated-arm-for-libvirt/create-image-and-boot-files/
     - /devel/old-school-automated-arm-for-libvirt/create-image-and-boot-files/
-title: "Create the image and boot files"
+title: "Create old school ARM image and boot files"
 author: Daniel F. Dickinson
 series:
     - arm-libvirt-kvm-virtualization

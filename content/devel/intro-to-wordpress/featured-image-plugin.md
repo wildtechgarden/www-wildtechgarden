@@ -7,7 +7,7 @@ aliases:
 author: Daniel F. Dickinson
 date: '2021-01-29T15:24:38+00:00'
 publishDate: '2021-01-29T15:24:38+00:00'
-title: Featured image plugin
+title: "WordPress: Featured image plugin"
 description: "Adding a 'Featured Image' plugin to WordPress hosted on a VPS"
 summary: "Adding a 'Featured Image' plugin to WordPress hosted on a VPS"
 series:

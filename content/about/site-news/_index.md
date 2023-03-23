@@ -1,5 +1,5 @@
 +++
-title = "Site news"
+title = "Wild Tech 'Garden' site news"
 slug = "site-news"
 author = "Daniel F. Dickinson"
 description = "News and information about changes or updates to this site"

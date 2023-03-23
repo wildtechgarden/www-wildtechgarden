@@ -1,5 +1,5 @@
 +++
-title = "Disambiguation"
+title = "Disambiguating the Wild Tech 'Garden'"
 author = "Daniel F. Dickinson"
 date = 2021-03-03T17:55:52+00:00
 publishDate = 2021-02-06T10:06:14+00:00

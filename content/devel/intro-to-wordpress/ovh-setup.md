@@ -7,7 +7,7 @@ aliases:
 author: Daniel F. Dickinson
 date: 2021-03-03T22:06:01+00:00
 publishDate: 2021-01-29T21:48:06+00:00
-title: OVH setup
+title: OVHcloud WordPress setup
 description: "Setting up a WordPress instance on a VPS on OVHcloud"
 summary: "Setting up a WordPress instance on a VPS on OVHcloud"
 series:

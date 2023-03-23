@@ -8,7 +8,7 @@ aliases:
 author: Daniel F. Dickinson
 date: 2021-03-08T10:28:15+00:00
 publishDate: 2021-01-29T16:00:36+00:00
-title: Final steps
+title: Final steps for a basic WordPress blog
 description: "Finishing up with creating a very simple WordPress blog"
 series:
     - intro-to-wordpress

@@ -1,5 +1,5 @@
 +++
-title = "Building"
+title = "Building and designing tech"
 slug = "devel"
 aliases = [
 	"/develop-design/",
