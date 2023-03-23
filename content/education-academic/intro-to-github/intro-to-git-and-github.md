@@ -27,9 +27,7 @@ tags:
 title: Intro to Git and GitHub
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Overview
 

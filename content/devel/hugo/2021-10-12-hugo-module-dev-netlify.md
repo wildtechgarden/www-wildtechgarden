@@ -4,18 +4,17 @@ aliases:
     - /develop-design/web-design-web-devel/hugo-module-dev-netlify/
     - /docs/devel/hugo-module-dev-netlify/
     - /blog/hugo-module-dev-netlify/
-title: "ARCHIVED: Hugo module devel on Netlify"
+title: "Hugo module devel on Netlify"
 date: 2021-10-12T17:10:00-0400
 publishDate: 2021-10-12T17:10:00-0400
 author: Daniel F. Dickinson
 tags:
-    - frontend
-    - devel
-    - docs
+    - deploy
     - projects
     - web-design
 description: "Using a Hugo module starter and Netlify for Hugo module development"
 summary: "Using a Hugo module starter and Netlify for Hugo module development"
+weight: 70000
 ---
 
 A starter repo for building Hugo modules (by Daniel F. Dickinson)

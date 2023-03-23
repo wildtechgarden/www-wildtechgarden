@@ -17,9 +17,7 @@ summary: "Setting up your own local Nextcloud can be useful for a number of reas
 description: "Setting up your own local Nextcloud can be useful for a number of reasons."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

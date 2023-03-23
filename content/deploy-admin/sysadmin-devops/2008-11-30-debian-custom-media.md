@@ -26,9 +26,7 @@ description: "This page will describe the steps used to create a custom debian i
 summary: "This page will describe the steps used to create a custom debian install cd using a partial mirror mostly gathered from a prototype system's apt cache."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## ARCHIVED
 

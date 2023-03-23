@@ -5,28 +5,22 @@ aliases:
     - /develop-design/infrastructure-via-code/tokens-for-ovh-v1/
     - /docs/devel/infrastructure-via-code/tokens-for-ovh-v1/
     - /devel/tokens-for-ovh-v1/
-title: "ARCHIVED: Tokens for OVH v1"
+title: "Tokens for OVH v1"
 date: 2021-06-06T13:50:39-04:00
 publishDate: 2021-06-06T17:14:46-04:00
 author: Daniel F. Dickinson
 tags:
     - archived
-    - devel
-    - experimentation
-    - infrastructure-via-code
-    - learning
+    - deploy
     - projects
     - python
     - sysadmin-devops
-    - templating
 description: "Generating OVH API tokens for use with Terraform and other applications."
 summary: "Generating OVH API tokens for use with Terraform and other applications."
 weight: 10200
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

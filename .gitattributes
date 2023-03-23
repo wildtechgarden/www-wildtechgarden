@@ -12,3 +12,4 @@ static/* linguist-vendored
 *.webp filter=lfs diff=lfs merge=lfs -text
 *.svg !text !filter !merge !diff
 *.odp filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text

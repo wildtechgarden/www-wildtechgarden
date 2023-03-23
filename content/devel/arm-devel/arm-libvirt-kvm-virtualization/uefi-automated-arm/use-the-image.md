@@ -23,9 +23,7 @@ publishDate: '2020-11-16T12:32:00+00:00'
 description: Use an UEFI (newish) ARM Hard Float (32-bit) image for Libvirt/KVM using automated image.
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Option 1: Use the Image Directly (not recommended)
 

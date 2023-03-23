@@ -4,30 +4,24 @@ aliases:
     - /sysadmin-devops/windows-and-linux/hugo-on-netlify-with-wsl/
     - /deploy-admin/hugo-on-netlify-with-wsl/
     - /docs/devel/hugo/hugo-on-netlify-with-wsl/
-title: "ARCHIVED: Hugo on Netlify With WSL(2)"
+title: "Hugo on Netlify With WSL(2)"
 date: 2021-11-04T21:34:42Z
 publishDate: 2021-11-04T21:34:42Z
 author: Daniel F. Dickinson
 tags:
-    - linux
-    - sysadmin-devops
-    - windows
+    - deploy
+    - web-design
     - windows-and-linux
 description: "A configuration for using Hugo on WSL(2) with Netlify and Netlify CLI"
 summary: "A configuration for using Hugo on WSL(2) with Netlify and Netlify CLI"
+card: true
 ---
-
-## ARCHIVED
-
-I've switched to Azure Storage Blob containers for my static website needs (using [Hugo's builtin ``deploy`` command](https://gohugo.io/hosting-and-deployment/hugo-deploy/)) and have automated the process of auditing, validating the site, and checking for link errors using [GitHub Actions](https://docs.github.com/en/actions).
 
 ## Setting Up Your WSL/WSL2 Environment
 
 ### Essentials
 
-[Install WSL(2) for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install) & ~~\[Configure WSL(2) launch settings]\(`/deploy-admin/windows-and-linux/a-more-windows-centric-approach/tweaks-and-recommendations.md\#configuring-wsl-so-windows-filesystems-have-proper-unix-permissions`)~~.
-
-See Also: ~~\[A Windows-centric approach to setting up Windows and Linux combined]\(`/deploy-admin/windows-and-linux/a-more-windows-centric-approach/`)~~
+[Install WSL(2) for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install)
 
 ### Recommended
 

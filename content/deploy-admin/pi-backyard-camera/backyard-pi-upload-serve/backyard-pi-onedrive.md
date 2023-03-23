@@ -20,9 +20,7 @@ description: Copying backyard camera videos and pictures to Microsoft OneDrive u
 summary: Copying backyard camera videos and pictures to a Microsoft OneDrive using rclone
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Overview
 

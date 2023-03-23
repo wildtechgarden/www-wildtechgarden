@@ -28,16 +28,14 @@ title: "Old school manual ARM for Libvirt/KVM"
 toc: true
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 **NB** These instructions are out of date since the release of Debian 11 (Bullseye). Some parts of these guide will need to be updated to the new Debian release.
 
 ## Overview
 
 * Create a non-EFI (old school) ARM hardfloat virtual machine for Libvirt/KVM using a traditional interactive Debian install.
-* See [Four ARMs for Libvirt/KVM virtualisation](arm-libvirt-kvm.md) for prerequisites, why, and other alternatives.
+* See [Four ARMs for Libvirt/KVM virtualisation](_index.md) for prerequisites, why, and other alternatives.
 
 ## Get the Installer Images
 

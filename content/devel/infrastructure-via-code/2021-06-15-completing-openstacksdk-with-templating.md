@@ -5,7 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/completing-openstacksdk-with-templating/
     - /docs/devel/infrastructure-via-code/completing-openstacksdk-with-templating/
     - /devel/completing-openstacksdk-with-templating/
-title: "ARCHIVED: IvC: Complete templating"
+title: "IvC: Complete templating"
 date: 2021-06-15T21:50:11-04:00
 publishDate: 2021-06-25T02:25:11-04:00
 author: Daniel F. Dickinson
@@ -13,24 +13,17 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
+    - deploy
     - openstack
     - projects
     - python
     - sysadmin-devops
-    - templating
 description: "This page was intended to complete the OpenStack SDK with templated userdata portion of this Infrastructure via Code set"
 summary: "This page was intended to complete the OpenStack SDK with templated userdata portion of this Infrastructure via Code set"
 weight: 10600
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

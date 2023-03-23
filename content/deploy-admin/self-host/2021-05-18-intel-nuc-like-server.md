@@ -18,9 +18,7 @@ summary: "The Intel NUC (and boards based on the same SoC) are quite powerful fo
 description: "The Intel NUC (and boards based on the same SoC) are quite powerful for their price point, and use less electricity than even a mini tower."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

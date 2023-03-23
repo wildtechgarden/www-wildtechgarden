@@ -34,9 +34,7 @@ tags = [
 ]
 +++
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 Note that as of 2022-11-16 (November 16, 2022), this is still under development
 and not yet used for a live deployment, although it is used for development

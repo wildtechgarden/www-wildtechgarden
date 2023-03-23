@@ -22,9 +22,7 @@ description: "These are notes on creating a Windows and Linux hybrid environment
 summary: "These are notes on creating a Windows and Linux hybrid environment, specifically when running Windows on a physical machine"
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

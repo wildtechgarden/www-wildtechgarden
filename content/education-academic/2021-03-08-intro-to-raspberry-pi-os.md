@@ -23,9 +23,7 @@ title: Intro to Raspberry Pi OS
 toc: true
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

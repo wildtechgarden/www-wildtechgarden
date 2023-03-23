@@ -21,9 +21,7 @@ tags:
 title: Reducing web server spam with Lighttpd
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

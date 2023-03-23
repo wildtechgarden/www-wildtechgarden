@@ -1,13 +1,14 @@
+title = "Wild Tech 'Garden'"
 baseURL = "https://www.wildtechgarden.ca/"
+defaultContentLanguage = "en"
 disableAliases = true
 enableGitInfo = true
-title = "Wild Tech 'Garden'"
-languageCode = "en-CA" # Set your language code (only needed for non-multilingual sites).
+enableRobotsTXT = true
+ignoreErrors = ["error-output-taxonomy"]
+languageCode = "en-CA"
 paginate = 10
 paginatePath = "page"
-pluralizelisttitles = false
 rssLimit = 20
-theme ="github.com/frjo/hugo-theme-zen/v3"
 timeout = 500000
 
 [taxonomies]
@@ -23,15 +24,16 @@ lastmod = [":git", "lastmod", ":fileModTime", "date", "publishDate"]
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
-unsafe = true
+unsafe = false
 
 [markup.highlight]
 codeFences = true
 noClasses = false
 
 [markup.tableOfContents]
-startLevel = 2
 endLevel = 5
+ordered = true
+startLevel = 2
 
 [outputFormats]
 [outputFormats.SearchIndex]
@@ -60,6 +62,8 @@ suffixes = [""]
 [outputs]
 home = ["HTML", "RSS", "JSON", "SearchIndex", "nredirects", "nheaders"]
 section = ["HTML", "RSS", "JSON"]
+taxonomy = ["HTML", "RSS", "JSON"]
+term = ["HTML", "RSS", "JSON"]
 
 [params]
 contact = "dfdpublic@wildtechgarden.ca"
@@ -68,56 +72,161 @@ copyright = """\
 	[Creative Commons Attribution-ShareAlike 4.0 International \
 	License](https://creativecommons.org/licenses/by-sa/4.0/).\
 """
-description = "Where the wild tech grows" # Set site description, used in meta tags and JSON-LD
+description = "Where the wild tech grows. Daniel F. Dickinson technical documentation website." # Set site description, used in meta tags and JSON-LD
+dateformat = "2 January, 2006"
 favicon = "apple-touch-icon.png" # Relative path to favicon in json feed, no leading slash.
 feedlinks = true # Show feed links in the footer.
-footer = "[Sitemap](/about/sitemap) | [Tags](/tags/) | [Series](/series/) | [Search](/search)"
+footer = "[Contact Daniel](/about/contact) | [Accessibility](/about/accessibility) | [Privacy](/about/privacy-policy) | [Sitemap](/about/user-sitemap) | [Search](/about/search)"
 icon = "apple-touch-icon.png" # Relative path to icon in json feed and JSON-LD, no leading slash.
 image = "images/corner-rock-garden-pixelized-2400x1260-text-overlay.png" # Relative path to site image in JSON-LD, no leading slash.
 #imageMaxWidth = 400 # Max width for images added via figure shortcode.
-imageSrcSet = "480 720 1080 1280 1600 2048"
-logo = true # Turn off the logo.
-logoPath= "android-chrome-512x512.png"
+logo = true
 logoHeight = 64
 logoWidth = 64
 mainSections= ["deploy-admin", "devel", "education-academic"] # The sections you want to have listed on the front page # Default to the section with most content if not set.
 mobileMenu = true # Turn on a mobile menu on small screens, default false.
+noImageConvert = false
+noSrcSetDefault = false
+pageCanonical = true
 poweredby = true # Show powered by hugo in footer
-privacyPolicyUrl = "" # If set, add link to cookie consent form.
 realfavicongenerator = true # If full set of favicons, site manifest etc. exists, default false.
+redirectsDomains = [
+	"http://www.thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://www.thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://www.thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://www.thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://www.wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://www.wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://www.wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://thewildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://thewildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!"
+]
+redirectsExtra = [
+	"/feed/ /index.xml 301",
+	"/post/feed/ /blog/index.xml 301",
+	"/blog/* https://www.danielfdickinson.ca/blog/:splat 301",
+	"/docs/deploy-admin/server-alpine-linux-docs4web/* /deploy-admin/server-alpine-linux-docs4web/:splat 301!",
+	"/develop-design/web-design-web-devel/archived-new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/develop-design/web-design-web-devel/archived-new-oldnew-mashup-theme-hugo/new-oldnew-mashup-README/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/2021/01/16/archived-new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/2021/01/16/new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/develop-design/web-design-web-devel/hugo-fusebar/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/archived-new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/post/archived-new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/post/new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/projects/defunct/new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/projects/defunct/web-design/new-oldnew-mashup-theme-hugo/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/views/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/blog/moved-back-to-netlify/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/post/some-pages-removed/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/posts/some-pages-removed/ https://www.danielfdickinson.ca/blog/some-pages-removed/ 301",
+	"/post/accessible-design-no-blank https://www.danielfdickinson.ca/blog/accessible-design-no-blank/ 301",
+	"/posts/accessible-design-no-blank https://www.danielfdickinson.ca/blog/accessible-design-no-blank/ 301",
+	"/post/relaxation-at-the-midland-copy-shoppe https://www.danielfdickinson.ca/blog/relaxation-at-the-midland-copy-shoppe/ 301",
+	"/posts/relaxation-at-the-midland-copy-shoppe https://www.danielfdickinson.ca/blog/relaxation-at-the-midland-copy-shoppe/ 301",
+	"/post/too-much-web-not-enough-design/ https://www.danielfdickinson.ca/blog/too-much-web-not-enough-design/ 301",
+	"/posts/too-much-web-not-enough-design/ https://www.danielfdickinson.ca/blog/too-much-web-not-enough-design/ 301",
+	"/post/moved-back-to-netlify/ https://www.danielfdickinson.ca/blog/no-i-have-not-sold-my-soul-v2/ 301",
+	"/posts/moved-back-to-netlify/ https://www.danielfdickinson.ca/blog/no-i-have-not-sold-my-soul-v2/ 301",
+	"/post/no-i-have-not-sold-my-soul-v2/ https://www.danielfdickinson.ca/blog/no-i-have-not-sold-my-soul-v2/ 301",
+	"/posts/no-i-have-not-sold-my-soul-v2/ https://www.danielfdickinson.ca/blog/no-i-have-not-sold-my-soul-v2/ 301",
+	"/posts/halting-infrastructure-via-code-project/ https://www.danielfdickinson.ca/blog/halting-infrastructure-via-code-project/ 301",
+	"/post/terraforming-with-ovh-is-not-paradise/ https://www.danielfdickinson.ca/blog/terraforming-with-ovh-is-not-paradise/ 301",
+	"/posts/terraforming-with-ovh-is-not-paradise/ https://www.danielfdickinson.ca/blog/terraforming-with-ovh-is-not-paradise/ 301",
+	"/2021/03/29/web-design-after-all/ https://www.danielfdickinson.ca/blog/web-design-after-all/ 301",
+	"/web-design-after-all/ https://www.danielfdickinson.ca/blog/web-design-after-all/ 301",
+	"/post/web-design-after-all/ https://www.danielfdickinson.ca/blog/web-design-after-all/ 301",
+	"/posts/web-design-after-all/ https://www.danielfdickinson.ca/blog/web-design-after-all/ 301",
+	"/2021/03/09/how-not-to-rebuild-a-wordpress-site/ https://www.danielfdickinson.ca/blog/how-not-to-rebuild-a-wordpress-site/ 301",
+	"/how-not-to-rebuild-a-wordpress-site/ https://www.danielfdickinson.ca/blog/how-not-to-rebuild-a-wordpress-site/ 301",
+	"/post/how-not-to-rebuild-a-wordpress-site/ https://www.danielfdickinson.ca/blog/how-not-to-rebuild-a-wordpress-site/ 301",
+	"/posts/how-not-to-rebuild-a-wordpress-site/ https://www.danielfdickinson.ca/blog/how-not-to-rebuild-a-wordpress-site/ 301",
+	"/2021/02/23/archive-rent-or-own/ https://www.danielfdickinson.ca/blog/archive-rent-or-own/ 301",
+	"/archive-rent-or-own https://www.danielfdickinson.ca/blog/archive-rent-or-own/ 301",
+	"/post/archive-rent-or-own https://www.danielfdickinson.ca/blog/archive-rent-or-own/ 301",
+	"/posts/archive-rent-or-own https://www.danielfdickinson.ca/blog/archive-rent-or-own/ 301",
+	"/2021/02/20/the-problem-with-thin-pools-volumes/ https://www.danielfdickinson.ca/blog/the-problem-with-thin-pools-volumes/ 301",
+	"/the-problem-with-thin-pools-volumes/ https://www.danielfdickinson.ca/blog/the-problem-with-thin-pools-volumes/ 301",
+	"/post/the-problem-with-thin-pools-volumes/ https://www.danielfdickinson.ca/blog/the-problem-with-thin-pools-volumes/ 301",
+	"/posts/the-problem-with-thin-pools-volumes/ https://www.danielfdickinson.ca/blog/the-problem-with-thin-pools-volumes/ 301",
+	"/2021/03/01/archive-dating-with-accelerators/ https://www.danielfdickinson.ca/blog/archive-dating-with-accelerators/ 301",
+	"/archive-dating-with-accelerators/ https://www.danielfdickinson.ca/blog/archive-dating-with-accelerators/ 301",
+	"/post/archive-dating-with-accelerators/ https://www.danielfdickinson.ca/blog/archive-dating-with-accelerators/ 301",
+	"/posts/archive-dating-with-accelerators/ https://www.danielfdickinson.ca/blog/archive-dating-with-accelerators/ 301",
+	"/2021/02/10/facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/ 301",
+	"/facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/ 301",
+	"/post/facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/ 301",
+	"/posts/facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/ 301",
+	"/2020/11/29/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/ 301",
+	"/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/ 301",
+	"/post/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/ 301",
+	"/posts/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/ 301",
+	"/2020/07/29/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/ 301",
+	"/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/ 301",
+	"/post/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/ 301",
+	"/posts/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/ 301",
+	"/develop-design/web-design-web-devel/test-theme-and-debug-tables/hugo-debug-tables-docs/ https://github.com/danielfdickinson/hugo-debug-tables 301!",
+	"/devel/hugo-debug-tables-docs/  https://github.com/danielfdickinson/hugo-debug-tables 301!",
+	"/devel/hugo/hugo-debug-tables-docs/  https://github.com/danielfdickinson/hugo-debug-tables 301!",
+	"/docs/devel/hugo/hugo-debug-tables-docs/  https://github.com/danielfdickinson/hugo-debug-tables 301!",
+	"/develop-design/web-design-web-devel/hugo-dfd-responsive-images/ https://github.com/danielfdickinson/image-handling-mod-hugo-dfd 301!",
+	"/devel/hugo-dfd-responsive-images/ https://github.com/danielfdickinson/image-handling-mod-hugo-dfd 301!",
+	"/devel/hugo/hugo-dfd-responsive-images/ https://github.com/danielfdickinson/image-handling-mod-hugo-dfd 301!",
+	"/docs/devel/hugo/hugo-dfd-responsive-images/ https://github.com/danielfdickinson/image-handling-mod-hugo-dfd 301!",
+	"/develop-design/web-design-web-devel/test-theme-and-debug-tables/hugo-minimal-test-docs/ https://github.com/danielfdickinson/minimal-test-theme-hugo-dfd 301!",
+	"/devel/hugo-minimal-test-docs/ https://github.com/danielfdickinson/minimal-test-theme-hugo-dfd 301!",
+	"/devel/hugo/hugo-minimal-test-docs/ https://github.com/danielfdickinson/minimal-test-theme-hugo-dfd 301!",
+	"/docs/devel/hugo/hugo-minimal-test-docs/  https://github.com/danielfdickinson/minimal-test-theme-hugo-dfd 301!",
+	"/develop-design/web-design-web-devel/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme 301!",
+	"/devel/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme 301!",
+	"/docs/devel/hugo/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme 301!",
+	"/devel/hugo/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme 301!",
+	"/develop-design/web-design-web-devel/hugo-dfd-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/develop-design/web-design-web-devel/hugo-dfd-microformats/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/devel/hugo-dfd-microformats/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/devel/hugo-dfd-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/devel/hugo-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/devel/hugo/hugo-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/docs/devel/hugo/hugo-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/devel/dananke-theme-hugo-dfd/ https://github.com/danielfdickinson/dananke-theme-hugo-dfd 301!",
+	"/devel/hugo/dananke-theme-hugo-dfd/ https://github.com/danielfdickinson/dananke-theme-hugo-dfd 301!",
+	"/docs/devel/dananke-theme-hugo-dfd/ https://github.com/danielfdickinson/dananke-theme-hugo-dfd 301!",
+	"/docs/devel/hugo/dananke-theme-hugo-dfd/ https://github.com/danielfdickinson/dananke-theme-hugo-dfd 301!",
+	"/devel/hugo/hugo-metadata-images/ https://github.com/danielfdickinson/metadata-image-mod-hugo-dfd 301!",
+	"/docs/devel/hugo/hugo-metadata-images/ https://github.com/danielfdickinson/metadata-image-mod-hugo-dfd 301!",
+	"/devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/docs/devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd 301!",
+	"/projects/defunct/armshorian/ / 410",
+	"/develop-design/arm-development/armshorian/ / 410",
+	"/devel/armshorian/ / 410",
+	"/devel/arm-devel/armshorian/ / 410",
+	"/docs/devel/arm-devel/armshorian/ / 410",
+	"/projects/defunct/msmtp-scripts/ / 410",
+	"/deploy-admin/msmtp-scripts/ / 410",
+	"/sysadmin-devops/self-host/msmtp-scripts/ / 410",
+	"/docs/deploy-admin/sysadmin-devops/msmtp-scripts/ / 410",
+	"/docs/devel/* /devel/:splat 301!",
+	"/docs/deploy-admin/* /deploy-admin/:splat 301!"
+]
 relatedposts = true # Show related posts under a "See also" section, default false.
 sassTranspiler = "libsass" # The Sass transpiler to use, default "libsass".
+searchAllPages = true
 sidebar = true # Show a sidebar to the right, default false.
 submitted = true # Show author and date information for a post.
-#themeColor = "#acdcec" # Hex color value, used in meta tags, default "#ffffff".
-pageCanonical = false # Until we deploy this site to primary domain, do not make any page on this site canonical
-useBaseURL = false
+themeColor = "#acdcec" # Hex color value, used in meta tags, default "#ffffff".
+# useBaseURL = false
 
-[menu]
-[[menu.main]]
-name = "Home"
-pageref = "/"
-weight = 1
-[[menu.main]]
-name = "Building"
-pageref = "devel/"
-weight = 10
-[[menu.main]]
-name = "Ops"
-pageref = "deploy-admin/"
-weight = 20
-[[menu.main]]
-name = "Learning"
-pageref = "education-academic/"
-weight = 30
-[[menu.main]]
-name = "About"
-pageref = "about/about"
-weight = 60
-[[menu.main]]
-name = "Search"
-pageref = "search"
-weight = 70
+[params.author]
+name = "Daniel F. Dickinson"
+url = "https://www.danielfdickinson.ca"
+avatar = "apple-touch-icon.png"
 
 [privacy]
 [privacy.disqus]
@@ -138,13 +247,56 @@ disable = true
 [privacy.youtube]
 disable = true
 
+[menu]
+[[menu.main]]
+name = "Home"
+pageref = "/"
+weight = 1
+[[menu.main]]
+name = "Building"
+pageref = "devel/"
+weight = 10
+[[menu.main]]
+name = "Ops"
+pageref = "deploy-admin/"
+weight = 20
+[[menu.main]]
+name = "Learning"
+pageref = "education-academic/"
+weight = 30
+[[menu.main]]
+name = "About"
+pageref = "about/"
+weight = 60
+[[menu.main]]
+name = "Tags"
+pageref = "tags/"
+weight = 70
+[[menu.main]]
+name = "Series"
+pageref = "series/"
+weight = 80
+[[menu.main]]
+name = "Search"
+pageref = "about/search"
+weight = 90
+
 [module]
+# replacements = "gitlab.com/danielfdickinson/dfd-hugo-theme-zen -> ../../dfd-hugo-theme-zen"
+
 [[module.imports]]
 path = "gitlab.com/danielfdickinson/server-alpine-linux-docs4web"
 
 [[module.imports.mounts]]
 source = 'src'
 target = 'content/deploy-admin/server-alpine-linux-docs4web'
+
+[[module.imports]]
+path = "github.com/danielfdickinson/wpxr-to-static"
+
+[[module.imports.mounts]]
+source = "README.md"
+target = "assets/README-wpxr.md"
 
 [[module.mounts]]
 source = 'content'
@@ -167,8 +319,24 @@ source = "static"
 target = "static"
 
 [[module.imports]]
-path = "github.com/danielfdickinson/wpxr-to-static"
+path ="gitlab.com/danielfdickinson/dfd-hugo-theme-zen"
 
 [[module.imports.mounts]]
-source = "README.md"
-target = "assets/README-wpxr.md"
+source = 'archetypes'
+target = 'archetypes'
+
+[[module.imports.mounts]]
+source = "assets"
+target = "assets"
+
+[[module.imports.mounts]]
+source = "i18n"
+target = "i18n"
+
+[[module.imports.mounts]]
+source = "layouts"
+target = "layouts"
+
+[[module.imports.mounts]]
+source = "static"
+target = "static"

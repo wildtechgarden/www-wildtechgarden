@@ -8,14 +8,13 @@ author: Daniel F. Dickinson
 date: '2021-01-29T15:24:38+00:00'
 publishDate: '2021-01-29T15:24:38+00:00'
 title: Featured image plugin
-description: "Adding a 'Featured Image' plugin to WordPress"
+description: "Adding a 'Featured Image' plugin to WordPress hosted on a VPS"
+summary: "Adding a 'Featured Image' plugin to WordPress hosted on a VPS"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - web-design
-    - website
-    - wordpress
 weight: 20500
 ---
 

@@ -24,9 +24,7 @@ tags:
 title: "ARCHIVED: An OVH VPS with CentOS 7"
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## ARCHIVED
 

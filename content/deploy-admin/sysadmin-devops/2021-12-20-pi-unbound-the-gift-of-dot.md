@@ -21,9 +21,7 @@ description: "Using Unbound DNS resolver on a Raspberry Pi to enable DNS over TL
 summary: "Keeping your DNS queries from your local network to public DNS servers private in transit by using DNS over TLS on a Raspberry Pi is ridiculously easy."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Overview
 

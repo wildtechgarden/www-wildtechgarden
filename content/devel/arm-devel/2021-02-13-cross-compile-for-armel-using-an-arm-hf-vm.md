@@ -24,9 +24,7 @@ summary: "This method of compiling for armel (e.g. ARMv5, earlier, and some ARMv
 weight: 9600
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 
@@ -34,7 +32,7 @@ This method of compiling for armel (e.g. ARMv5, earlier, and some ARMv6) which u
 
 ## You Need an ARM HardFloat VM
 
-Build and boot an ARM HardFloat VM created using one of the methods pointed to by [Four ARMs for LibVirt KVM](arm-libvirt-kvm-virtualization/arm-libvirt-kvm.md)
+Build and boot an ARM HardFloat VM created using one of the methods pointed to by [Four ARMs for LibVirt KVM](arm-libvirt-kvm-virtualization/_index.md)
 
 ## Install and Configure pbuilder
 

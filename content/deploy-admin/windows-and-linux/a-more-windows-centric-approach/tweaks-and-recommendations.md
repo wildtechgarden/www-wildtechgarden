@@ -19,9 +19,7 @@ description: "Windows post-install extra tweaks and recommendations"
 summary: "Windows post-install extra tweaks and recommendations"
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Additional security settings
 

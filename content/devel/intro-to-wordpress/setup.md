@@ -9,21 +9,18 @@ author: Daniel F. Dickinson
 date: '2021-03-08T10:23:50+00:00'
 publishDate: '2021-01-29T21:14:43+00:00'
 title: Setup
-description: "Setting up a WordPress blog"
+description: "Setting up a WordPress blog on a VPS-hosted instance"
+summary: "Setting up a WordPress blog on a VPS-hosted instance"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - sysadmin-devops
     - web-design
-    - website
-    - wordpress
 weight: 20300
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Initial Purchase / Install
 

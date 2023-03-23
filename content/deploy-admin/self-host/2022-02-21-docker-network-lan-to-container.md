@@ -16,9 +16,7 @@ summary: "Normally when using Docker one only wants specific unicast ports forwa
 description: "When using Docker with internal services like Samba, LLMNR, or mDNS/Bonjour, one may find that the standard model of using specific unicast ports forwards, is insufficient."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

@@ -18,9 +18,7 @@ summary: "Setting up an email relay that aliases addresses in various domains to
 description: "Setting up an email relay that aliases addresses in various domains to a specific offsite user doesn't have to mean backscatter."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

@@ -16,11 +16,10 @@ tags:
 - sysadmin-devops
 summary: "You may realize that you really wish you could start the Nextcloud instance from scratch without the hassle of a reinstalling."
 description: "You may realize that you really wish you could start the Nextcloud instance from scratch without the hassle of a reinstalling."
+frontCard: true
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

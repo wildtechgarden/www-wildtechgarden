@@ -5,7 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/adding-trivial-templating/
     - /docs/devel/infrastructure-via-code/adding-trivial-templating/
     - /devel/adding-trivial-templating/
-title: "ARCHIVED: IvC: Adding trivial templating"
+title: "IvC: Adding trivial templating"
 date: 2021-06-09T13:32:13-04:00
 publishDate: 2021-06-11T18:29:35-04:00
 author: Daniel F. Dickinson
@@ -13,24 +13,17 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
+    - deploy
     - openstack
     - projects
     - python
     - sysadmin-devops
-    - templating
 description: "We start with a separate script that only generates userdata (no instance creation)."
 summary: "We start with a separate script that only generates userdata (no instance creation)."
 weight: 10400
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

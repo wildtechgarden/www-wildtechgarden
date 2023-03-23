@@ -18,9 +18,7 @@ description: Uploading and serving image and video captures from a Raspberry Pi 
 summary: Uploading and serving image and video captures from a Raspberry Pi as a backyard public camera
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Prerequisites
 

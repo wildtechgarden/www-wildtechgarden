@@ -5,17 +5,16 @@ aliases:
    - /develop-design/web-design-web-devel/intro-to-wordpress/basic-blog/first-real-page/
    - /docs/devel/intro-to-wordpress/basic-blog/first-real-page/
 author: Daniel F. Dickinson
-date: '2021-03-03T22:07:56+00:00'
-publishDate: '2021-01-29T20:09:29+00:00'
+date: 2021-03-03T22:07:56+00:00
+publishDate: 2021-01-29T20:09:29+00:00
 title: First real page
-description: "Adding a real page to a WordPress install"
+description: "Adding a real page to a WordPress install hosted on a VPS"
+summary: "Adding a real page to a WordPress install hosted on a VPS"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - web-design
-    - website
-    - wordpress
 weight: 20420
 ---
 

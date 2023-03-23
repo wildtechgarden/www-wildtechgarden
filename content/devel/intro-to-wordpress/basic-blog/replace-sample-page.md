@@ -5,8 +5,8 @@ aliases:
     - /develop-design/web-design-web-devel/intro-to-wordpress/basic-blog/replace-sample-page/
     - /docs/devel/intro-to-wordpress/basic-blog/replace-sample-page/
 author: Daniel F. Dickinson
-date: '2021-03-03T22:08:19+00:00'
-publishDate: '2021-01-29T20:23:42+00:00'
+date: 2021-03-03T22:08:19+00:00
+publishDate: 2021-01-29T20:23:42+00:00
 title: Replace sample page
 description: "Replacing the sample page from a WordPress install with a real page"
 series:
@@ -14,8 +14,6 @@ series:
 tags:
     - archived
     - web-design
-    - website
-    - wordpress
 weight: 20430
 ---
 

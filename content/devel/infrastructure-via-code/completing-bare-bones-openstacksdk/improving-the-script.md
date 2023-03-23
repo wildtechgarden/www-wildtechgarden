@@ -13,24 +13,16 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
-    - openstack
+    - deploy
     - projects
     - python
     - sysadmin-devops
-    - templating
 description: "Further improvements to an OpenStackSDK-based 'bare bones' instance deployment"
 summary: "Further improvements to an OpenStackSDK-based 'bare bones' instance deployment"
 weight: 10520
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Overview
 

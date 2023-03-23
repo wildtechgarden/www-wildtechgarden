@@ -24,9 +24,7 @@ tags:
 title: "ARCHIVED: Lightweight public Git self hosting"
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## ARCHIVED
 

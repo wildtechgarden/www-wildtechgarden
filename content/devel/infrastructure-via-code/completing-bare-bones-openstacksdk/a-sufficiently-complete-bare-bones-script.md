@@ -13,16 +13,11 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
+    - deploy
     - openstack
     - projects
     - python
     - sysadmin-devops
-    - templating
 description: "The final stage of the 'bare bones' OpenStackSDK deployment"
 summary: "The final stage of the 'bare bones' OpenStackSDK deployment"
 weight: 10550

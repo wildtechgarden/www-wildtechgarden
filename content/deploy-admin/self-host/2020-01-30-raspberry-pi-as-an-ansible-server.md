@@ -23,9 +23,7 @@ tags:
 title: "ARCHIVED: Raspberry Pi as an Ansible server"
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 **Note**: This is not a tutorial on how to create and use Ansible playbooks.
 

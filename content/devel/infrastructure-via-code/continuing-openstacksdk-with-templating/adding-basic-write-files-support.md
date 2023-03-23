@@ -13,24 +13,16 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
-    - sysadmin-devops
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
+    - deploy
     - openstack
     - projects
     - python
-    - templating
 description: "Adding basic support for cloud-init 'write_files' in an OpenSDK-based templated instance deployment"
 summary: "Adding basic support for cloud-init 'write_files' in an OpenSDK-based templated instance deployment"
 weight: 10630
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Implementation
 

@@ -1,7 +1,6 @@
-public/**
-!public/blog/
-public/blog/page/
-!public/about/
-!public/index.html
-!public/about-midland-2018-qa/
-!public/search/
+public/page/
+public/devel/page/
+public/deploy-admin/page/
+public/education-academic/page/
+public/tags/page/
+public/tags/*/page/

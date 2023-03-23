@@ -21,9 +21,7 @@ summary: "These are some personal notes about setting up a very nice combined
 Windows and Linux productivity and development environment."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

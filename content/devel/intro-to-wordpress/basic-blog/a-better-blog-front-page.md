@@ -6,17 +6,16 @@ aliases:
    - /docs/devel/intro-to-wordpress/basic-blog/a-better-blog-front-page/
    - /projects/defunct/intro-to-wordpress/basic-blog/a-better-blog-front-page/
 author: Daniel F. Dickinson
-date: '2021-03-03T21:58:08+00:00'
-publishDate: '2021-01-29T16:14:53+00:00'
+date: 2021-03-03T21:58:08+00:00
+publishDate: 2021-01-29T16:14:53+00:00
 title: A better blog front page
-description: "Improving on the default WordPress front page"
+description: "Improving on the default WordPress front page for use with a blog"
+summary: "Improving on the default WordPress front page for use with a blog"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - web-design
-    - website
-    - wordpress
 weight: 20450
 ---
 

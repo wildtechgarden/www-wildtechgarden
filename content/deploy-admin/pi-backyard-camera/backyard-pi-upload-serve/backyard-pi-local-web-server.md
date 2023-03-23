@@ -20,9 +20,7 @@ description: Copying backyard camera videos and pictures to a remote web server 
 summary: Copying backyard camera videos and pictures to a remote web server using rclone
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Overview
 

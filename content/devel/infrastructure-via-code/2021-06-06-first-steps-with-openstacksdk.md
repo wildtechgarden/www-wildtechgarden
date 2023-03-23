@@ -5,7 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/first-steps-with-openstacksdk/
     - /docs/devel/infrastructure-via-code/first-steps-with-openstacksdk/
     - /devel/first-steps-withopenstacksdk/
-title: "ARCHIVED: IvC: OpenStackSDK first steps"
+title: "IvC: OpenStackSDK first steps"
 date: 2021-06-06T15:29:14-04:00
 publishDate: 2021-06-06T17:14:46-04:00
 author: Daniel F. Dickinson
@@ -13,24 +13,18 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
+    - deploy
     - sysadmin-devops
-    - experimentation
-    - infrastructure-via-code
-    - learning
     - openstack
     - projects
     - python
-    - templating
 description: "Since OpenStackSDK should theoretically make life easier for doing Infrastructure via Code, this is approach which which this learning effort has begun."
 summary: "Since OpenStackSDK should theoretically make life easier for doing Infrastructure via Code, this is approach which which this learning effort has begun."
 toc: true
 weight: 10300
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

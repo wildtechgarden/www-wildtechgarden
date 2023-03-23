@@ -24,9 +24,7 @@ Observations on what you need to build a website that will be found: a presentat
 """
 +++
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

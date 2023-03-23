@@ -23,9 +23,7 @@ publishDate: '2020-11-13T13:50:00+00:00'
 description: Use an non-EFI (old school) ARM Hard Float image for Libvirt/KVM.
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Option 1: Use the Image Directly (not recommended)
 

@@ -23,9 +23,7 @@ tags:
 title: "ARCHIVED: Linux network monitoring"
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## ARCHIVED
 

@@ -24,9 +24,7 @@ tags:
     - virtualization
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Setup the Packer Environment
 

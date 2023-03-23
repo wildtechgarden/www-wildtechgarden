@@ -23,9 +23,7 @@ tags:
 - sysadmin-devops
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## ARCHIVED
 

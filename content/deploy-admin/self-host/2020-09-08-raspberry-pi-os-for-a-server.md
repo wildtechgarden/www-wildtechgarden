@@ -27,9 +27,7 @@ summary: "You may find yourself in need of a 'bare metal' server. If the workloa
 description: "You may find yourself in need of a 'bare metal' server. If the workload is not too demanding, a Raspberry Pi can be a good choice."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

@@ -32,9 +32,7 @@ tags = [
 ]
 +++
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 The base configuration is very basic and aims to act like an OVH Debian 11
 (Bullseye) dedicated server's base configuration.

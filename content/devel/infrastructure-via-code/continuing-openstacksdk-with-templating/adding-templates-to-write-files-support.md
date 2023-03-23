@@ -13,11 +13,7 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
-    - openstack
+    - deploy
     - projects
     - python
     - templating
@@ -26,9 +22,7 @@ summary: "Adding basic support for templates to an OpenSDK-based instance deploy
 weight: 10650
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

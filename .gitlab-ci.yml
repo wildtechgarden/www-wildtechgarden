@@ -3,7 +3,7 @@
 stages:
 - checks
 
-image: danielfdickinson/gitlab-debian-hugo-pre-commit:0.2.2
+image: danielfdickinson/gitlab-debian-hugo-pre-commit:0.2.3
 
 workflow:
   rules:

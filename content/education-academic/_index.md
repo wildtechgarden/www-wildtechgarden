@@ -6,9 +6,7 @@ aliases:
 - /docs/education-academic/
 author: Daniel F. Dickinson
 title: "Learning"
-date: 2021-04-24T00:10:00-0400
-publishDate: 2021-04-24T00:10:20-0400
-description: "Educational and academic (or similar) work by Daniel F. Dickinson"
-summary: "Educational and academic (or similar) work by Daniel F. Dickinson"
-weight: 1500
+description: "Educational and academic (or similar) work and presentations by Daniel F. Dickinson"
+summary: "Educational and academic (or similar) work and presentations by Daniel F. Dickinson"
+weight: 9500
 ---

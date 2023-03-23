@@ -19,9 +19,7 @@ description: "A quick guide to a base install of windows, for completeness."
 summary: "A quick guide to a base install of windows, for completeness."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Base install
 

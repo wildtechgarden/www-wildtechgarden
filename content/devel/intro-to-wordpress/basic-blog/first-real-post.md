@@ -6,17 +6,16 @@ aliases:
    - /develop-design/web-design-web-devel/intro-to-wordpress/basic-blog/first-real-post/
    - /docs/devel/intro-to-wordpress/basic-blog/first-real-post/
 author: Daniel F. Dickinson
-date: '2021-03-08T10:26:00+00:00'
-publishDate: '2021-01-29T17:55:59+00:00'
+date: 2021-03-08T10:26:00+00:00
+publishDate: 2021-01-29T17:55:59+00:00
 title: First real post
-description: "Add a 'real' post"
+description: "Add a 'real' post to a WordPress instance hosted on a VPS"
+summary: "Add a 'real' post to a WordPress instance hosted on a VPS"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - web-design
-    - website
-    - wordpress
 weight: 20440
 ---
 

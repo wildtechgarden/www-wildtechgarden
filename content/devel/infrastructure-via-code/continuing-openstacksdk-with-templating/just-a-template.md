@@ -13,24 +13,16 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
+    - deploy
     - sysadmin-devops
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
-    - openstack
     - projects
     - python
-    - templating
 description: "Adding more a complete template to an OpenSDK-based templated instance deployment"
 summary: "Adding more a complete template to an OpenSDK-based templated instance deployment"
 weight: 10620
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## A Basic Template
 

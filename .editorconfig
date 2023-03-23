@@ -22,11 +22,12 @@ indent_style = space
 
 [*.scss]
 indent_size = 2
-indent_style = space
+indent_style = space # To match stylelint
 
 # Make sure we don't trim hard line breaks
 # Using pre-commit we can clean out unwanted trailing whitespace
 [*.md]
+indent_style = unset
 trim_trailing_whitespace = false
 
 [*.svg]

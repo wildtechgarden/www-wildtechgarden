@@ -37,9 +37,7 @@ series:
     - debian-on-a-craig-clp281
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## ARCHIVED
 

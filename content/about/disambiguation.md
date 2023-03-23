@@ -1,14 +1,22 @@
----
-author: Daniel F. Dickinson
-date: '2021-03-03T17:55:52+00:00'
-publishDate: '2021-02-06T10:06:14+00:00'
-title: Disambiguation
-description: "To avoid confusion, here is a list of sites that are not 'us' and with whom 'we' have no affiliation, but which have a similar name."
-summary: To avoid confusion here is a list of sites with similar names that are not 'us' and with which 'we' have no affiliation.
-weight: 1000
-aliases:
-- /disambiguation/
----
++++
+title = "Disambiguation"
+author = "Daniel F. Dickinson"
+date = 2021-03-03T17:55:52+00:00
+publishDate = 2021-02-06T10:06:14+00:00
+description = """\
+To avoid confusion, here is a list of sites that are not 'us' and with whom \
+'we' have no affiliation, but which have a similar name.\
+"""
+summary = """\
+To avoid confusion, here is a list of sites that are not 'us' and with whom \
+'we' have no affiliation, but which have a similar name.\
+"""
+weight = 99000
+aliases = [
+	"/disambiguation/"
+]
+card = true
++++
 
 * Like Wild Tech "Garden":
   * `https://wildtechoutdoors.com/`

@@ -18,9 +18,7 @@ description: "Fully configured details of two SystemD timer use cases"
 summary: "Most blog entries on SystemD timers give trivial samples. This article takes a different approach and provides the full details of two examples of using SystemD timers that are in active use on my systems."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

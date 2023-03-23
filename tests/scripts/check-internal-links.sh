@@ -5,7 +5,7 @@ set -o pipefail
 
 if [ -z "$SKIP_CHECK_PATTERNS" ]; then
 	SKIP_CHECK_PATTERNS="https://www.facebook.com/sharer.php \
-https://www.linkedin.com/shareArticle  \
+https://www.linkedin.com/shareArticle	\
 https://linkedin.com/shareArticle \
 https://twitter.com/share \
 https://www.pexels.com \
@@ -21,7 +21,7 @@ example.com \
 example.net"
 fi
 
-CROOT="${1:-https://www.example.com}"
+CROOT="${1:-https://www.example.com/}"
 SITEROOT="$(pwd)"
 
 if [ -d exampleSite ]; then
@@ -35,7 +35,7 @@ if grep -q baseURL "${SITESRC}"/hugo.toml; then
 	sed -e 's/^[^=]*= *\('\''\|"\)\([^'\''"]*\)\('\''\|"\)\( \|\n\)*$/\2/')"
 fi
 
-echo "Using ${CROOT} as canonicalroot"
+echo "Using ${CROOT} as canonicalRoot"
 
 SKIPS=""
 # shellcheck disable=SC2089
@@ -43,14 +43,14 @@ for skip in ${SKIP_CHECK_PATTERNS}; do \
 	SKIPS="${SKIPS}${SKIPS:+ }--skip \"${skip}\""
 done
 
-URLBASE="${SITEROOT}"/public/sitemap.xml
+URLBASE="${SITEROOT}"/public/index.html
 
 if [ ! -e "$URLBASE" ]; then
 	URLBASE="${SITEROOT}"/public/index.html
 fi
 
 # shellcheck disable=SC2090,SC2086
-if echo y | npx hyperlink "$URLBASE" --canonicalroot "${CROOT}" \
+if echo y | npx hyperlink "$URLBASE" --canonicalRoot "${CROOT}" \
 	--internal \
 	${SKIPS} \
 	--todo "301 http" \

@@ -1,16 +1,18 @@
----
-aliases:
-    - /privacy-policy/
-    - /privacy/
-    - /siteentry/privacy/
-author: Daniel F. Dickinson
-date: '2021-03-03T23:18:24+00:00'
-publishDate: '2021-01-17T19:02:07+00:00'
-title: Privacy Policy
-description: "Privacy policy for www.wildtechgarden.ca"
-summary: "Privacy policy for www.wildtechgarden.ca"
-pageCanonical: false
----
++++
+aliases = [
+	"/privacy-policy/",
+	"/privacy/",
+	"/siteentry/privacy/"
+]
+author = "Daniel F. Dickinson"
+date = 2021-03-03T23:18:24+00:00
+publishDate = 2021-01-17T19:02:07+00:00
+title = "Privacy Policy"
+description = "Informal privacy policy for www.wildtechgarden.ca, such as it is."
+summary = "Informal privacy policy for www.wildtechgarden.ca, such as it is."
+pageCanonical = false
+toCanonical = "https://www.danielfdickinson.ca/about/privacy-policy/"
++++
 
 ## Who we are
 

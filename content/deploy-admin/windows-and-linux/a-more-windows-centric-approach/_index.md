@@ -18,9 +18,7 @@ description: "A Windows-centric approach to creating a Windows and Linux hybrid 
 summary: "A Windows-centric approach to creating a Windows and Linux hybrid environment for developers."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

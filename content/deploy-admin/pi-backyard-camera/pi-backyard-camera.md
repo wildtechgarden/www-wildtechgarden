@@ -18,9 +18,7 @@ description: A short talk / presentation about using the Raspberry Pi as a publi
 summary: A short talk / presentation about using the Raspberry Pi as a public backyard camera (e.g. live streamed or time lagged snapshots of a bird feeder).
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

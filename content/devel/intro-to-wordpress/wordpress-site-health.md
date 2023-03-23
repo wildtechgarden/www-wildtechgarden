@@ -9,21 +9,17 @@ date: '2021-03-03T22:06:52+00:00'
 publishDate: '2021-01-29T20:53:46+00:00'
 title: WordPress 'Site Health'
 description: "Fixing 'Site Health' issues with default WordPress install"
+summary: "Fixing 'Site Health' issues with default WordPress install"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - sysadmin-devops
-    - security
     - web-design
-    - website
-    - wordpress
 weight: 20310
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Using WordPress Site Health Page
 

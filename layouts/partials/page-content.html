@@ -1,0 +1,17 @@
+{{ $pctx := . -}}
+
+{{ with .Content }}
+<div class="content">
+{{ . }}
+</div>
+
+{{ with $pctx.Param "page_endnote" -}}
+<div class="content content--endnote">
+	{{ . | $pctx.RenderString }}
+</div>
+{{ end -}}
+
+<div class="content content--bottom">
+	{{ if ne $pctx.Lastmod $pctx.PublishDate }}{{ partial "dates.html" $pctx }}{{ end -}}
+</div>
+{{ end }}

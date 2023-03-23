@@ -18,11 +18,10 @@ tags:
 author: Daniel F. Dickinson
 description: "The official Ubuntu images that are built for Azure/Hyper-V really are only compatible with Hyper-V on Azure, but there is a solution…"
 summary: "The official Ubuntu images that are built for Azure/Hyper-V really are only compatible with Hyper-V on Azure, but there is a solution…"
+frontCard: true
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

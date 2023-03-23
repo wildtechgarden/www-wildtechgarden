@@ -8,14 +8,9 @@ date: 2021-10-13T02:54:33Z
 publishDate: 2021-10-13T02:54:33Z
 author: Daniel F. Dickinson
 tags:
-    - conversion
-    - devel
-    - docs
     - python
     - projects
     - web-design
-    - website
-    - wordpress
 description: "Convert from WordPress XML export to static site generator (Hugo)"
 summary: "Convert from WordPress XML export to static site generator (Hugo)"
 ---

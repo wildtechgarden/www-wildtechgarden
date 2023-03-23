@@ -18,9 +18,7 @@ description: Streaming from a Raspberry Pi as a backyard public camera
 summary: Streaming from a Raspberry Pi as a backyard public camera
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Prerequisites
 

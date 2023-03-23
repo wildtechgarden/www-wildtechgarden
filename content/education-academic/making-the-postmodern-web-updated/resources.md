@@ -26,9 +26,7 @@ Links to additional resources for ['Making the postmodern web'](making-the-postm
 """
 +++
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Introductory
 

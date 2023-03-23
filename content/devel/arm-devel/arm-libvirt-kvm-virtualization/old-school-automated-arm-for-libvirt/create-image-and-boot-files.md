@@ -23,9 +23,7 @@ publishDate: '2020-11-13T13:50:00+00:00'
 description: Create a non-EFI (old school) ARM Hard Float virtual machine image and boot files for Libvirt/KVM.
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Setup the Packer Environment
 

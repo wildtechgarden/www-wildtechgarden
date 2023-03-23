@@ -17,9 +17,7 @@ summary: "At some point you may need to upsize your PostgreSQL server, particula
 description: "At some point you may need to upsize your PostgreSQL server, particular if you have implemented one on a old Raspberry Pi."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

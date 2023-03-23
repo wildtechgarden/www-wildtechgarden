@@ -15,14 +15,10 @@ weight: 9000
 tags:
 - accessibility
 - archived
-- devel
-- docs
-- frontend
 - web-design
-- web-devel
-title: "ARCHIVED: A font for all ages"
-description: "Especially if you are older, have dirty or inadequate glasses, are just tired, or are using a small screen, you may find sites use an excessively small font."
-summary: "Especially if you are older, have dirty or inadequate glasses, are just tired, or are using a small screen, you may find sites use an excessively small font."
+title: "A font for all ages"
+description: "Especially if you are older, have dirty or inadequate glasses, are just tired, or are using a small screen, you may find websites use an excessively small font."
+summary: "Especially if you are older, have dirty or inadequate glasses, are just tired, or are using a small screen, you may find websites use an excessively small font."
 ---
 
 **ARCHIVED**: This page is archived and may contain information that is out-of-date or no longer accurate.

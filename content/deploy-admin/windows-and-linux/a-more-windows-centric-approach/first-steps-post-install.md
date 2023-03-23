@@ -19,9 +19,7 @@ description: "Some recommended first steps after a base install of Windows 10."
 summary: "Some recommended first steps after a base install of Windows 10."
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Core isolation; a security recommendation
 

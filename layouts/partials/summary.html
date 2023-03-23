@@ -1,0 +1,21 @@
+{{- $ctx := . -}}
+{{- $pctx := .Page -}}
+{{- $caller := .Caller -}}
+{{- $class := .class | default (printf "%s %s" "list-view" (cond (ne $pctx.Section "") (printf "list-view--%s"  ($pctx.Section | urlize )) "")) -}}
+{{- $showSummaries := (cond (isset $caller.Params "showsummaries") ($caller.Params.showSummaries) true) -}}
+{{- if not (isset $caller.Params "showsummaries") -}}
+	{{- $showSummaries = (cond (isset site.Params "showsummaries") (site.Params.showSummaries) true) -}}
+{{- end -}}
+<article class="{{ $class }}">
+<header>
+<h2 class="title {{ if $pctx.Param "submitted" | default false }}mb--xxs{{ end }}"><a href="{{ $pctx.RelPermalink }}">{{ $pctx.Title }}</a>{{ if $pctx.Pages }} <span class="page-count">({{ len (partial "helpers/find-all-sub-pages-including-section.html" $pctx) }})</span>{{ end }}{{ if $pctx.Data.Term }} <span class="term">[{{ $pctx.Data.Term }}]</span>{{ end }}</h2>
+{{ if $showSummaries }}
+{{ if $pctx.Param "submitted" | default false }}{{ partial "submitted.html" $pctx -}}{{ end }}
+{{ end }}
+</header>
+{{ if $showSummaries }}
+<div class="content">
+<p>{{ ($pctx.Param "summary") | default ($pctx.Summary | plainify) | $pctx.RenderString | safeHTML }}</p>
+</div>
+{{ end }}
+</article>

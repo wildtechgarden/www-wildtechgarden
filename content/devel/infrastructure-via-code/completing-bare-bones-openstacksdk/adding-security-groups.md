@@ -13,24 +13,16 @@ series:
     - infrastructure-via-code-openstack
 tags:
     - archived
-    - devel
-    - experimentation
-    - infrastructure-via-code
-    - jinja
-    - learning
-    - openstack
+    - deploy
     - projects
     - python
     - sysadmin-devops
-    - templating
 description: "Adding security groups to an OpenStackSDK-based instance deployment"
 summary: "Adding security groups to an OpenStackSDK-based instance deployment"
 weight: 10540
 ---
 
-{{< details summary="What is in this article" >}}
-{{< toc >}}
-{{< /details >}}
+{{< details-toc >}}
 
 ## Preface
 

@@ -5,18 +5,17 @@ aliases:
     - /develop-design/web-design-web-devel/intro-to-wordpress/ovh-setup/
     - /docs/devel/intro-to-wordpress/ovh-setup/
 author: Daniel F. Dickinson
-date: '2021-03-03T22:06:01+00:00'
-publishDate: '2021-01-29T21:48:06+00:00'
+date: 2021-03-03T22:06:01+00:00
+publishDate: 2021-01-29T21:48:06+00:00
 title: OVH setup
-description: "Setting up a WordPress instance on OVH"
+description: "Setting up a WordPress instance on a VPS on OVHcloud"
+summary: "Setting up a WordPress instance on a VPS on OVHcloud"
 series:
     - intro-to-wordpress
 tags:
     - archived
     - sysadmin-devops
     - web-design
-    - website
-    - wordpress
 weight: 20200
 ---
 

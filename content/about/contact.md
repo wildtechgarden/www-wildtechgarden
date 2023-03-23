@@ -1,12 +1,13 @@
----
-aliases:
-    - /siteentry/contact/
-title: Contact
-description: "Connect with Daniel"
-author: false
-weight: 10300
-description: Contact form to reach Daniel F. Dickinson
-summary: Contact form to reach Daniel F. Dickinson
----
++++
+title = "Contact Daniel F. Dickinson"
+aliases =[
+	"/siteentry/contact/"
+]
+author = "Daniel F. Dickinson"
+description = "Contact form to reach Daniel F. Dickinson through Netlify"
+summary = "Contact form to reach Daniel F. Dickinson through Netlify"
++++
 
-{{< form-contact name="wildtechgarden_contact" >}}
+Contact form to reach Daniel F. Dickinson through Netlify
+
+{{< contact name="wildtechgarden_contact" netlify=true >}}
