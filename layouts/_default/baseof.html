@@ -32,13 +32,13 @@
 {{ $logoWidth := ($.Param "logoWidth") -}}
 {{ $logoHeight := ($.Param "logoHeight") -}}
 {{ $finalImage := (partial "helpers/process-images.html" (dict
-  "convertTo" $convertTo
-  "height" $logoHeight
-  "Page" .Page
-  "size" ""
-  "src" $src
-  "srcset" ""
-  "width" $logoWidth
+	"convertTo" $convertTo
+	"height" $logoHeight
+	"Page" .Page
+	"size" ""
+	"src" $src
+	"srcset" ""
+	"width" $logoWidth
 )) -}}
 <img src="{{ $finalImage.src }}"{{ with $logoWidth }} width="{{ $logoWidth }}"{{ end }}{{ with $logoHeight }} height="{{ $logoHeight }}"{{ end }}{{ with .Title}} title="{{ . }}"{{ end }} alt="Home"  class="header__logo-image">
 </a>
