@@ -12,7 +12,6 @@ author: Daniel F. Dickinson
 tags:
     - archived
     - deploy
-    - projects
     - python
     - sysadmin-devops
 description: "Generating OVH API tokens for use with Terraform and other applications."

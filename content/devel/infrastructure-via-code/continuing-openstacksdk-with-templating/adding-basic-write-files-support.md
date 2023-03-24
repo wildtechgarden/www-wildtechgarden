@@ -14,8 +14,6 @@ series:
 tags:
     - archived
     - deploy
-    - openstack
-    - projects
     - python
 description: "Adding basic support for cloud-init 'write_files' in an OpenSDK-based templated instance deployment"
 summary: "Adding basic support for cloud-init 'write_files' in an OpenSDK-based templated instance deployment"

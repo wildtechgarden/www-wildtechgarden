@@ -9,7 +9,6 @@ title: "Ancient games, old computers, and new tech"
 summary: "About a member of the Mancala family of games known as Oware or Wari, with a look at an old Commodore 64 version as well as modern versions."
 description: "About a member of the Mancala family of games known as Oware or Wari, with a look at an old Commodore 64 version as well as modern versions."
 tags:
-- games
 - theory
 card: true
 frontCard: true

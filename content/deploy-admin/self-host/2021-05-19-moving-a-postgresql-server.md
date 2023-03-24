@@ -9,7 +9,6 @@ title: "Moving a PostgreSQL server"
 date: 2021-05-19T22:04:42-04:00
 publishDate: 2021-05-20T07:32:04-04:00
 tags:
-- database
 - linux
 - self-host
 - sysadmin-devops

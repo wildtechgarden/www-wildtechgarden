@@ -22,9 +22,7 @@ series = ["infrastructure-via-code-openstack"]
 tags = [
 	"archived",
 	"deploy",
-	"openstack",
 	"sysadmin-devops",
-	"projects",
 	"python"
 ]
 weight = 10000

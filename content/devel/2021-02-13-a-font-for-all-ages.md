@@ -13,7 +13,6 @@ date: '2021-02-13T07:39:44+00:00'
 publishDate: '2021-02-03T21:38:50+00:00'
 weight: 9000
 tags:
-- accessibility
 - archived
 - web-design
 title: "A font for all ages"

@@ -9,11 +9,7 @@ aliases:
 author: Daniel F. Dickinson
 tags:
     - arm-devel
-    - armel
-    - armhf
-    - cross-compile
     - devel
-    - docs
     - linux
     - virtualization
 date: '2021-02-13T07:59:35+00:00'

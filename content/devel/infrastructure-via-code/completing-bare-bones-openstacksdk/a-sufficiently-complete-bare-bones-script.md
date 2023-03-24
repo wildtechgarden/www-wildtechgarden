@@ -14,8 +14,6 @@ series:
 tags:
     - archived
     - deploy
-    - openstack
-    - projects
     - python
     - sysadmin-devops
 description: "The final stage of the 'bare bones' OpenStackSDK deployment"

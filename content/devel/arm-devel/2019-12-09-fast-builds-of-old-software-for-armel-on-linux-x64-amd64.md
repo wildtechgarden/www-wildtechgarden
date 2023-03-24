@@ -14,17 +14,14 @@ aliases:
 author: Daniel F. Dickinson
 tags:
     - arm-devel
-    - armel
-    - armhf
-    - cross-compile
     - devel
-    - docs
     - linux
     - virtualization
 date: '2019-12-09T06:40:00+00:00'
 publishDate: '2019-12-09T06:40:00+00:00'
 title: Fast builds of armel software on Linux x64
 description: "The fastest and most practical way to build software for armel is to cross-compile on an x86_64 machine even for a Linux 2.6-series kernel"
+summary: "The fastest and most practical way to build software for armel is to cross-compile on an x86_64 machine even for a Linux 2.6-series kernel"
 weight: 9700
 series:
     - debian-on-a-craig-clp281

@@ -15,8 +15,6 @@ tags:
     - archived
     - deploy
     - sysadmin-devops
-    - openstack
-    - projects
     - python
 description: "Since OpenStackSDK should theoretically make life easier for doing Infrastructure via Code, this is approach which which this learning effort has begun."
 summary: "Since OpenStackSDK should theoretically make life easier for doing Infrastructure via Code, this is approach which which this learning effort has begun."

@@ -14,9 +14,7 @@ series:
 tags:
     - archived
     - deploy
-    - projects
     - python
-    - templating
 description: "Adding basic support for templates to an OpenSDK-based instance deployment"
 summary: "Adding basic support for templates to an OpenSDK-based instance deployment"
 weight: 10650

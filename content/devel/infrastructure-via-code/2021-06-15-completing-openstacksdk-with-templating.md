@@ -14,8 +14,6 @@ series:
 tags:
     - archived
     - deploy
-    - openstack
-    - projects
     - python
     - sysadmin-devops
 description: "This page was intended to complete the OpenStack SDK with templated userdata portion of this Infrastructure via Code set"

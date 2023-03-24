@@ -14,8 +14,6 @@ series:
 tags:
     - archived
     - deploy
-    - openstack
-    - projects
     - python
     - sysadmin-devops
 description: "We start with a separate script that only generates userdata (no instance creation)."

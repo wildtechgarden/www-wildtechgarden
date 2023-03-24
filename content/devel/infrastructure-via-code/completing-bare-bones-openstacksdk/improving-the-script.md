@@ -14,7 +14,6 @@ series:
 tags:
     - archived
     - deploy
-    - projects
     - python
     - sysadmin-devops
 description: "Further improvements to an OpenStackSDK-based 'bare bones' instance deployment"

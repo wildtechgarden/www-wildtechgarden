@@ -16,8 +16,6 @@ series:
 tags:
     - archived
     - deploy
-    - openstack
-    - projects
     - python
     - sysadmin-devops
 description: "Continuing with the a bare bones OpenStackSDK-based deployment of instances"

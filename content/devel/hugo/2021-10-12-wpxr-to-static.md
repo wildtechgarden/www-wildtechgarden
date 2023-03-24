@@ -9,7 +9,6 @@ publishDate: 2021-10-13T02:54:33Z
 author: Daniel F. Dickinson
 tags:
     - python
-    - projects
     - web-design
 description: "Convert from WordPress XML export to static site generator (Hugo)"
 summary: "Convert from WordPress XML export to static site generator (Hugo)"

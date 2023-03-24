@@ -14,7 +14,6 @@ publishDate: 2021-01-13T20:34:34+00:00
 summary: "About the effort to unify, eliminate duplication, delete those older than my 'data retention policy', and organize the rest into yearly archives."
 description: "About the effort to unify, eliminate duplication, delete those older than my 'data retention policy', and organize the rest into yearly archives."
 tags:
-- data-and-security
 - linux
 - sysadmin-devops
 title: 'Converting emails: Merge & purge'

@@ -2,7 +2,5 @@ github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 h1
 github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361/go.mod h1:8ArFjp0rvMTCvY0zPTv8nsKvDBJKvWJ1pyE2NJezQdI=
 gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.0-20230321041727-a22f27a75cc7 h1:5wVID8fvzEaIxGhUYegFtN/cPRbN6xLhMTq+LYBF+4c=
 gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.0-20230321041727-a22f27a75cc7/go.mod h1:AyUJrDSjdGjVr6/kp6GPPnch2R6scbkld8s8ejhv2Fk=
-gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20220801020442-ec73b8724eac h1:VauseRYMd8AF+hhZ1sHQZioV+lBn8c+Ho/TVptw5l/U=
-gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20220801020442-ec73b8724eac/go.mod h1:P6LZj4ajU+D7o5/+wOOL/iIi/yEed9KefZFtIZQZldw=
-gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230324135958-24fbff3ff040 h1:pdBwg7Gagz7qpjgg4pFgX5AekmvxU3X0b0SHnVMaza8=
-gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230324135958-24fbff3ff040/go.mod h1:P6LZj4ajU+D7o5/+wOOL/iIi/yEed9KefZFtIZQZldw=
+gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230324152522-396d92b8c440 h1:PYvyEgtd4YpYzMpjQr+hWjFOkyfLCLLp7gb/mfyReVI=
+gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230324152522-396d92b8c440/go.mod h1:P6LZj4ajU+D7o5/+wOOL/iIi/yEed9KefZFtIZQZldw=

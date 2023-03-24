@@ -11,11 +11,11 @@ author: Daniel F. Dickinson
 date: '2020-11-16T12:32:00+00:00'
 publishDate: '2020-11-16T12:32:00+00:00'
 description: Create an UEFI (newish) ARM Hard Float (32-bit) image and boot files for Libvirt/KVM using automated image build using Packer.
+summary: Create an UEFI (newish) ARM Hard Float (32-bit) image and boot files for Libvirt/KVM using automated image build using Packer.
 series:
     - arm-libvirt-kvm-virtualization
 tags:
     - arm-devel
-    - armhf
     - debian
     - devel
     - firmware

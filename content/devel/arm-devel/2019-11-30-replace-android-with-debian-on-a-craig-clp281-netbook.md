@@ -15,15 +15,10 @@ author: Daniel F. Dickinson
 tags:
     - archived
     - arm-devel
-    - armel
-    - armhf
-    - craig-clp281
     - debian
     - devel
     - firmware
     - linux
-    - projects
-    - rootfs-images
 date: '2019-11-30T08:41:00+00:00'
 publishDate: '2019-11-30T08:41:00+00:00'
 description: 'This article describes using Devuan Jessie as the firmware on one such: a Craig CLP281 Netbook.'

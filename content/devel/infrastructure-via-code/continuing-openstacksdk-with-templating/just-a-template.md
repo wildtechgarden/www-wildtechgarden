@@ -15,7 +15,6 @@ tags:
     - archived
     - deploy
     - sysadmin-devops
-    - projects
     - python
 description: "Adding more a complete template to an OpenSDK-based templated instance deployment"
 summary: "Adding more a complete template to an OpenSDK-based templated instance deployment"

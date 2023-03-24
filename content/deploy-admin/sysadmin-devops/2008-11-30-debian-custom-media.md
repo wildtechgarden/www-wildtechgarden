@@ -19,7 +19,6 @@ tags:
 - debian
 - devel
 - linux
-- rootfs-images
 - sysadmin-devops
 title: "ARCHIVED: Debian custom CD"
 description: "This page will describe the steps used to create a custom debian install cd using a partial mirror mostly gathered from a prototype system's apt cache."

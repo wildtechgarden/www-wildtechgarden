@@ -11,7 +11,6 @@ series:
     - arm-libvirt-kvm-virtualization
 tags:
     - arm-devel
-    - armhf
     - debian
     - devel
     - firmware
@@ -21,6 +20,7 @@ tags:
 date: '2020-11-13T13:50:00+00:00'
 publishDate: '2020-11-13T13:50:00+00:00'
 description: Create a non-EFI (old school) ARM Hard Float virtual machine image and boot files for Libvirt/KVM.
+summary: Create a non-EFI (old school) ARM Hard Float virtual machine image and boot files for Libvirt/KVM.
 ---
 
 {{< details-toc >}}

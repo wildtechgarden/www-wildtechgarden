@@ -15,7 +15,6 @@ description: The binary constraint satisfaction problem (bcsp) is an important a
   research because so many problems can be represented in this form [Kumar92].
 tags:
 - archived
-- games
 - theory
 title: A Study of selected algorithms against the Sherlock and Zebra problems
 showChildPages: false

@@ -11,7 +11,6 @@ series:
     - arm-libvirt-kvm-virtualization
 tags:
     - arm-devel
-    - armhf
     - debian
     - devel
     - firmware
@@ -21,6 +20,7 @@ tags:
 date: '2020-11-16T12:32:00+00:00'
 publishDate: '2020-11-16T12:32:00+00:00'
 description: Use an UEFI (newish) ARM Hard Float (32-bit) image for Libvirt/KVM using automated image.
+summary: Use an UEFI (newish) ARM Hard Float (32-bit) image for Libvirt/KVM using automated image.
 ---
 
 {{< details-toc >}}

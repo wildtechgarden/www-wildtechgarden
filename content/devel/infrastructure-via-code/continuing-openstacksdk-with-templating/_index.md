@@ -18,8 +18,6 @@ series:
 tags:
     - archived
     - deploy
-    - openstack
-    - projects
     - python
     - sysadmin-devops
 weight: 10610

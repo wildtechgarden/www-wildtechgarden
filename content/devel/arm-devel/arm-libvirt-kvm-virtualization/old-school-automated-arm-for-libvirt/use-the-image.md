@@ -11,7 +11,6 @@ series:
     - arm-libvirt-kvm-virtualization
 tags:
     - arm-devel
-    - armhf
     - debian
     - devel
     - firmware
@@ -21,6 +20,7 @@ tags:
 date: '2020-11-13T13:50:00+00:00'
 publishDate: '2020-11-13T13:50:00+00:00'
 description: Use an non-EFI (old school) ARM Hard Float image for Libvirt/KVM.
+summary: Use an non-EFI (old school) ARM Hard Float image for Libvirt/KVM.
 ---
 
 {{< details-toc >}}

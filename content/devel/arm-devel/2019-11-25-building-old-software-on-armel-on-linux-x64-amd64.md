@@ -11,11 +11,7 @@ aliases:
 author: Daniel F. Dickinson
 tags:
     - arm-devel
-    - armel
-    - armhf
-    - cross-compile
     - devel
-    - docs
     - firmware
     - linux
     - virtualization

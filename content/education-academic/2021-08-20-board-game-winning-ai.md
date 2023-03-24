@@ -11,8 +11,6 @@ author: "Daniel F. Dickinson"
 summary: "How Artificial Intelligence can win at board games."
 description: "How Artificial Intelligence can win at board games."
 tags:
-    - ai
-    - games
     - theory
 card: true
 frontCard: true

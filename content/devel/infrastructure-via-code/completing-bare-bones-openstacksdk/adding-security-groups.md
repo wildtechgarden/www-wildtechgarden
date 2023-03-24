@@ -14,7 +14,6 @@ series:
 tags:
     - archived
     - deploy
-    - projects
     - python
     - sysadmin-devops
 description: "Adding security groups to an OpenStackSDK-based instance deployment"

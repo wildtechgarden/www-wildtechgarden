@@ -12,8 +12,6 @@ publishDate: 1992-10-29T04:04:00+00:00
 description: "Uses the basic principles of radioactive dating and combines them with advanced isotope measurements to obtain very precise results from small samples."
 summary: "Uses the basic principles of radioactive dating and combines them with advanced isotope measurements to obtain very precise results from small samples."
 tags:
-- archives
-- paper
 - theory
 title: Dating with accelerators
 card: true

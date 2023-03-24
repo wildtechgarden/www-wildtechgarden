@@ -10,7 +10,6 @@ publishDate: 2021-10-12T17:10:00-0400
 author: Daniel F. Dickinson
 tags:
     - deploy
-    - projects
     - web-design
 description: "Using a Hugo module starter and Netlify for Hugo module development"
 summary: "Using a Hugo module starter and Netlify for Hugo module development"

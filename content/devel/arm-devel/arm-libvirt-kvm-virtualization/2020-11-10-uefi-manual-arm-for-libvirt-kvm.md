@@ -12,8 +12,7 @@ author: Daniel F. Dickinson
 series:
     - arm-libvirt-kvm-virtualization
 tags:
-    - arm
-    - armhf
+    - arm-devel
     - debian
     - devel
     - firmware
