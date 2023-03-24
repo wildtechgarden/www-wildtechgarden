@@ -7,7 +7,6 @@ title: "Docker network: LAN to container"
 date: 2022-02-21T11:48:46-05:00
 tags:
     - linux
-    - network
     - self-host
     - sysadmin-devops
 summary: "When using Docker to containerize internal services like Samba, LLMNR, or mDNS a.k.a Bonjour one may find that the standard Docker model of using specific unicast ports forwards, is insufficient."

@@ -10,13 +10,7 @@ aliases = [
 date = "2023-02-11T19:30:22Z"
 publishDate = "2023-02-11T19:30:22Z"
 tags = [
-	"educational",
-	"frontend",
-	"learning",
-	"opinion",
-	"presentations",
-	"web-design",
-	"website"
+	"web-design"
 ]
 description = """\
 Links to additional resources for 'Making the postmodern web'\

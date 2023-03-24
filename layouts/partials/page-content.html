@@ -2,7 +2,15 @@
 
 {{ with .Content }}
 <div class="content">
-{{ . }}
+	{{ if and ($pctx.Param "toc") (not ($pctx.HasShortcode "details-toc")) }}
+	<details>
+		<summary>What is in this article</summary>
+		<div class="toc">
+		{{- $pctx.TableOfContents -}}
+		</div>
+		</details>
+	{{ end }}
+	{{ . }}
 </div>
 
 {{ with $pctx.Param "page_endnote" -}}
@@ -12,6 +20,8 @@
 {{ end -}}
 
 <div class="content content--bottom">
+	{{ if $pctx.Param "relatedposts" | default false }}{{ partial "related.html" $pctx }}{{ end -}}
+
 	{{ if ne $pctx.Lastmod $pctx.PublishDate }}{{ partial "dates.html" $pctx }}{{ end -}}
 </div>
 {{ end }}

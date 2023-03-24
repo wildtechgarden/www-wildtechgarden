@@ -11,7 +11,7 @@ tags:
     - linux
     - raspberry-pi
     - self-host
-    - system-administration
+    - sysadmin-devops
 description: "Using Unbound DNS resolver on a Raspberry Pi to enable DNS over TLS and DNSSEC for all your systems (including Windows and IoT devices)"
 summary: "Keeping your DNS queries from your local network to public DNS servers private in transit by using DNS over TLS on a Raspberry Pi is ridiculously easy."
 card: true

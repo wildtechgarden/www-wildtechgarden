@@ -283,6 +283,7 @@ weight = 90
 
 [module]
 # replacements = "gitlab.com/danielfdickinson/dfd-hugo-theme-zen -> ../../dfd-hugo-theme-zen"
+# replacements = "gitlab.com/danielfdickinson/server-alpine-linux-docs4web -> ../../server-alpine-linux-docs4web"
 
 [[module.imports]]
 path = "gitlab.com/danielfdickinson/server-alpine-linux-docs4web"

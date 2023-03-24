@@ -20,7 +20,6 @@ series = [
 	"automating-a-personal-cloud-infrastructure"
 ]
 tags = [
-	"automation",
 	"debian",
 	"deploy",
 	"linux",

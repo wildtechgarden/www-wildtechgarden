@@ -9,8 +9,6 @@ title: "Ubuntu cloud images on Hyper-V"
 date: '2021-06-24T10:32:00-04:00'
 publishDate: '2020-06-24T10:32:00-04:00'
 tags:
-- automation
-- cloud
 - linux
 - sysadmin-devops
 - virtualization
