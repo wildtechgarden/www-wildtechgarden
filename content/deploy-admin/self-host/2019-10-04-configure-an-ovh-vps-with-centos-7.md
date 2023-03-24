@@ -9,19 +9,17 @@ aliases:
     - /sysadmin-devops/self-host/configure-an-ovh-vps-with-centos-7/
     - /docs/deploy-admin/self-host/configure-an-ovh-vps-with-centos-7/
 author: Daniel F. Dickinson
-date: '2019-10-05T03:23:00+00:00'
-publishDate: '2019-10-05T03:23:00+00:00'
+date: 2019-10-05T03:23:00+00:00
+publishDate: 2019-10-05T03:23:00+00:00
 summary: CentOS 7 has been a stable and reliable choice for VPS servers. This guide shows how to install it on an OVH VPS (Virtual Private Server)
 description: CentOS 7 has been a stable and reliable choice for VPS servers. This guide shows how to install it on an OVH VPS (Virtual Private Server)
 tags:
 - archived
-- centos
-- cloud
 - linux
 - self-host
 - sysadmin-devops
 - virtualization
-title: "ARCHIVED: An OVH VPS with CentOS 7"
+title: "An OVH VPS with CentOS 7"
 ---
 
 {{< details-toc >}}

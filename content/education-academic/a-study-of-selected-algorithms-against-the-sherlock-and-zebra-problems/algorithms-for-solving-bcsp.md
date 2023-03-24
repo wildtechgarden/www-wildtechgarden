@@ -7,8 +7,8 @@ aliases:
 title: "Algorithms for solving Zebra and Sherlock"
 author: Daniel F. Dickinson
 tags:
-- academic
 - archived
+- games
 - theory
 date: '2021-03-02T13:34:12+00:00'
 publishDate: '2003-02-09T10:25:00+00:00'
@@ -16,9 +16,10 @@ description: "This section contains pseudocode of the algorithms used in the pap
 well as a brief discussion of each algorithm."
 summary: "This section contains pseudocode of the algorithms used in the paper as
 well as a brief discussion of each algorithm."
-toc: true
 weight: 1100
 ---
+
+{{< details-toc >}}
 
 ## Preface
 

@@ -11,7 +11,6 @@ author: Daniel F. Dickinson
 date: '2021-07-14T11:12:00-04:00'
 publishDate: '2021-07-15T06:04:00-04:00'
 tags:
-- linux
 - sysadmin-devops
 - windows
 - windows-and-linux

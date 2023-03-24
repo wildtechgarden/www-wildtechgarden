@@ -20,7 +20,7 @@ tags:
 - raspberry-pi
 - self-host
 - sysadmin-devops
-title: "ARCHIVED: Raspberry Pi as an Ansible server"
+title: "Raspberry Pi as an Ansible server"
 ---
 
 {{< details-toc >}}

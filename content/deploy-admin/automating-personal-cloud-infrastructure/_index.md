@@ -8,11 +8,11 @@ date = "2022-11-16T14:10:36-0500"
 publishDate = "2022-11-16T21:10:36-0500"
 title = "Automating a personal 'cloud' infrastructure"
 description = """\
-How Daniel uses Packer + Terraform + Ansible to develop, test, and deploy his
+How Daniel uses Ansible to develop, test, and deploy his
 own mail servers, calendar/addressbook, websites, git archive server, and more.\
 """
 summary = """\
-How Daniel uses Packer + Terraform + Ansible to develop, test, and deploy his
+How Daniel uses Ansible to develop, test, and deploy his
 own mail servers, calendar/addressbook, websites, git archive server, and more.\
 \
 """
@@ -21,18 +21,17 @@ series = [
 ]
 tags = [
 	"automation",
-	"cloud",
-	"configuration",
 	"debian",
-	"docs",
-	"hosting",
-	"infrastructure",
+	"deploy",
 	"linux",
 	"self-host",
 	"sysadmin-devops",
 	"virtualization"
 ]
 +++
+
+How Daniel uses Ansible to develop, test, and deploy his own mail servers,
+calendar/addressbook, websites, git archive server, and more.
 
 This is not total 'Continuous Delivery' but is 'Continuous Integration' and
 'Continuous Deployment' (that is basic verification and deployment of the

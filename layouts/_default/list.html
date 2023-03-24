@@ -33,6 +33,15 @@
 		{{ end -}}
 </div>
 	{{- end }}
+{{- else -}}
+{{- if $showChildCardsTop }}
+{{- $frontCardPages := (((partial "helpers/find-all-sub-pages-including-section.html" $pmctx).ByPublishDate).Reverse).ByWeight -}}
+<div class="cards">
+		{{ range where $frontCardPages "Params.card" "eq" true }}
+			{{ partial "card.html" (dict "Page" . "Caller" $pmctx) -}}
+		{{ end -}}
+</div>
+	{{- end }}
 {{- end -}}
 
 {{- if ne ($pmctx.Param "bottomContent") true -}}

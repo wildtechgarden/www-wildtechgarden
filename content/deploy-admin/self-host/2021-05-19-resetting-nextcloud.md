@@ -9,14 +9,12 @@ title: "Resetting Nextcloud"
 date: 2021-05-19T22:04:42-04:00
 publishDate: 2021-05-20T07:32:04-04:00
 tags:
-- cloud
 - linux
-- nextcloud
 - self-host
 - sysadmin-devops
 summary: "You may realize that you really wish you could start the Nextcloud instance from scratch without the hassle of a reinstalling."
 description: "You may realize that you really wish you could start the Nextcloud instance from scratch without the hassle of a reinstalling."
-frontCard: true
+card: true
 ---
 
 {{< details-toc >}}

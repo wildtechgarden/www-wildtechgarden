@@ -11,11 +11,9 @@ author:
 date: 2021-09-23T01:55:44Z
 publishDate: 2021-09-23T01:55:44Z
 tags:
-    - hosting
     - linux
-    - presentations
     - raspberry-pi
-    - technology
+    - self-host
 description: Copying backyard camera videos and pictures to Microsoft OneDrive using rclone
 summary: Copying backyard camera videos and pictures to a Microsoft OneDrive using rclone
 ---

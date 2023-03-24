@@ -12,15 +12,14 @@ author: Daniel F. Dickinson
 date: '2021-03-08T09:53:30+00:00'
 publishDate: '2020-09-20T13:27:00+00:00'
 description: "Raspberry Pi OS is the official OS for the Raspberry Pi family of educational single board computers.  Using Pi OS (including remotely)."
+summary: "Raspberry Pi OS is the official OS for the Raspberry Pi family of educational single board computers.  Using Pi OS (including remotely)."
 tags:
 - debian
-- educational
 - linux
 - raspberry-pi
-- sbc
 - sysadmin-devops
 title: Intro to Raspberry Pi OS
-toc: true
+card: true
 ---
 
 {{< details-toc >}}

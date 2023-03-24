@@ -22,7 +22,7 @@ description = """\
 Links to additional resources for 'Making the postmodern web'\
 """
 summary = """\
-Links to additional resources for ['Making the postmodern web'](making-the-postmodern-web-updated.md)\
+Links to additional resources for ['Making the postmodern web'](_index.md)\
 """
 +++
 

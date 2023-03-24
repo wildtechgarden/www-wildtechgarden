@@ -11,11 +11,9 @@ author: Daniel F. Dickinson
 date: 2021-09-22T16:19:07-04:00
 publishDate: 2021-09-22T19:19:07-04:00
 tags:
-    - hosting
     - linux
-    - presentations
     - raspberry-pi
-    - technology
+    - self-host
 description: Copying backyard camera videos and pictures to a remote web server using rclone
 summary: Copying backyard camera videos and pictures to a remote web server using rclone
 ---

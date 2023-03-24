@@ -6,15 +6,17 @@ aliases:
 - /post/dating-with-accelerators/
 - /docs/education-academic/dating-with-accelerators/
 author: Daniel F. Dickinson
-date: '2021-03-03T21:09:27+00:00'
-publishDate: '1992-10-29T04:04:00+00:00'
-summary: "Dating with accelerators uses the basic principles of radioactive dating and combines them with advanced isotope measurements to obtain very precise results from small samples. The principle measurement device is a modified mass spectrometer called an accelerator mass spectrometer (A.M.S.). This essay will cover the topics of radioactive dating, accelerator mass spectrometry, and how both of these work together to date materials."
+date: 2021-03-03T21:09:27+00:00
+publishDate: 1992-10-29T04:04:00+00:00
+#summary: "Dating with accelerators uses the basic principles of radioactive dating and combines them with advanced isotope measurements to obtain very precise results from small samples. The principle measurement device is a modified mass spectrometer called an accelerator mass spectrometer (A.M.S.). This essay will cover the topics of radioactive dating, accelerator mass spectrometry, and how both of these work together to date materials."
 description: "Uses the basic principles of radioactive dating and combines them with advanced isotope measurements to obtain very precise results from small samples."
+summary: "Uses the basic principles of radioactive dating and combines them with advanced isotope measurements to obtain very precise results from small samples."
 tags:
 - archives
 - paper
 - theory
 title: Dating with accelerators
+card: true
 ---
 
 ## 66-110: The Structure of Matter

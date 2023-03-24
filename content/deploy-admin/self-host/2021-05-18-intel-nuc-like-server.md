@@ -11,7 +11,6 @@ date: 2021-05-18T03:56:34-04:00
 publishDate: 2021-05-18T03:56:34-04:00
 tags:
 - linux
-- sbc
 - self-host
 - sysadmin-devops
 summary: "The Intel NUC (and boards based on the same SoC) are quite powerful for their price point, and use less electricity than even a mini tower."

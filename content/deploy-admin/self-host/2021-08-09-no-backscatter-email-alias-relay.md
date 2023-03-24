@@ -9,9 +9,7 @@ title: "No backscatter email alias relay"
 date: 2021-08-09T06:26:09-0400
 publishDate: 2021-08-09T06:26:09-0400
 tags:
-- backscatter
 - linux
-- security
 - self-host
 - sysadmin-devops
 summary: "Setting up an email relay that aliases addresses in various domains to a specific offsite user doesn't have to mean backscatter. Here is one solution."

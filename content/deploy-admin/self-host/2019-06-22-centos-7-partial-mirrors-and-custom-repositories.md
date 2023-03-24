@@ -9,21 +9,16 @@ aliases:
     - /sysadmin-devops/self-host/centos-7-partial-mirrors-and-custom-repositories/
     - /docs/deploy-admin/self-host/centos-7-partial-mirrors-and-custom-repositories/
 author: Daniel F. Dickinson
-date: '2019-06-22T23:21:00+00:00'
-publishDate: '2019-06-22T23:21:00+00:00'
-summary: "ARCHIVED: Often you don't need a full mirror of CentOS and/or EPEL, so we give a working example of a partial mirror and custom repository setup."
-description: "ARCHIVED: Often you don't need a full mirror of CentOS and/or EPEL, so we give a working example of a partial mirror and custom repository setup."
+date: 2019-06-22T23:21:00+00:00
+publishDate: 2019-06-22T23:21:00+00:00
+summary: "Often you don't need a full mirror of CentOS and/or EPEL, so we give a working example of a partial mirror and custom repository setup."
+description: "Often you don't need a full mirror of CentOS and/or EPEL, so we give a working example of a partial mirror and custom repository setup."
 tags:
 - archived
-- centos
 - linux
-- package-management
-- security
 - self-host
 - sysadmin-devops
 title: "CentOS 7 partial mirrors/custom repos"
-toc: true
-weight: 80000
 ---
 
 ## ARCHIVED
@@ -31,6 +26,8 @@ weight: 80000
 CentOS 7 is getting rather old, and CentOS has changed delivery models in ways that change where it is useful.
 
 This document is archived and may be out of date or inaccurate.
+
+{{< details-toc >}}
 
 ## Overview
 

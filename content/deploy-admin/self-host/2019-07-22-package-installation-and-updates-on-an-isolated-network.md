@@ -9,22 +9,18 @@ aliases:
 - /sysadmin-devops/self-host/package-installation-and-updates-on-an-isolated-network/
 - /docs/deploy-admin/self-host/package-installation-and-updates-on-an-isolated-network/
 author: Daniel F. Dickinson
-date: '2019-07-22T23:20:00+00:00'
-publishDate: '2019-07-22T23:20:00+00:00'
+date: 2019-07-22T23:20:00+00:00
+publishDate: 2019-07-22T23:20:00+00:00
 summary: For your self-hosted systems there are likely hosts you don't want internet-connected, but you still want to be able to do package installs and updates.
 description: For your self-hosted systems there are likely hosts you don't want internet-connected, but you still want to be able to do package installs and updates.
 tags:
 - archived
-- centos
 - debian
 - linux
-- package-management
-- security
 - self-host
 - sysadmin-devops
 title: "Network isolation and package management"
 toc: true
-weight: 80000
 ---
 
 ## ARCHIVED

@@ -11,14 +11,16 @@ date: '2021-03-02T13:34:12+00:00'
 publishDate: '2003-02-09T10:25:00+00:00'
 summary: The binary constraint satisfaction problem (bcsp) is an important area of
   research because so many problems can be represented in this form [Kumar92].
+description: The binary constraint satisfaction problem (bcsp) is an important area of
+  research because so many problems can be represented in this form [Kumar92].
 tags:
-- academic
 - archived
+- games
 - theory
 title: A Study of selected algorithms against the Sherlock and Zebra problems
-toc: true
-layout: list-content
-microformatDescriptionAsOverlayText: false
+showChildPages: false
+card: true
+frontCard: true
 ---
 
 ## CIS*4750 Course Project
@@ -26,6 +28,8 @@ microformatDescriptionAsOverlayText: false
 Author: Daniel F. Dickinson
 
 Date: 2003-02-09
+
+{{< details-toc >}}
 
 ## Introduction
 

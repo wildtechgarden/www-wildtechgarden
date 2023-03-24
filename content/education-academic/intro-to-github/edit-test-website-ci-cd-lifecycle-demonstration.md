@@ -17,12 +17,9 @@ author: Daniel F. Dickinson
 date: '2021-03-08T09:49:08+00:00'
 publishDate: '2020-08-29T19:40:00+00:00'
 tags:
-- devel
-- educational
 - git
 - sysadmin-devops
 - web-design
-- website
 title: Edit-test-website CI/CD lifecycle demo
 description: "Example of a Netlify-based website CI/CD lifecycle on GitHub"
 ---

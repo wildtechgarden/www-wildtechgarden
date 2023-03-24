@@ -9,7 +9,6 @@ title: "Hosting a local Nextcloud"
 date: 2021-05-18T14:16:25-04:00
 publishDate: 2021-05-20T07:32:04-04:00
 tags:
-- cloud
 - linux
 - self-host
 - sysadmin-devops

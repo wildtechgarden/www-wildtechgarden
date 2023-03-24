@@ -11,11 +11,9 @@ author:
 date: 2021-09-23T02:46:23Z
 publishDate: 2021-09-23T02:46:23Z
 tags:
-    - hosting
     - linux
-    - presentations
     - raspberry-pi
-    - technology
+    - self-host
 description: Copying backyard camera videos and pictures to Google Drive using rclone
 summary: Copying backyard camera videos and pictures to a Google Drive using rclone
 ---

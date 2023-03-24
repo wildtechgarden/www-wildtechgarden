@@ -13,18 +13,16 @@ aliases:
     - /develop-design/29/introduction-to-git-and-github/
     - /docs/education-academic/intro-to-github/
 author: Daniel F. Dickinson
-date: '2021-03-08T09:46:40+00:00'
-publishDate: '2020-08-29T17:32:00+00:00'
+date: 2021-03-08T09:46:40+00:00
+publishDate: 2020-08-29T17:32:00+00:00
 description: An Introduction to Git & GitHub based on a presentation I created for
   a group of fellow Makers at the MakerPlace at the Midland Public Library
 tags:
-- devel
-- educational
 - git
 - sysadmin-devops
 - web-design
-- website
 title: Intro to Git and GitHub
+showChildPages: false
 ---
 
 {{< details-toc >}}

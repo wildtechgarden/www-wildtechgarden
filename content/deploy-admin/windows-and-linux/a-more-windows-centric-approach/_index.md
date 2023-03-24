@@ -10,12 +10,12 @@ author: Daniel F. Dickinson
 date: '2021-07-09T11:51:00-04:00'
 publishDate: '2021-07-15T06:03:00-04:00'
 tags:
-- linux
 - sysadmin-devops
 - windows
 - windows-and-linux
 description: "A Windows-centric approach to creating a Windows and Linux hybrid environment for developers."
 summary: "A Windows-centric approach to creating a Windows and Linux hybrid environment for developers."
+card: true
 ---
 
 {{< details-toc >}}

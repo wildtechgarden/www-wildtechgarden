@@ -11,12 +11,11 @@ author: Daniel F. Dickinson
 date: '2021-07-13T15:02:00-04:00'
 publishDate: '2021-07-15T06:04:00-04:00'
 tags:
-- linux
 - sysadmin-devops
 - windows
 - windows-and-linux
-description: Obtaining and/or creating Windows install media
-summary: Obtaining and/or creating Windows install media
+description: Obtaining and/or creating Windows install media for Windows 10 Pro
+summary: Obtaining and/or creating Windows install media for Windows 10 Pro
 ---
 
 * Get [Windows 10 Pro installation media](https://www.microsoft.com/en-ca/software-download/windows10) or a product key (if you don't already have one) and download.

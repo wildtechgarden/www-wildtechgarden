@@ -9,18 +9,18 @@ aliases:
     - /sysadmin-devops/self-host/linux-network-monitoring/
     - /docs/deploy-admin/sysadmin-devops/linux-network-monitoring/
 author: Daniel F. Dickinson
-date: '2021-03-08T09:21:22+00:00'
-publishDate: '2006-04-03T02:25:00+00:00'
-summary: Linux network monitoring presentation circa 2006
-description: Linux network monitoring presentation circa 2006
+date: 2021-03-08T09:21:22+00:00
+publishDate: 2006-04-03T02:25:00+00:00
+summary: Linux network monitoring presentation using munin and nagios circa 2006
+description: Linux network monitoring presentation using munin and nagios circa 2006
 tags:
 - archived
-- docs
 - linux
-- monitoring
 - self-host
 - sysadmin-devops
-title: "ARCHIVED: Linux network monitoring"
+title: "Linux network monitoring"
+card: true
+frontCard: true
 ---
 
 {{< details-toc >}}

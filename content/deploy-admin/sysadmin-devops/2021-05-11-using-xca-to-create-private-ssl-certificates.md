@@ -15,6 +15,7 @@ tags:
 summary: "This article details using the XCA GUI for creating private SSL certificates for enabling end-to-end SSL on non-public servers."
 description: "This article details using the XCA GUI for creating private SSL certificates for enabling end-to-end SSL on non-public servers."
 frontCard: true
+card: true
 ---
 
 {{< details-toc >}}

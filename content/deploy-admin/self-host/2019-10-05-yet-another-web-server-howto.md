@@ -8,16 +8,14 @@ aliases:
     - /docs/sysadmin-devops/self-host/yet-another-web-server-howto/
     - /sysadmin-devops/self-host/yet-another-web-server-howto/
     - /docs/deploy-admin/self-host/yet-another-web-server-howto/
-title: "ARCHIVED: Yet another web server HOWTO"
+title: "Yet another web server HOWTO"
 author: Daniel F. Dickinson
-date: '2019-10-05T18:20:00+00:00'
-publishDate: '2019-10-05T18:20:00+00:00'
+date: 2019-10-05T18:20:00+00:00
+publishDate: 2019-10-05T18:20:00+00:00
 summary: A guide to configuring a static web server using Lighttpd on CentOS 7
 description: A guide to configuring a static web server using Lighttpd on CentOS 7
 tags:
 - archived
-- centos
-- cloud
 - linux
 - self-host
 - sysadmin-devops

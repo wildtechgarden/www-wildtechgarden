@@ -7,25 +7,22 @@ title: "Pi Unbound: The gift of DoT"
 date: 2021-12-20T14:31:45-05:00
 publishDate: 2021-12-20T14:31:45-05:00
 tags:
-    - sbc
     - debian
-    - hosting
-    - infrastructure
     - linux
     - raspberry-pi
-    - router
     - self-host
-    - security
     - system-administration
 description: "Using Unbound DNS resolver on a Raspberry Pi to enable DNS over TLS and DNSSEC for all your systems (including Windows and IoT devices)"
 summary: "Keeping your DNS queries from your local network to public DNS servers private in transit by using DNS over TLS on a Raspberry Pi is ridiculously easy."
+card: true
+frontCard: true
 ---
 
 {{< details-toc >}}
 
 ## Overview
 
-Keeping your DNS queries from your local network to public DNS servers private while in transit by using DNS over TLS on a Raspberry Pi is ridiculously easy.
+Keeping your DNS queries from your local network to public DNS servers private while in transit by using DNS over TLS on a Raspberry Pi is ridiculously easy. (It's even easier with [OpenWrt on your router](https://openwrt.org/), but that's not the topic of this article).
 
 For bonus points this guide also shows how to use the same DNS server to provide you local network with hostnames to local IP addresses (local DNS), as well as how to successfully use this on your post-modern linux system that uses systemd resolved with DoT enabled.
 

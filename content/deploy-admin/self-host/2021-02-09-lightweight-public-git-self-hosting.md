@@ -10,18 +10,17 @@ aliases:
 - /sysadmin-devops/self-host/lightweight-public-git-self-hosting/
 - /docs/deploy-admin/self-host/lightweight-public-git-self-hosting/
 author: Daniel F. Dickinson
-date: '2021-02-09T23:32:46+00:00'
-publishDate: '2020-12-19T16:53:00+00:00'
+date: 2021-02-09T23:32:46+00:00
+publishDate: 2020-12-19T16:53:00+00:00
 summary: 'Public git self hosting can be desirable for a number of reasons. Here we discuss a very lightweight alternative.'
 description: 'Public git self hosting can be desirable for a number of reasons. Here we discuss a very lightweight alternative.'
 tags:
 - archived
 - git
-- gitea
 - linux
 - self-host
 - sysadmin-devops
-title: "ARCHIVED: Lightweight public Git self hosting"
+title: "Lightweight public Git self hosting"
 ---
 
 {{< details-toc >}}

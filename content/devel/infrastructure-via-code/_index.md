@@ -28,7 +28,6 @@ tags = [
 	"python"
 ]
 weight = 10000
-frontCard = true
 card = true
 showChildPages = false
 +++

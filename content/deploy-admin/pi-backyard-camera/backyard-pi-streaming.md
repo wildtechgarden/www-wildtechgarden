@@ -9,11 +9,9 @@ author: Daniel F. Dickinson
 date: 2021-09-22T17:03:00-04:00
 publishDate: 2021-09-22T17:03:00-04:00
 tags:
-    - hosting
     - linux
-    - presentations
     - raspberry-pi
-    - technology
+    - self-host
 description: Streaming from a Raspberry Pi as a backyard public camera
 summary: Streaming from a Raspberry Pi as a backyard public camera
 ---

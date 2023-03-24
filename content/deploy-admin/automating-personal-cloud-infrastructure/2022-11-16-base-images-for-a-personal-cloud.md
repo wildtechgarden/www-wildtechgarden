@@ -20,18 +20,15 @@ series = [
 ]
 tags = [
 	"automation",
-	"base-images",
-	"cloud",
-	"configuration",
 	"debian",
-	"docs",
+	"deploy",
 	"hosting",
-	"infrastructure",
 	"linux",
 	"self-host",
 	"sysadmin-devops",
 	"virtualization"
 ]
+weight = 10500
 +++
 
 {{< details-toc >}}

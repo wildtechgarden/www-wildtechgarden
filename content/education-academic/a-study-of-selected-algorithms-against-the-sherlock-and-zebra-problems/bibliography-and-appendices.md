@@ -6,16 +6,17 @@ aliases:
 title: "Bibliography and Appendices"
 author: Daniel F. Dickinson
 tags:
-- academic
 - archived
+- games
 - theory
 date: '2021-03-02T13:34:12+00:00'
 publishDate: '2003-02-09T10:25:00+00:00'
 description: "Bibliography and appendices for selected algorithms against the Zebra and Sherlock problems"
 summary: "Bibliography and appendices for selected algorithms against the Zebra and Sherlock problems"
-toc: true
 weight: 1400
 ---
+
+{{< details-toc >}}
 
 ## Bibliography
 

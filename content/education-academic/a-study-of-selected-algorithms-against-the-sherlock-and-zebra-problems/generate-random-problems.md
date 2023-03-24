@@ -6,8 +6,8 @@ aliases:
 title: "Generate random problems"
 author: Daniel F. Dickinson
 tags:
-- academic
 - archived
+- games
 - theory
 date: '2021-03-02T13:34:12+00:00'
 publishDate: '2003-02-09T10:25:00+00:00'
@@ -15,9 +15,10 @@ description: "This section outlines the algorithms used to generate the problems
 various solving algorithms were tested against."
 summary: "This section outlines the algorithms used to generate the problems the
 various solving algorithms were tested against."
-toc: true
 weight: 1200
 ---
+
+{{< details-toc >}}
 
 ## Preface
 

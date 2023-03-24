@@ -19,6 +19,7 @@ tags:
 - self-host
 - sysadmin-devops
 title: Reducing web server spam with Lighttpd
+card: true
 ---
 
 {{< details-toc >}}

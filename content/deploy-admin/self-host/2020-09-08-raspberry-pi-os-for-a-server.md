@@ -15,8 +15,8 @@ aliases:
 - /post/rpi-server/
 - /docs/deploy-admin/self-host/raspberry-pi-os-for-a-server/
 author: Daniel F. Dickinson
-date: '2020-09-08T04:26:00+00:00'
-publishDate: '2020-09-08T04:26:00+00:00'
+date: 2020-09-08T04:26:00+00:00
+publishDate: 2020-09-08T04:26:00+00:00
 tags:
 - linux
 - raspberry-pi

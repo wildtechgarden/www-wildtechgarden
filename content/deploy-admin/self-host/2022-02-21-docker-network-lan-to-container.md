@@ -6,14 +6,14 @@ aliases:
 title: "Docker network: LAN to container"
 date: 2022-02-21T11:48:46-05:00
 tags:
-    - containers
-    - hosting
     - linux
     - network
     - self-host
     - sysadmin-devops
-summary: "Normally when using Docker one only wants specific unicast ports forwarded, so the standard Docker paradigm of using NAT to forward ports to the container works. However, when using Docker to containerize internal services like Samba (which needs a combination of unicast and broadcast UDP), LLMNR (Windows multicast address resolution), or mDNS a.k.a Bonjour (Apple multicast address resolution) one may find that the standard Docker model is insufficient."
-description: "When using Docker with internal services like Samba, LLMNR, or mDNS/Bonjour, one may find that the standard model of using specific unicast ports forwards, is insufficient."
+summary: "When using Docker to containerize internal services like Samba, LLMNR, or mDNS a.k.a Bonjour one may find that the standard Docker model of using specific unicast ports forwards, is insufficient."
+description: "When using Docker with internal services like Samba, LLMNR, or mDNS/Bonjour, one may find the standard model of using specific ports forwards insufficient."
+card: true
+frontCard: true
 ---
 
 {{< details-toc >}}
