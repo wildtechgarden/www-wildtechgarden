@@ -1090,6 +1090,7 @@ vmail
 vmbus
 vncconnect
 warnf
+wcag
 webapps
 webbuildtools
 webcontrol

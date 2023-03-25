@@ -29,7 +29,7 @@ There are two files to edit. The first is ``/etc/motion/motion.conf``.
 
 ### Changes
 
-{{< details "Only changed lines in ``/etc/motion/motion.conf`` on Pi OS (buster-based)" >}}
+{{< details summary="Only changed lines in ``/etc/motion/motion.conf`` on Pi OS (buster-based)" >}}
 
 ```config
 # Adjust to suit your camera
@@ -97,7 +97,7 @@ webcontrol_port 0
 
 ### Reference
 
-{{< details "Default ``/etc/motion/motion.conf`` on Pi OS (buster-based)" >}}
+{{< details summary="Default ``/etc/motion/motion.conf`` on Pi OS (buster-based)" >}}
 
 ```config
 # Rename this distribution example file to motion.conf

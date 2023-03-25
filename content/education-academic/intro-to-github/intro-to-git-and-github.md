@@ -41,7 +41,7 @@ These pages are based on a presentation I created for a group of fellow Makers a
 
 #### Git is Everywhere
 
-{{< figure alt="Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)" src="/assets/images/github-use-by-country-1.png" >}}
+{{< img alt="Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)" src="/assets/images/github-use-by-country-1.png" >}}Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/
 
 #### Why Git is Used
 
@@ -85,8 +85,8 @@ Just got to <https://github.com> fill out the form, click ‘Sign Up’ and foll
 
 ### GitHub Provides Learning Materials
 
-{{< figure alt="screenshot of GitHub welcome screen after sign-up" caption="screenshot of GitHub welcome screen after sign-up" src="/assets/images/github-welcome-choices-1-1024x622.png" >}}
-{{< figure alt="screenshot of GitHub course choices if you go to 'GitHub Learning'" caption="screenshot of GitHub course choices if you go to 'GitHub Learning'" src="/assets/images/github-course-choices-1-1024x622.png" >}}
+{{< img alt="screenshot of GitHub welcome screen after sign-up" caption="screenshot of GitHub welcome screen after sign-up" src="/assets/images/github-welcome-choices-1-1024x622.png" >}}screenshot of GitHub welcome screen after sign-up
+{{< img alt="screenshot of GitHub course choices if you go to 'GitHub Learning'" caption="screenshot of GitHub course choices if you go to 'GitHub Learning'" src="/assets/images/github-course-choices-1-1024x622.png" >}}screenshot of GitHub course choices if you go to 'GitHub Learning'
 
 ## Demonstration
 

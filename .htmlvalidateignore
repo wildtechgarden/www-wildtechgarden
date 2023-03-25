@@ -1,6 +1,12 @@
 public/page/
 public/devel/page/
+public/devel/*/page/
 public/deploy-admin/page/
 public/education-academic/page/
 public/tags/page/
 public/tags/*/page/
+public/series/page/
+public/series/*/page/
+public/about/site-news/page/
+public/deploy-admin/**/page/
+public/deploy-admin/page/

@@ -1,6 +1,6 @@
 module gitlab.com/danielfdickinson/wildtechgarden
 
-go 1.19
+go 1.20
 
 require (
 	github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 // indirect

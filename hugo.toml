@@ -105,7 +105,9 @@ redirectsDomains = [
 	"http://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
 	"https://wildtechgarden.ca/* https://www.wildtechgarden.ca/:splat 301!",
 	"http://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
-	"https://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!"
+	"https://wildtechgarden.com/* https://www.wildtechgarden.ca/:splat 301!",
+	"http://wildtechgarden.netlify.app/* https://www.wildtechgarden.ca/:splat 301!",
+	"https://wildtechgarden.netlify.app/* https://www.wildtechgarden.ca/:splat 301!"
 ]
 redirectsExtra = [
 	"/feed/ /index.xml 301",

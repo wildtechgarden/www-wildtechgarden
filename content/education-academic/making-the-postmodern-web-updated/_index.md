@@ -104,7 +104,7 @@ physical making, and the digital world (like today's topic).
 * Taste
 * Expectations
 
-## Technology {#technology}
+## Technology to know
 
 ### The web is polyglot {#the-web-is-polyglot}
 
@@ -219,7 +219,7 @@ nastiness, but requires your hosting supporting it.
 Authentication are a must (seriously).
 * **Keep your hosting up to date!**
 
-## Who is doing the work {#who-is-doing-the-work}
+## Who is doing what work
 
 ### Team vs. individual {#team-vs.-individual}
 
