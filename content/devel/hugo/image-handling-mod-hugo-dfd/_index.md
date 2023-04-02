@@ -1,5 +1,6 @@
 +++
 title = "DFD Image handling module for Hugo"
+slug = "image-handling-mod-hugo-dfd"
 author = "Daniel F. Dickinson"
 description = """\
 A community-maintained module for Hugo for creating and using responsive images.\
@@ -13,6 +14,12 @@ tags = [
     "devel",
     "web-design"
 ]
+showChildPages = false
+pageCanonical = false
+toCanonical = "https://image-handling-mod.demo.wildtechgarden.com/post/readme"
+
+[[cascade]]
+pageCanonical = false
 +++
 
 {{< page-assets "README-image-handling.md" >}}

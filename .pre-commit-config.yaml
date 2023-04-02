@@ -112,7 +112,7 @@ repos:
     alias: ec
     args:
     - -no-color
-    exclude: ^(LICENSE|static/|assets/assets/files/)
+    exclude: ^(LICENSE|static/|assets/assets/files/|\.gitlab-ci\.yml\.disabled$)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
   rev: v6.28.0
@@ -126,6 +126,6 @@ repos:
     - --show-context
     - --show-suggestions
     - --validate-directives
-    exclude: ^(LICENSE|cspell.json$|assets/.*|hugo.toml$|tests/scripts/.*|assets/sass/_extra.scss$|static/|.*\.svg$|.*/2008-11-30-debian-custom-media\.md$|\.gitlab-ci\.yml$) # yamllint disable-line
+    exclude: ^(LICENSE|cspell.json$|assets/.*|hugo.toml$|tests/scripts/.*|assets/sass/_extra.scss$|static/|.*\.svg$|.*/2008-11-30-debian-custom-media\.md$|\.gitlab-ci\.yml\.disabled$) # yamllint disable-line
 # yamllint enable rule:key-ordering
 ...
