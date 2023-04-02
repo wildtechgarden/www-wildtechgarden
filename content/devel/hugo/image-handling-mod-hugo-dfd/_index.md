@@ -20,6 +20,25 @@ toCanonical = "https://image-handling-mod.demo.wildtechgarden.com/post/readme"
 
 [[cascade]]
 pageCanonical = false
+omitFromList = true
+
+[[cascade]]
+title = "Acknowledgements"
+[cascade._target]
+kind = "page"
+path = "/devel/hugo/image-handling-mod-hugo-dfd/ACKNOWLEDGEMENTS.md"
+
+[[cascade]]
+title = "README notes"
+[cascade._target]
+kind = "page"
+path = "/devel/hugo/image-handling-mod-hugo-dfd/README-NOTES.md"
+
+[[cascade]]
+title = "README (Image handling module)"
+[cascade._target]
+kind = "page"
+path = "/devel/hugo/image-handling-mod-hugo-dfd/README.md"
 +++
 
 {{< page-assets "README-image-handling.md" >}}
