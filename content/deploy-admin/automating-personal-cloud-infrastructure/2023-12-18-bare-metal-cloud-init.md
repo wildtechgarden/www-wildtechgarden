@@ -144,7 +144,7 @@ Welcome to SystemRescue 9.05!
 [...]
 Starting D-Bus System Message Bus...
 Starting SSH Key Generation...
-Starting SystemRescue Init&hellip;lization, before networking...
+Starting SystemRescue Initialization, before networking...
 Starting User Login Management...
 [  OK  ] Started D-Bus System Message Bus.
 [  OK  ] Started User Login Management.
@@ -174,7 +174,7 @@ sysrescue login: root (automatic login)
 
 [root@sysrescue ~]# lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME   SIZE FSTYPE LABEL     UUID              MOUNTPOINT
-loop0  656.6M squash                          /run/archi
+loop0  656.6M squash                          /run/xxxx
 sda    931.5G
 ├─sda1 930.5G ext4           e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2 953M vfat   CIDATA    0E6B-8C93
@@ -196,7 +196,7 @@ sr0    1024M
 [root@sysrescue ~]# eject /dev/sdh
 [root@sysrescue ~]# lsblk -oeNAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME   SIZE FSTYPE LABEL     UUID              MOUNTPOINT
-loop0  656.6M squash                          /run/archi
+loop0  656.6M squash                          /run/xxxx
 sda    931.5G
 ├─sda1 930.5G ext4           e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2 953M vfat   CIDATA    0E6B-8C93
@@ -213,7 +213,7 @@ sdg    0B
 sr0    1024M
 [root@sysrescue ~]# lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME   SIZE FSTYPE LABEL     UUID              MOUNTPOINT
-loop0  656.6M squash                          /run/archi
+loop0  656.6M squash                          /run/xxxx
 sda    931.5G
 ├─sda1 930.5G ext4           e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2 953M vfat   CIDATA    0E6B-8C93
@@ -305,7 +305,7 @@ tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=3180068k,nr_inode
 tar -O -xvJf debian-11-generic-amd64-20230124-1270.tar.xz disk.raw | dd of=/dev/mkdirs/media
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME    SIZE    FSTYPE  LABEL         UUID             MOUNTPOINT
-loop0    656.6M squashfs                              /run/archis
+loop0    656.6M squashfs                              /run/archiso
 sda      931.5G
 ├─sda1     1.9G ext4                    e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2     953M vfat    CIDATA        9B59-C16F

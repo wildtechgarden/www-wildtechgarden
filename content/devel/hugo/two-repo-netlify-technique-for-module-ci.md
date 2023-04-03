@@ -2,11 +2,11 @@
 title = "Two-repo Netlify technique for module CI"
 author = "Daniel F. Dickinson"
 description = """\
-Having a demo/test site embedded in a Hugo module causes large bandwith \
+Having a demo/test site embedded in a Hugo module causes large bandwidth \
 consumption when the module is pulled by git during its normal use as a module.\
 """
 summary = """\
-Having a demo/test site embedded in a Hugo module causes large bandwith consumption \
+Having a demo/test site embedded in a Hugo module causes large bandwidth consumption \
 during its normal use as a module. We split the site and module into separate git \
 repos, but keep a deploy as part of the CI process.\
 """

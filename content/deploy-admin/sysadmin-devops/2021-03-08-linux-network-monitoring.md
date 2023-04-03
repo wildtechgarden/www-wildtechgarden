@@ -454,7 +454,7 @@ define command{
   command_name check_ifstatus_router
   command_line /usr/lib/nagios/plugins/check_ifstatus -H $HOSTADDRESS$
 -x $ARG1$
-} ; $HOSTADDRES$ is always a single ip address, derived from
+} ; $HOSTADDRESS$ is always a single ip address, derived from
 ; the service definition and hostgroup.cfg and host.cfg files
 ```
 

@@ -18,7 +18,6 @@ Backjumping
 Backmarking
 Backports
 Beek
-Behaviour
 Binutils
 Byobu
 CASL
@@ -27,7 +26,6 @@ CERTBOT
 CIDATA
 CIRA
 CIRA's
-CIRA\'s
 COPR
 COPYLINK
 CWQOU
@@ -44,6 +42,7 @@ DEFAULTGW
 DEFBINSIZE
 DEFROUTE
 DEFSRCSIZE
+DEPLOYEDBASEURL
 DESTDIR
 DMARC
 DNSSEC
@@ -81,7 +80,7 @@ Gitea's
 Gitolite
 Gitweb
 Grzegorz
-HOSTADDRES
+HEREDOCS
 HOSTADDRESS
 HOWTO
 HSTS
@@ -135,7 +134,6 @@ MMAL
 MOUNTPOINT
 MPLMP
 Maildir
-Maildir's
 Maildirs
 Mancala
 Mbps
@@ -170,13 +168,12 @@ Pandoc
 Pinouts
 Pixabay
 Prefrences
-Prequisite
-Prequisites
 Preseed
 Preseeding
 Prosser
 Pubkey
 Puser
+RESOURCEDIR
 RTSP
 Radeon
 Rclone
@@ -200,6 +197,7 @@ SUIDSGID
 Sabbata
 Scaleway’s
 Scribus
+Selinger
 Spamass
 Stefano
 Subfolders
@@ -210,7 +208,6 @@ TDEWOLFF
 TDIR
 TIMETRACKING
 TOPDIR
-Targetted
 Terraforming
 Thonny
 Timelapse
@@ -220,7 +217,6 @@ Trusteer
 Tunables
 UDEB
 UEFI
-UNEXCLUD
 UNEXCLUDE
 USERCTL
 USERPROFILE
@@ -266,8 +262,6 @@ altssh
 anadmin
 anoncvs
 aptcache
-archi
-archis
 archiso
 archs
 arlt
@@ -275,6 +269,7 @@ armbootfiles
 armel
 armhf
 armmp
+armshorian
 arpa
 asmon
 attrlink
@@ -287,6 +282,7 @@ autoconfig
 autocopy
 autocrlf
 autoescape
+autofix
 autoindex
 autoinstall
 autolaunch
@@ -303,16 +299,13 @@ backlinks
 backmarking
 backports
 backscatter
-bain
 bantime
 basetgz
 bcfg
 bcmath
 bcsp
 bcspes
-bcsp’s
 bcssp
-behaviour
 bframes
 bindmounts
 binfmt
@@ -332,6 +325,7 @@ bootserver
 borgbackup
 botsearch
 browseable
+browserconfig
 brycewray
 bufsize
 buildplace
@@ -358,8 +352,6 @@ chgrp
 chipsets
 choco
 chocolateygui
-chromosone
-chromosones
 chrony
 chrp
 chsh
@@ -395,6 +387,7 @@ crypted
 cryptsetup
 cshore
 cshored
+csslint
 ctstate
 cust
 customcd
@@ -405,6 +398,7 @@ dananke
 danieldickinson
 danielfdickinson
 datasource
+dateformat
 datepattern
 davidsneighbour
 dbname
@@ -417,6 +411,7 @@ debpartial
 deluser
 demuxer
 denoise
+deployedbaseurl
 depmod
 desolder
 despeckle
@@ -441,6 +436,7 @@ dlcicl
 dmask
 dnsmasq
 dnsutils
+docbook
 doci
 dockapp
 dockapps
@@ -479,7 +475,6 @@ execdir
 exhost
 exif
 exim
-explicitely
 extpipe
 extrapackages
 extrav
@@ -490,12 +485,10 @@ fanless
 fastcgi
 fatload
 favicons
-favourite
 featherpad
 feedbackclient
 feedlinks
 filemode
-filessystem
 filesystems
 findtime
 fionavar
@@ -514,6 +507,7 @@ frontmatter
 ftparchive
 fullchain
 fullname
+fusebar
 gapless
 gawa
 gecos
@@ -527,6 +521,8 @@ gitea
 giteadb
 giteadmin
 githistory
+gitleaks
+gitlint
 gitolite
 gitweb
 glanceclient
@@ -556,6 +552,7 @@ hostnames
 hostssl
 hotplug
 howto
+howtos
 htdigest
 hyperv
 iexclude
@@ -599,7 +596,6 @@ keydir
 keyint
 keymap
 keypair
-keypair's
 keypairs
 keyserver
 keysubdirs
@@ -608,6 +604,7 @@ kver
 lastmod
 lastsnap
 lavf
+lessdark
 letsencrypt
 libbfb
 libc
@@ -631,8 +628,8 @@ libx
 libxenstore
 lightswitch
 lighttpd
+linebreak
 linenos
-lization
 lmtpd
 localdomain
 localechooser
@@ -664,6 +661,7 @@ manageddesktopbuildtools
 managesieved
 maplist
 markdownify
+markdownlint
 maxdepth
 maxfile
 maxload
@@ -686,12 +684,12 @@ microformat
 microformats
 microusername
 milters
+mimetypeapplication
 mindepth
 minifier
 miny
 mirrorcheck
 mirrorhost
-misbehaviour
 misccommands
 mjpeg
 mjpg
@@ -713,9 +711,12 @@ motory
 mounterr
 mountpoint
 mountpoints
+msapplication
 msdos
 msftdata
 msmpeg
+msmtp
+mstile
 mtdblock
 mtddev
 multiarch
@@ -739,6 +740,7 @@ nandrw
 nandwrite
 nativecrossplat
 nativedesktop
+nearblack
 netboot
 netcam
 netcfg
@@ -798,6 +800,7 @@ onedrive
 oneshot
 opendkim
 opendmarc
+opendocument
 openembedded
 openscad
 openstacksdk
@@ -851,7 +854,9 @@ pooldir
 poolpref
 poolprefix
 popd
+popupmenu
 postmap
+potrace
 poweredby
 poweroff
 practise
@@ -859,15 +864,14 @@ preconfiguration
 preconfigured
 premount
 prequeue
-prequisites
 preseed
 preseeded
 preseeding
 princesandmadmen
 privkey
 privoxy
-procede
 procs
+progressbar
 projectgus
 projectroot
 proto
@@ -875,7 +879,6 @@ proxied
 pseudocode
 psmisc
 psql
-pubish
 pubkey
 pubkeys
 pushd
@@ -904,7 +907,7 @@ realheight
 realwidth
 recidive
 recombinator
-redacedn
+redactedn
 redbox
 redcross
 redirecto
@@ -955,6 +958,7 @@ setsebool
 shellcheck
 shortcode
 shosts
+showchildpages
 shrc
 siteentry
 sitefooter
@@ -988,6 +992,7 @@ statd
 stepsize
 storvsc
 strerror
+stylelint
 subdir
 subdirs
 submissiond
@@ -1029,7 +1034,10 @@ timelapse
 timeperiods
 tmpfs
 toolchains
+toolpanel
 touchpad
+trueblack
+truewhite
 tunerdevice
 ubiattach
 ubiformat
@@ -1062,7 +1070,6 @@ usersitemap
 userspace
 uvcvideo
 uvideo
-varible
 vcard
 vcodec
 vcredist
@@ -1131,4 +1138,3 @@ yourworkstation
 yousarge
 yumdownloader
 zoneinfo
-{iser

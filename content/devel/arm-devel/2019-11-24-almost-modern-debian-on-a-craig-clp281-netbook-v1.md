@@ -439,7 +439,7 @@ modify the script appropriately.
 3. Remove SD Card from you computer and place it in the CLP281 SD card
 slot.
 4. Boot the CLP281 with Devuan Jessie for the first time.
-5. If you are using the prebuilt root filessystem then the root
+5. If you are using the prebuilt root filesystem then the root
 password is password. **CHANGE THE PASSWORD ASAP**.
 6. Configure Debian with a desktop and desired software, etc.
 7. Enjoy!

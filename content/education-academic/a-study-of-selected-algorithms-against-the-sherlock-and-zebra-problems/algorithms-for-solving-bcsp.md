@@ -292,7 +292,7 @@ uses double crossover and is called DoubleX.
 * *Death* In a genetic algorithm death occurs when the individual is removed from the population (e.g. in a fixed size array with the least fit on the bottom, children replace the least fit individual which can be said to have died).
 * *calculate-distance-from-consistent* This is the heuristic used to calculate fitness in the genetic algorithms discussed in this paper. When a solution violates a constraint, the number of columns one of the variables would have to move to be consistent is calculated (e.g. if there is a constraint that says the coffee is next to the zebra, but the coffee is in the same column as the zebra a distance of one is calculated).
 * *fitness* An attempt measure of how close the solution is to a solution. In the following algorithms a higher number for fitness is worse and a lower value is better.
-* *chromosone* For this paper chromosone is an array of size n whose contents correspond to the value of the variables in the constraint problem to be solved.
+* *chromosome* For this paper chromosome is an array of size n whose contents correspond to the value of the variables in the constraint problem to be solved.
 
 ### Mutate
 
@@ -392,7 +392,7 @@ The pseudocode for the algorithm is outlined below.
   6		DO BEGIN
   7			IF (random number between 0 and 1 < mutation-probability)
   8			THEN BEGIN
-  9				child.chromosone[j] = random number between 1 and max-domain
+  9				child.chromosome[j] = random number between 1 and max-domain
  10			END IF
  11		END FOR
  12		population[max-population - num-children + i] = child
@@ -435,20 +435,20 @@ only getting out after an unlikely mutation.
   4		k = random number between 1 and n
   5		FOR j = 1 to k
   6		DO BEGIN
-  7			child1.chromosone[j] = parents[i].chromosone[j]
-  8			child2.chromosone[j] = parents[i + 1].chromosone[j]
+  7			child1.chromosome[j] = parents[i].chromosome[j]
+  8			child2.chromosome[j] = parents[i + 1].chromosome[j]
   9		END FOR
  10		FOR j = k to n
  11		DO BEGIN
- 12			child1.chromosone[j] = parents[i + 1].chromosone[j]
- 13			child2.chromosone[j] = parents[i].chromosone[j]
+ 12			child1.chromosome[j] = parents[i + 1].chromosome[j]
+ 13			child2.chromosome[j] = parents[i].chromosome[j]
  14		END FOR
  15		FOR j = 1 TO n
  16		DO BEGIN
  17			IF (random number between 0 and 1 < mutation-probability)
  18			THEN BEGIN
- 19				child1.chromosone[j] = random number between 1 and max-domain
- 20				child2.chromosone[j] = random number between 1 and max-domain
+ 19				child1.chromosome[j] = random number between 1 and max-domain
+ 20				child2.chromosome[j] = random number between 1 and max-domain
  21			END IF
  22		END FOR
  23		population[max-population - num-children + i] = child1;
@@ -477,25 +477,25 @@ required to test this question it has not been answered for this paper.
  4.1		l = random number between k + 1 and n
    5		FOR j = 1 to k
    6		DO BEGIN
-   7			child1 = parents[i].chromosone[j]
-   8			child2 = parents[i + 1].chromosone[j]
+   7			child1 = parents[i].chromosome[j]
+   8			child2 = parents[i + 1].chromosome[j]
    9		END FOR
  9.1		FOR j = k to l
  9.2		DO BEGIN
- 9.3			child1 = parents[i + 1].chromosone[j]
- 9.4			child2 = parents[i].chromosone[j]
+ 9.3			child1 = parents[i + 1].chromosome[j]
+ 9.4			child2 = parents[i].chromosome[j]
  9.5		END FOR
   10		FOR j = l to n
   11		DO BEGIN
-  12			child1 = parents[i + 1].chromosone[j]
-  13			child2 = parents[i].chromosone[j]
+  12			child1 = parents[i + 1].chromosome[j]
+  13			child2 = parents[i].chromosome[j]
   14		END FOR
   15		FOR j = 1 TO n
   16		DO BEGIN
   17			IF (random number between 0 and 1 < mutation-probability)
   18			THEN BEGIN
-  19				child1.chromosone[j] = random number between 1 and max-domain
-  20				child2.chromosone[j] = random number between 1 and max-domain
+  19				child1.chromosome[j] = random number between 1 and max-domain
+  20				child2.chromosome[j] = random number between 1 and max-domain
   21			END IF
   22		END FOR
   23		population[max-population - num-children + i] = child1;

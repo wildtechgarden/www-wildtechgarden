@@ -2,7 +2,7 @@
 slug: completing-bare-bones-openstacksdk
 title: "IvC: Bare bones script"
 date: 2021-06-07T11:30:33-04:00
-pubishDate: 2021-06-08T15:47:23-04:00
+publishDate: 2021-06-08T15:47:23-04:00
 author: Daniel F. Dickinson
 weight: 10500
 aliases:

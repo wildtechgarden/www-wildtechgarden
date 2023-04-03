@@ -116,7 +116,7 @@ write_files:
 
 ### The Script
 
-Note the use of ``StrictUndefined`` so that any variable in the in the template for which a value is not defined in the configuration file results in an ``UndefinedError`` exception. We do this because forgetting to define a variable is a very easy mistake to make.  With this, if you want to allow a varible to have no value, you will need to explicitly handle that in your templates.
+Note the use of ``StrictUndefined`` so that any variable in the in the template for which a value is not defined in the configuration file results in an ``UndefinedError`` exception. We do this because forgetting to define a variable is a very easy mistake to make.  With this, if you want to allow a variable to have no value, you will need to explicitly handle that in your templates.
 
 ``generate-userdata.py``
 

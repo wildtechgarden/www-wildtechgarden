@@ -110,7 +110,7 @@ problems) was developed.
 
 The genetic algorithm development proved easier although a genetic
 algorithm which bested BM-CBJ2 was not found in producing this paper (a
-possible route to take for this is to make the chromosones more complex,
+possible route to take for this is to make the chromosomes more complex,
 rather than simply being the solution to the bcsp). BM-CBJ2 proved to be
 the best complete (i.e. works for all problems) algorithm as AC-3 cannot
 always find a solution, but for strongly k-consistent problems AC-3 was

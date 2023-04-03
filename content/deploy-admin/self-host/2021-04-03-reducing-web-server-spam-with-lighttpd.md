@@ -93,7 +93,7 @@ $HTTP["useragent"] =~ "perl|\{|\}|\/var\/|\/tmp\/|\/etc\/|China.Z|ZmEu|Zollard|g
 $HTTP["useragent"] =~ "redacted1|redacted2" { url.access-deny = ( "" ) accesslog.filename = "/var/log/lighttpd/spam.log"}
 
 # Block URLs that are certainly attempts at malicious behaviour
-$HTTP["url"] =~ "^/(redacted1|redacted2|...|redacedn)" { url.access-deny = ("") accesslog.filename = "/var/log/lighttpd/spam.log" }
+$HTTP["url"] =~ "^/(redacted1|redacted2|...|redactedn)" { url.access-deny = ("") accesslog.filename = "/var/log/lighttpd/spam.log" }
 
 # Queries that are likely malicious
 $HTTP["querystring"] =~ "(XDEBUG_SESSION_START|HelloThinkCMF)" { url.access-deny = ("") accesslog.filename = "/var/log/lighttpd/spam.log" }

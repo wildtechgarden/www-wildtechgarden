@@ -324,7 +324,7 @@ Since the author has decided to use Ubuntu Server 20.04 this is quite easy.
       // The following matches all packages starting with linux-
   //  "linux-";
 
-      // Use $ to explicitely define the end of a package name. Without
+      // Use $ to explicitly define the end of a package name. Without
       // the $, "libc6" would match all of them.
   //  "libc6$";
   //  "libc6-dev$";

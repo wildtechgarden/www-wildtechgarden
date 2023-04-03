@@ -27,10 +27,10 @@ summary: Create a non-EFI (old school) ARM Hard Float virtual machine image and 
 
 ## Setup the Packer Environment
 
-### Prequisites
+### Prerequisites
 
 1. The packer executable found in the download for your system at <https://www.packer.io> (Download button) needs to be in a directory that is in your PATH.
-2. Packer’s prequisites including QEMU in your PATH.
+2. Packer’s prerequisites including QEMU in your PATH.
 3. A directory for your packer files.
 4. In the packer file directory, a subdirectory named preseed-dir.
 

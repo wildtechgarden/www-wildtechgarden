@@ -46,7 +46,7 @@ The Hyper-V images do not work with local / on-premises (Windows 10 / Windows Se
 
 ## An (mostly) automated solution
 
-### Prequisite
+### Prerequisites for automation
 
 The solution described here assumes you already have and know how to use [Packer](https://www.packer.io/).
 
@@ -76,7 +76,7 @@ Note that qemu-img for Windows currently has a [known issue with vhdx files](htt
 
 In the directory on which you plan on working place the files below and open a Powershell console.
 
-#### Prerequisite
+#### Prerequisites for using Packer
 
 * First place the generic image in a known location such as ``C:\Users\Public\Documents``.
 * Hyper-V must be configured with an **external** network switch available.
@@ -229,7 +229,7 @@ will forcibly halt the virtual machine, which may result in data loss.
   (source code not available)
 ```
 
-If that is the only error message you may procede to the building the 'local Hyper-V ready' image.
+If that is the only error message you may proceed to the building the 'local Hyper-V ready' image.
 
 ### Build the 'local Hyper-V ready' image
 
