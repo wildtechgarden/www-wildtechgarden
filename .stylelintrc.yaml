@@ -83,7 +83,7 @@ rules:
     - "^[a-z0-9\\-]+$"
     - message: Selector should be written in lowercase with hyphens (selector-class-pattern) # yamllint disable-line
   selector-list-comma-newline-after: always
-  selector-max-compound-selectors: 5
+  selector-max-compound-selectors: 6
   selector-max-id: 0
   # selector-no-qualifying-type: true
   selector-no-vendor-prefix: true
