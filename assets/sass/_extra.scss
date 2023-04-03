@@ -9,10 +9,6 @@
       padding: initial;
       padding-inline-start: 40px;
 
-      &:first-child {
-        padding: 0;
-      }
-
       & > li {
         display: list-item;
         list-style-position: inside;
@@ -34,10 +30,6 @@
     margin-inline-end: 0;
     padding: initial;
     padding-inline-start: 40px;
-
-    &:first-of-type {
-      padding: 0;
-    }
 
     ol {
       display: block;
