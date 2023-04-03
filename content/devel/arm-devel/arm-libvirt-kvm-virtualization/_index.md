@@ -31,7 +31,6 @@ tags:
     - linux
     - sysadmin-devops
     - virtualization
-frontCard: true
 card: true
 weight: 6000
 showChildPages: false
