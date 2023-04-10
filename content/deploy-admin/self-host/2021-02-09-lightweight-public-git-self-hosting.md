@@ -566,10 +566,7 @@ automate the process.
 * [OVH’s Guide for SSH Key Generation](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-1-creating-ssh-keys)
 * [Scaleway’s Guide for SSH Key Generation](https://www.scaleway.com/en/docs/console/my-project/how-to/create-ssh-key)
 * [GitHub’s Guide for SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-* ~~[Oracle’s Guide for SSH]\(``https://docs.oracle.com/en/cloud/paas/database-dbaas-cloud/csdbi/generate-ssh-key-pair.html#GUID-4285B8CF-A228-4B89-9552-FE6446B5A673``)~~
 * [Gitolite Official Website](https://gitolite.com/gitolite/)
 * [Gitweb Configuration - gitweb.conf – Official](https://git-scm.com/docs/gitweb.conf)
 * [Gitweb Configuration - gitweb – Official](https://git-scm.com/docs/gitweb)
 * [Git HTTP backend configuration – Official](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-http-backend.html)
-* ~~[Setup Git, Gitweb with git-http-backend]\(``https://www.tiktalk.com/posts/2013/05/03/setup-git-gitweb-with-git-http-backend-smart-http-on-ubuntu-12-04/``)~~
-* [git, gitweb, and per-user repos](https://www.isi.edu/~calvin/gitweb.htm)
