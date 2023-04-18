@@ -1,5 +1,16 @@
 #!/bin/bash
 
+set -e
+set -o pipefail
+
+pip install pre-commit
+
+pre-commit install --install-hooks
+pre-commit run --all-files
+
+bash ./tests/scripts/hugo-audit.sh
+rm -rf public exampleSite/public
+
 if [ "$CONTEXT" = "production" ]; then
 	export HUGO_PARAMS_DEPLOYEDBASEURL="$URL"
 else
