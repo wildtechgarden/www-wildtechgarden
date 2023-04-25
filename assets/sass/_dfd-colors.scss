@@ -1,0 +1,126 @@
+// stylelint-disable color-no-hex, color-named, value-list-max-empty-lines
+// stylelint-disable scss/dollar-variable-colon-space-after, scss/dollar-variable-empty-line-before
+
+// Base colors.
+$black:                 #000;
+$nearblack:             lighten($black, 2%); // off-black
+$grey-darker:           lighten($black, 20%); // #333
+$grey-dark:             lighten($black, 30%);
+$grey-lessdark:         lighten($black, 40%);
+$grey-medium:           lighten($black, 50%);
+$grey:                  lighten($black, 60%); // #999
+$grey-light:            lighten($black, 80%); // #ccc
+$grey-extra-light:      lighten($black, 93.33%); // #eee
+$nearwhite:             lighten($black, 97%); // #f7f7f7
+$white:                 #fff;
+
+$blue:                  #0072b9;
+$red:                   #c00;
+$green:                 #43a808;
+$yellow:                #fd0;
+
+$green-nearblack:        darken($green, 30%);
+$green-darker:           darken($green, 25%);
+$green-dark:             darken($green, 15%);
+$green-lessdark:         darken($green, 10%);
+$green-medium:           lighten($green, 40%);
+$green-light:            lighten($green, 52%);
+$green-extra-light:      lighten($green, 61%);
+
+$blue-nearblack:        darken($blue, 25%);
+$blue-darker:           darken($blue, 20%);
+$blue-dark:             darken($blue, 15%);
+$blue-lessdark:         darken($blue, 10%);
+$blue-medium:           lighten($blue, 40%);
+$blue-light:            lighten($blue, 55%);
+$blue-extra-light:      lighten($blue, 70%);
+
+$brand-darker:          $green-nearblack;
+$brand-dark:            $green-darker;
+$brand:                 $green-dark;
+$brand-alt:             $green-lessdark;
+$brand-medium:          $green-medium;
+$brand-light:           $green-light;
+$brand-extra-light:     $green-extra-light;
+
+// Colour map.
+$colors: (
+  brand-darker:           $brand-darker,
+  brand-dark:             $brand-dark,
+  brand:                  $brand,
+  brand-alt:              $brand-alt,
+  brand-medium:           $brand-medium,
+  brand-light:            $brand-light,
+  brand-extra-light:      $brand-extra-light,
+
+  text:                   $black,
+  text-bg:                $green-extra-light,
+  text-meta:              $green-nearblack,
+
+  link:                   $green-darker,
+  link-visited:           $green-darker,
+  link-hover:             $black,
+  link-active:            $green-extra-light,
+
+  link-inverted:          $nearwhite,
+  link-visited-inverted:  $nearwhite,
+  link-hover-inverted:    $nearwhite,
+  link-active-inverted:   $green-lessdark,
+
+  border:                 $brand,
+  border-light:           $brand-light,
+  border-dark:            $brand-dark,
+
+  autocomplete:           $black,
+  autocomplete-bg:        $nearwhite,
+  autocomplete-select:    $nearwhite,
+  autocomplete-select-bg: $green,
+
+  body-bg:                $green-extra-light,
+  header-bg:              $brand,
+  footer-bg:              $brand,
+  backdrop:               $green-light,
+
+  footer-text:            $green-light,
+  header-text:            $green-light,
+
+  mobile-menu:            $green-darker,
+  mobile-menu-cover:      rgba($black, .2),
+
+  button:                 $brand,
+  button-hover:           $green-darker,
+  button-text:            $nearwhite,
+  button-text-hover:      $nearwhite,
+  button-disabled:        $grey,
+
+  form-error:             $red,
+
+  mark-highlight:         $red,
+  mark-bg:                $yellow,
+
+  menu-active:            $black,
+
+  preview-bg:             lighten($yellow, 43%),
+
+  row-header:             transparent,
+  row-odd:                $nearwhite,
+  row-even:               transparent,
+
+  status:                 $blue,
+  status-bg:              lighten($blue, 62%),
+  status-highlight:       $green-nearblack,
+  warning:                $green-nearblack,
+  warning-bg:             lighten($yellow, 45%),
+  warning-border:         $yellow,
+  error:                  $red,
+  error-bg:               lighten($red, 57%),
+
+  watermark:              $green-extra-light,
+
+  headings:               $green-nearblack,
+
+  code:                   $nearblack,
+  code-bg:                $nearwhite,
+
+  highlight:              $brand-alt,
+);

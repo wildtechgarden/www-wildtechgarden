@@ -741,6 +741,7 @@ nandwrite
 nativecrossplat
 nativedesktop
 nearblack
+nearwhite
 netboot
 netcam
 netcfg

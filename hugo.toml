@@ -23,6 +23,9 @@ lastmod = [":git", "lastmod", ":fileModTime", "date", "publishDate"]
 
 [markup]
 [markup.goldmark]
+[markup.goldmark.parser]
+[markup.goldmark.parser.attribute]
+block = true
 [markup.goldmark.renderer]
 unsafe = false
 
@@ -66,6 +69,17 @@ taxonomy = ["HTML", "RSS", "JSON"]
 term = ["HTML", "RSS", "JSON"]
 
 [params]
+blogSection = [
+	""
+]
+breadcrumbSections = [
+	"about",
+	"deploy-admin",
+	"devel",
+	"education-academic",
+	"series",
+	"tags"
+]
 contact = "dfdpublic@wildtechgarden.ca"
 copyright = """\
 	This site is licensed under a \
@@ -222,6 +236,7 @@ sassTranspiler = "libsass" # The Sass transpiler to use, default "libsass".
 searchAllPages = true
 sidebar = true # Show a sidebar to the right, default false.
 submitted = true # Show author and date information for a post.
+tables = true
 themeColor = "#acdcec" # Hex color value, used in meta tags, default "#ffffff".
 # useBaseURL = false
 

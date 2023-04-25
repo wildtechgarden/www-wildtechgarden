@@ -30,13 +30,15 @@ description: "Various definitions for selected algorithms against the Zebra and 
   * V{{< sub >}}16{{< /sub >}} - V{{< sub >}}20{{< /sub >}} correspond to five pets: Zebra, Dog, Horse, Fox, and Snails, respectively.
   * V{{< sub >}}21{{< /sub >}} - V{{< sub >}}25{{< /sub >}} correspond to five drinks: Coffee, Tea, Water, Milk, Orange Juice, respectively. This can be represented in a tabular format as follows:
 
-|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | R   | B   | Y   | G   | I   |     | R   | B   | Y   | G   | I   |     | R   | B   | Y   | G   | I   |     | R   | B   | Y   | G   | I   |     | R   | B   | Y   | G   | I   |
 | O   | P   | K   | L   | C   |     | O   | P   | K   | L   | C   |     | O   | P   | K   | L   | C   |     | O   | P   | K   | L   | C   |     | O   | P   | K   | L   | C   |
 | N   | U   | E   | S   | J   |     | N   | U   | E   | S   | J   |     | N   | U   | E   | S   | J   |     | N   | U   | E   | S   | J   |     | N   | U   | E   | S   | J   |
 | Z   | D   | H   | F   | S   |     | Z   | D   | H   | F   | S   |     | Z   | D   | H   | F   | S   |     | Z   | D   | H   | F   | S   |     | Z   | D   | H   | F   | S   |
 | C   | T   | W   | M   | O   |     | C   | T   | W   | M   | O   |     | C   | T   | W   | M   | O   |     | C   | T   | W   | M   | O   |     | C   | T   | W   | M   | O   |
+{.no-responsive-table, .no-zebra-table}
+
 > **Zebra Table**
 
 All instances of the Zebra have the following constraints:
@@ -79,6 +81,8 @@ For the purposes of the paper, the query is, “Who lives in which house, smokes
 | P   | O   | A   | B   | C   | S   |     | P   | O   | A   | B   | C   | S   |     | P   | O   | A   | B   | C   | S   |     | P   | O   | A   | B   | C   | S   |     | P   | O   | A   | B   | C   | S   |     | P   | O   | A   | B   | C   | S   |
 | St  | H   | Sl  | O   | R   | D   |     | St  | H   | Sl  | O   | R   | D   |     | St  | H   | Sl  | O   | R   | D   |     | St  | H   | Sl  | O   | R   | D   |     | St  | H   | Sl  | O   | R   | D   |     | St  | H   | Sl  | O   | R   | D   |
 | H   | O   | L   | M   | E   | S   |     | H   | O   | L   | M   | E   | S   |     | H   | O   | L   | M   | E   | S   |     | H   | O   | L   | M   | E   | S   |     | H   | O   | L   | M   | E   | S   |     | H   | O   | L   | M   | E   | S   |
+{.no-responsive-table, .no-zebra-table}
+
 >**Sherlock Table**
 
 All instances of the Sherlock have the following constraints:

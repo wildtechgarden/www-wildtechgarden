@@ -1,0 +1,57 @@
+// stylelint-disable color-no-hex, max-nesting-depth
+// stylelint-disable scss/dollar-variable-colon-space-after, scss/dollar-variable-empty-line-before
+
+.chroma .c {
+  color: #006000;
+}
+
+.layout {
+  &__footer {
+    color: var(--color-footer-text);
+
+    p a {
+      color: var(--color-brand-extra-light);
+    }
+  }
+
+  &__header {
+    .header {
+      &__brand {
+
+        flex: 0 1 auto;
+
+        &:hover,
+        &:focus {
+          background-color: var(--color-brand-dark);
+          color: var(--color-brand-extra-light);
+
+          a {
+            background-color: var(--color-brand-dark);
+            color: var(--color-brand-extra-light);
+
+            &:hover,
+            a:focus {
+              background-color: var(--color-brand-dark);
+              color: var(--color-brand-extra-light);
+            }
+          }
+        }
+
+        .header {
+          &__site-name,
+          &__logo {
+            line-height: var(--heading-line-height);
+          }
+
+          &__logo-image {
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+    p a {
+      color: var(--color-brand-extra-light);
+    }
+  }
+}
