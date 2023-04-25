@@ -19,6 +19,14 @@ $font-size-fixed: (
 
 $font-size: $font-size-fixed;
 
+.main .cards {
+  --column-min: 300px;
+}
+
+.list-page:has(div.cards) {
+  --max-page-width: 2048px;
+}
+
 .main h2.subtitle {
   font-size: var(--fs-xxl);
   margin-block-start: 0;
