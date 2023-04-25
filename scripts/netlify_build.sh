@@ -17,4 +17,4 @@ else
 	export HUGO_PARAMS_DEPLOYEDBASEURL="$DEPLOY_PRIME_URL"
 fi
 
-HUGO_RESOURCEDIR="$(pwd)/resources" hugo --gc --minify -b $URL
+HUGO_RESOURCEDIR="$(pwd)/resources" hugo --gc --minify -b $HUGO_PARAMS_DEPLOYEDBASEURL
