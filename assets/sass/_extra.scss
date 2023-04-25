@@ -50,6 +50,7 @@ $font-size: $font-size-fixed;
       &__brand {
 
         flex: 0 1 auto;
+        overflow-y: hidden;
 
         &:hover,
         &:focus {
@@ -85,4 +86,8 @@ $font-size: $font-size-fixed;
       color: var(--color-brand-extra-light);
     }
   }
+}
+
+article .highlight pre.chroma {
+  overflow-x: hidden;
 }
