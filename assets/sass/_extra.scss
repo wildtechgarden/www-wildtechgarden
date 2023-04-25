@@ -1,6 +1,28 @@
 // stylelint-disable color-no-hex, max-nesting-depth
 // stylelint-disable scss/dollar-variable-colon-space-after, scss/dollar-variable-empty-line-before
 
+$base-font-size: 20;
+
+// The font sizes in our type hierarchy as tee shirt sizes.
+// Size m is base.
+// Use like this: var(--fs-m)
+$font-size-fixed: (
+  xxxxl:      2.5rem,
+  xxxl:       2rem,
+  xxl:        1.75rem,
+  xl:         1.5rem,
+  l:          1.223rem,
+  m:          1rem,
+  s:          .9rem,
+  xs:         .8rem,
+);
+
+$font-size: $font-size-fixed;
+
+.main h2.subtitle {
+  font-size: var(--fs-xxl);
+}
+
 .chroma .c {
   color: #006000;
 }
