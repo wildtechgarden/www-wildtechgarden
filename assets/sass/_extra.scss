@@ -21,6 +21,7 @@ $font-size: $font-size-fixed;
 
 .main h2.subtitle {
   font-size: var(--fs-xxl);
+  margin-block-start: 0;
 }
 
 .chroma .c {
