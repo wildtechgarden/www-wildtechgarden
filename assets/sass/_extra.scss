@@ -1,93 +1,30 @@
 // stylelint-disable color-no-hex, max-nesting-depth
-// stylelint-disable scss/dollar-variable-colon-space-after, scss/dollar-variable-empty-line-before
-
-$base-font-size: 20;
-
-// The font sizes in our type hierarchy as tee shirt sizes.
-// Size m is base.
-// Use like this: var(--fs-m)
-$font-size-fixed: (
-  xxxxl:      2.5rem,
-  xxxl:       2rem,
-  xxl:        1.75rem,
-  xl:         1.5rem,
-  l:          1.223rem,
-  m:          1rem,
-  s:          .9rem,
-  xs:         .8rem,
-);
-
-$font-size: $font-size-fixed;
-
-.main .cards {
-  --column-min: 300px;
-}
-
-.list-page:has(div.cards) {
-  --max-page-width: 2048px;
-}
-
-.main h2.subtitle {
-  font-size: var(--fs-xxl);
-  margin-block-start: 0;
-}
 
 .chroma .c {
   color: #006000;
 }
 
-.layout {
-  &__footer {
-    color: var(--color-footer-text);
+.main article {
+  display: block;
 
-    p a {
-      color: var(--color-brand-extra-light);
-    }
-  }
+  > .content {
+    &:has(iframe) {
+      width: 100%;
 
-  &__header {
-    .header {
-      &__brand {
-
-        flex: 0 1 auto;
-        overflow-y: hidden;
-
-        &:hover,
-        &:focus {
-          background-color: var(--color-brand-dark);
-          color: var(--color-brand-extra-light);
-
-          a {
-            background-color: var(--color-brand-dark);
-            color: var(--color-brand-extra-light);
-
-            &:hover,
-            a:focus {
-              background-color: var(--color-brand-dark);
-              color: var(--color-brand-extra-light);
-            }
-          }
-        }
-
-        .header {
-          &__site-name,
-          &__logo {
-            line-height: var(--heading-line-height);
-          }
-
-          &__logo-image {
-            vertical-align: middle;
-          }
-        }
+      li {
+        max-width: unset;
       }
-    }
-
-    p a {
-      color: var(--color-brand-extra-light);
     }
   }
 }
 
-article .highlight pre.chroma {
-  overflow-x: hidden;
+.main article li > pre > code {
+  white-space: pre-wrap;
+}
+
+// DFD-Zen additions
+
+.main article pre {
+  max-height: unset;
+  max-width: 100%;
 }

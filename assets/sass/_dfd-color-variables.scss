@@ -1,0 +1,46 @@
+// stylelint-disable color-no-hex
+// stylelint-disable scss/dollar-variable-empty-line-before
+
+// Base colors.
+$black: #000;
+$nearblack: lighten($black, 2%); // off-black
+$grey-darker: lighten($black, 20%); // #333
+$grey-dark: lighten($black, 30%);
+$grey-lessdark: lighten($black, 40%);
+$grey-medium: lighten($black, 50%);
+$grey: lighten($black, 60%); // #999
+$grey-light: lighten($black, 80%); // #ccc
+$grey-extra-light: lighten($black, 93.33%); // #eee
+$nearwhite: lighten($black, 97%); // #f7f7f7
+$white: #fff;
+
+$blue: #0072b9;
+$red: #c00;
+$green: #43a808;
+$yellow: #fd0;
+
+$green-nearblack: darken($green, 30%);
+$green-darker: darken($green, 25%);
+$green-dark: darken($green, 15%);
+$green-lessdark: darken($green, 10%);
+$green-medium: lighten($green, 40%);
+$green-light: lighten($green, 52%);
+$green-extra-light: lighten($green, 61%);
+
+$blue-nearblack: darken($blue, 25%);
+$blue-darker: darken($blue, 20%);
+$blue-dark: darken($blue, 15%);
+$blue-lessdark: darken($blue, 10%);
+$blue-medium: lighten($blue, 40%);
+$blue-light: lighten($blue, 55%);
+$blue-extra-light: lighten($blue, 70%);
+
+$brand-nearblack: $green-nearblack;
+$brand-darker: $green-darker;
+$brand-dark: $green-dark;
+$brand-alt: $green-lessdark;
+$brand-medium: $green-medium;
+$brand: $green;
+$brand-light: $green-light;
+$brand-extra-light: $green-extra-light;
+$brand-nearwhite: $nearwhite;

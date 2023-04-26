@@ -73,6 +73,7 @@ blogSection = [
 	""
 ]
 breadcrumbSections = [
+	"",
 	"about",
 	"deploy-admin",
 	"devel",
