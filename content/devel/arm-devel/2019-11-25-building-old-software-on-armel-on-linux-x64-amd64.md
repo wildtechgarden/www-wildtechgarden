@@ -85,7 +85,7 @@ Follow the rest of the instructions at <https://www.debian.org/releases/jessie/a
 4. ``MAKEDEV generic``
 5. Create ``/etc/fstab``, for example (for virtualization):
 
-   ```conf
+   ```plain
    # /etc/fstab: static file system information.
    #
    # file system mount point type options dump pass
@@ -95,7 +95,7 @@ Follow the rest of the instructions at <https://www.debian.org/releases/jessie/a
 
 6. Create /etc/network/interfaces, for example:
 
-   ```conf
+   ```plain
    ######################################################################
    # /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)
    # See the interfaces(5) manpage for information on what options are
@@ -131,7 +131,7 @@ Follow the rest of the instructions at <https://www.debian.org/releases/jessie/a
 8. ``echo jessie-armel-build > /etc/hostname``
 9. Update ``/etc/apt/sources.list``. For example:
 
-   ```conf
+   ```plain
    deb http://deb.debian.org/debian jessie main contrib non-free
    deb-src http://deb.debian.org/debian jessie main contrib non-free
    deb http://deb.debian.org/debian-security jessie/updates main contrib non-free

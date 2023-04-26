@@ -142,7 +142,7 @@ partition for swap. For this guide we will assume swap on on partition
 
 ### An Example U-Boot Script for SD Card Booting
 
-```u-boot
+```plain
 display init force
 mmcinit 0
 fatload mmc 0 0x0 uzImage.bin
@@ -218,7 +218,7 @@ Assuming you are still in the chroot:
 4. ``MAKEDEV generic``
 5. Create ``/etc/fstab``, for example:
 
-   ```conf
+   ```plain
    # /etc/fstab: static file system information
    #
 
@@ -232,8 +232,7 @@ Assuming you are still in the chroot:
 
 6. Create ``/etc/network/interfaces``, for example:
 
-   ```conf
-
+   ```plain
    ######################################################################
    # /etc/network/interfaces -- configuration file for ifup(8), ifdown(8)
    # See the interfaces(5) manpage for information on what options are

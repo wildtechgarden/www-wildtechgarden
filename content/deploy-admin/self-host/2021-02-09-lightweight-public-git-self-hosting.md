@@ -391,7 +391,7 @@ Create an Apache virtual host configuration in
 
 (this config assumes use of HTTPS only, and of Let’s Encrypt certificates)
 
-```conf
+```plain
 Define _DOMAIN example.com
 Define _HOST git.${_DOMAIN}
 

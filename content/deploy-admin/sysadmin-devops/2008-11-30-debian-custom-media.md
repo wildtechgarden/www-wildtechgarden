@@ -63,7 +63,7 @@ This article was begun when it was realized that no information on how to create
        1. [DebianInstaller](https://wiki.debian.org/DebianInstaller) lives in=\<debian-dir>/dists/\<dist>/main/debian-installer/binary-i386 so create the appropriate subdirectories (e.g. mkdir -p /debian/dists/sarge/main/debian-installer/binary-i386
        2. in a directory for your scripts and config files for this project place the following apt.conf:
 
-          ```conf
+          ```plain
           APT {
              FTPArchive {
                  Release {
@@ -82,7 +82,7 @@ This article was begun when it was realized that no information on how to create
 
        3. And the following yourcdname-di.conf (creating the directories described therein, as necessary):
 
-          ```conf
+          ```plain
           Dir {
              ArchiveDir "/debian";
              OverrideDir "indices";
@@ -115,7 +115,7 @@ This article was begun when it was realized that no information on how to create
     2. repeat for binary-i386:
        * using the following yourcdname.conf instead of yourcdname-di.conf:
 
-         ```conf
+         ```plain
          Dir {
             ArchiveDir "/debian";
             OverrideDir "indices";
@@ -426,7 +426,7 @@ If you want to includes packages from non-US you ought to create another indices
      /debian/dists/sarge/main/debian-installer/binary-i386)
 2. in a directory (e.g. custom-cd-scripts) for your scripts and config files for this project place the following apt.conf:
 
-   ```conf
+   ```plain
    APT {
         FTPArchive {
             Release {
@@ -444,7 +444,7 @@ If you want to includes packages from non-US you ought to create another indices
 
 3. And the following customcd-di.conf (creating the directories described therein, as necessary):
 
-   ```conf
+   ```plain
    Dir {
        ArchiveDir "/debian";
        OverrideDir "indices";
@@ -488,7 +488,7 @@ If you want to includes packages from non-US you ought to create another indices
 5. repeat for the binary-i386 directories (under main, contrib, non-free):
    * using the following customcd.conf instead of customcd-di.conf:
 
-      ```conf
+      ```plain
       Dir {
          ArchiveDir "/debian";
          OverrideDir "indices";
@@ -578,7 +578,7 @@ install debian-cd)
 2. ``cd /usr/share/debian-cd`` and edit ``CONF.sh``
    A sample [=CONF.sh] is reproduced below:
 
-   ```conf
+   ```plain
     #
     # This file will have to be sourced where needed
     #

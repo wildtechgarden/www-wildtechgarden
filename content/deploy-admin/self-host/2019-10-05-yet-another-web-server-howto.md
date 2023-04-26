@@ -112,7 +112,7 @@ more suitable for getting Let’s Encrypt SSL certificates for your mail server.
        ``var.vhosts_acme_dir = server_root + "/vhosts-acme"``
     2. At end, add:
 
-       ```conf
+       ```plain
        $HTTP["scheme"] == "http" {
            include "/etc/lighttpd/vhosts-acme.d/*.conf"
        }
@@ -135,7 +135,7 @@ more suitable for getting Let’s Encrypt SSL certificates for your mail server.
         * mod_redirect,
     2. if you want to redirect example.com to [www.example.com](http://www.example.com), after the closing parentheses for server-modules add
 
-       ```conf
+       ```plain
        $HTTP["scheme"] == "http" {
            $HTTP["host"] == "example.com" {
                url.redirect = (".*" => "http://www.example.com$0")
@@ -150,7 +150,7 @@ more suitable for getting Let’s Encrypt SSL certificates for your mail server.
 /etc/lighttpd/vhosts-acme.d/ include a file such as
 www.example.com.conf (**NB**: The filename must end in .conf):
 
-   ```conf
+   ```plain
    $HTTP["host"] == "www.example.com" {
        var.server_name = "www.example.com"
        server.name = server_name
@@ -264,7 +264,7 @@ command, without --staging.
 
 1. In /etc/lighttpd/lighttpd.conf, before
 
-   ```conf
+   ```plain
    $HTTP["scheme"] == "http" {
        include "/etc/lighttpd/vhosts-acme.d/*.conf"
    }
@@ -272,14 +272,14 @@ command, without --staging.
 
    which you added previously, add
 
-   ```conf
+   ```plain
    $SERVER["socket"] == "0.0.0.0:443" { include "ssl.conf" }
    $SERVER["socket"] == "[::]:443" { include "ssl.conf" }
    ```
 
 2. Add a file /etc/lighttpd/ssl.conf that looks like:
 
-   ```conf
+   ```plain
    ssl.engine = "enable"
    ssl.pemfile = "/etc/letsencrypt/live/www.example.com/lighttpd.pem"
    include "/etc/lighttpd/vhosts.d/*.conf"
@@ -289,7 +289,7 @@ command, without --staging.
 each virtual host you are adding (in this case www.example.com)
 that looks like:
 
-   ```conf
+   ```plain
    $HTTP["host"] == "www.example.com" {
        var.server_name = "www.example.com"
        server.name = server_name
@@ -302,7 +302,7 @@ that looks like:
     1. inside the directive server.modules =, uncomment or add the
     following
 
-       ```conf
+       ```plain
        "mod_openssl",
        ```
 
@@ -312,7 +312,7 @@ that looks like:
         * ``"mod_authn_file",``
     3. If you want to redirect HTTP to HTTPS, before
 
-       ```conf
+       ```plain
        $HTTP["scheme"] == "http" {
             $HTTP["host"] == "example.com" {
                  url.redirect = (".*" => "http://www.example.com$0")
@@ -322,7 +322,7 @@ that looks like:
 
        which you added above, add
 
-       ```conf
+       ```plain
        $HTTP["scheme"] == "http" {
            $HTTP["host"] == "example.com" {
                url.redirect = (".*" => "https://www.example.com$0")
@@ -332,7 +332,7 @@ that looks like:
 
        and after, add
 
-       ```conf
+       ```plain
        $HTTP["scheme"] == "http" {
            $HTTP["url"] !~ "^/.well-known/acme-challenge/" {
                $HTTP["host"] =~ ".*" {
@@ -348,7 +348,7 @@ that looks like:
    1. in /etc/vhosts.d/\<host-to-require-auth>, above the closing
       brace (}) in the \<host>.conf listed previously, add something similar to:
 
-      ```conf
+      ```plain
       auth.backend = "htdigest"
       auth.backend.htdigest.userfile = "/etc/lighttpd/users/\<host>"
       auth.require = ( "/" =>

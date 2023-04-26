@@ -42,7 +42,7 @@ you to the 'work in progress' documentation.
 
 The first step though is to make sure 'good' bots (usually search engine crawlers) don't overwhelm your site by making sure you are serving an appropriate [robots.txt](https://moz.com/learn/seo/robotstxt) for your site. If you want to centralize your robots.txt configuration you could use a file with lighttpd config sections such as (assuming you have mod\_alias enabled, which is usually in the default configuration for your distro):
 
-```conf
+```plain
 $HTTP["host"] == "myvhost.example.com" {
     $HTTP["url"] =~ "^/robots.txt" {
         alias.url = (
@@ -68,7 +68,7 @@ Here we deny access using mod_access to return HTTP code 403 Forbidden for match
 
 A sample 70-deny-bad-bots.conf for /etc/lighttpd/conf-available could be:
 
-```conf
+```plain
 # Block some (usually) malicious traffic
 
 # Empty UA, or -

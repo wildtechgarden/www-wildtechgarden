@@ -77,7 +77,7 @@ sudo apt install -y certbot mutt opendmarc opendkim postfix postfix-policyd-spf-
 7. In the same file, make sure the line with ``TrustAnchorFile`` is commented
 8. Add the following lines:
 
-   ```conf
+   ```plain
    DNSTimeout 8
    On-BadSignature r
    On-DNSError t
@@ -104,7 +104,7 @@ sudo apt install -y certbot mutt opendmarc opendkim postfix postfix-policyd-spf-
 6. In the same file, set make sure the ``TrustAuthservIDs`` line is ``TrustAuthservIDs HOSTNAME``
 7. In the same file, add the following lines:
 
-   ```conf
+   ```plain
    SPFIgnoreResults false
    SPFSelfValidate true
    RequiredHeaders true
@@ -164,14 +164,14 @@ sudo apt install -y certbot mutt opendmarc opendkim postfix postfix-policyd-spf-
 
 1. Add the following lines to ``/etc/postfix/master.cf``:
 
-   ```conf
+   ```plain
    spfcheck  unix  -       n       n       -       0       spawn
      user=policyd-spf argv=/usr/sbin/postfix-policyd-spf-perl
    ```
 
 2. Edit ``/etc/postfix/main.cf`` to look like the example below (leaving comments that come with the default configuration, if you wish), assuming your mail server is ``mail.example.com``, you are required to use email relay ``relay.example.com``, your final destination email address is in the ``example.net`` domain, you are relaying mail original sent to ``domain1.example.com`` and ``domain2.example.com``, and the final local user for postmaster mail is named ``user1``:
 
-   ```conf
+   ```plain
    myorigin = mail.example.com
    myhostname = mail.example.com
    smtpd_banner = $myhostname ESMTP $mail_name (Ubuntu)
@@ -216,7 +216,7 @@ sudo apt install -y certbot mutt opendmarc opendkim postfix postfix-policyd-spf-
 
 3. Edit ``/etc/aliases`` to contain at least, assuming the final local user for postmaster mail is named ``user1`` and your final destination mail address for email generated on the server is ``mailuser@example.net``:
 
-   ```conf
+   ```plain
    postmaster: user1
    root: mailuser@example.net
    ```
@@ -229,7 +229,7 @@ sudo apt install -y certbot mutt opendmarc opendkim postfix postfix-policyd-spf-
 
 5. Create the file ``/etc/postfix/sender_relay_transport_map`` with the following contents (using the same assumptions as above):
 
-   ```conf
+   ```plain
    MAILER-DAEMON@mail.example.com local:mail.example.com
    MAILER-DAEMON@localhost local:mail.example.com
    ```
@@ -242,7 +242,7 @@ sudo apt install -y certbot mutt opendmarc opendkim postfix postfix-policyd-spf-
 
 7. Create the file ``/etc/postfix/virtual`` as appropriate. An example which redirects ``userX`` or ``info`` in any domain in the ``virtual_alias_domains`` above to ``mailuser@example.net``:
 
-   ```conf
+   ```plain
    /^user.@.*/ mailuser@example.net
    /^info@.*/ mailuser@example.net
    ```

@@ -398,7 +398,7 @@ You could call this password-var-file.json. I recommend you do NOT place this ve
 
 This should be in the files subdirectory and named sshd_config.sample.
 
-```conf
+```plain
 # $OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
 
 # This is the sshd server system-wide configuration file. See

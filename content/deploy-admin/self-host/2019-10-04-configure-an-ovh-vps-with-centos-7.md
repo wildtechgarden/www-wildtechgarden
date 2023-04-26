@@ -58,7 +58,7 @@ A guide to configuring an OVH VPS (Virtual Private Server) with CentOS 7
 4. Set hostname for instance: hostnamectl set-hostname new-hostname
 5. Make sure /etc/hosts has your IP (v4 and/or v6) to hostname mapping
 
-   ```conf
+   ```plain
    127.0.0.1 localhost
    xxx.xxx.xxx.xxxx exhost.example.com exhost
 

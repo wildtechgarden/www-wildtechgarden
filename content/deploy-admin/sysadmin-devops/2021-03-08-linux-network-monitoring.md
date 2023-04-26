@@ -212,7 +212,7 @@ In the following configuration files, the following definitions apply:
 
 ##### Example of templates
 
-```conf
+```plain
 define host{
   use generic-host ; Name of host template to use
   name fionavar-defaults
@@ -240,7 +240,7 @@ The primary configuration file is /etc/nagios/nagios.cfg
 
 Debian uses include directives in this file to logically divide up the various configuration sections
 
-```conf
+```plain
 cfg_file=/etc/nagios/checkcommands.cfg
 cfg_dir=/etc/nagios-plugins/config/
 cfg_file=/etc/nagios/misccommands.cfg
@@ -258,7 +258,7 @@ cfg_file=/etc/nagios/timeperiods.cfg
 
 You will need to edit /etc/nagios/contacts.cfg
 
-```conf
+```plain
 # 'efs' contact definition
 define contact{
   contact_name efs
@@ -283,7 +283,7 @@ recovery for hosts.
 
 You will need to edit /etc/nagios/contactgroups.cfg
 
-```conf
+```plain
 # 'nagios-admins' contact group definition
 define contactgroup{
   contactgroup_name nagios-admins
@@ -296,7 +296,7 @@ define contactgroup{
 
 /etc/nagios/hosts.cfg
 
-```conf
+```plain
 define host {
   use generic-host ; Name of host template to use
 
@@ -321,7 +321,7 @@ define host {
 
 /etc/nagios/hostgroup.cfg
 
-```conf
+```plain
 define hostgroup {
   hostgroup_name fionavar
   alias Daniel's Computers
@@ -349,7 +349,7 @@ See the files in /etc/nagios-plugins for available commands
 
 ##### Nagios service template
 
-```conf
+```plain
 # Generic service definition template
 define service {
   ; The 'name' of this service template, referenced in other service definitions
@@ -372,7 +372,7 @@ define service {
 
 ##### Nagios base template
 
-```conf
+```plain
 # Base options for most services
 define service{
   use generic-service ; Name of service template to use
@@ -396,7 +396,7 @@ define service{
 
 This service checks that the hosts specified are up (in this case all hosts in hostgroup fionavar)
 
-```conf
+```plain
 define service{
   use fionavar-service
   hostgroup_name fionavar
@@ -414,7 +414,7 @@ screen.
 
 The following service checks that ssh on the local machine (mornir) is working
 
-```conf
+```plain
 define service{
   use fionavar-service
   host_name mornir
@@ -428,7 +428,7 @@ define service{
 The following service checks that ssh to darien and revor are available
 from mornir (the nagios server)
 
-```conf
+```plain
 define service{
   use fionavar-service
   host_name darien,revor
@@ -442,7 +442,7 @@ define service{
 etc/nagios/checkcommands.cfg is used to define local service commands,
 for example:
 
-```conf
+```plain
 define command{
   command_name check_privoxy
   command_line /usr/lib/nagios/plugins/check_http -I $ARG1$ -p $ARG2$ -
@@ -476,7 +476,7 @@ by email, when warning or critical conditions are reached
 You can monitor disk, swap, etc on the server. For example, to monitor
 the load averages on the Nagios server
 
-```conf
+```plain
 define service{
   use fionavar-service
   host_name mornir
@@ -498,7 +498,7 @@ nagios-statd requires the use of a real device not a symlink.
 
 For all commands ! is the separator for arguments to the command.
 
-```conf
+```plain
 define service{
   use fionavar-service
   host_name darien
@@ -509,7 +509,7 @@ define service{
 
 ##### Swap, # of processes
 
-```conf
+```plain
 define service{
   use fionavar-service
   hostgroup_name fionavar
@@ -543,7 +543,7 @@ define service{
 
 The default nrpe.cfg can be boiled down to:
 
-```conf
+```plain
 server_port=5666
 # SERVER ADDRESS
 # Address that nrpe should bind to in case there are more than one interface
@@ -567,7 +567,7 @@ include=/etc/nagios/nrpe_local.cfg
 On the client you need to specify that the server is allowed to connect
 (in this case the server is 192.168.8.2)
 
-```conf
+```plain
 server_port=5666
 # SERVER ADDRESS
 # Address that nrpe should bind to in case there are more than one interface
@@ -590,7 +590,7 @@ include=/etc/nagios/nrpe_local.cfg
 
 (command definitions)
 
-```conf
+```plain
 command[check_load2]=/usr/lib/nagios/plugins/check_load --warning=5,4.5,4 --critical=7,6.5,5.5
 command[check_ping_mornir]=/usr/lib/nagios/plugins/check_ping -H mornir.fionavar.dd -w 100.0,20% -c 500.0,60%
 command[check_disk_mornir]=/usr/lib/nagios/plugins/check_disk -w 10% -c 5% -p /dev/ide/host0/bus0/target0/lun0/part1

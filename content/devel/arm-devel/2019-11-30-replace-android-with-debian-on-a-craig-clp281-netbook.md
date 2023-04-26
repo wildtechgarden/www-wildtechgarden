@@ -206,7 +206,7 @@ With `setenv bootargs mem=${memtotal} ubi.mtd=16 root=ubi0:rootfs_vol noinitrd r
 2. `mount`
 3. You should see something like:
 
-   ```conf
+   ```plain
    ubi0:rootfs_vol on / type ubifs (rw,relatime)
    /dev/mmcblk0p1 on /boot type vfat (rw,relatime,fmask=0022,dmask=0022,codepage=cp437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)
    ...
@@ -295,7 +295,7 @@ devices if different than below), and set up the new:
 2. Boot from the SD Card.
 3. If you execute mount you should see something like:
 
-   ```conf
+   ```plain
    /dev/root on / type ext4 (rw,relatime,barrier=1,data=ordered)
    tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=20960k,mode=755)
    tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)

@@ -284,7 +284,7 @@ of your server on your network.
     1. hostname -s will give your the first part of the fully qualified domain name. We don’t used hostname --fqdn to get the fully qualified domain name (FQDN) because, per the man page, it is unreliable.
     2. cat /etc/resolv.conf. You should see something like:
 
-       ```conf
+       ```plain
        nameserver 192.168.1.1
        search lan
        ```

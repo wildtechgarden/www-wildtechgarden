@@ -343,7 +343,7 @@ Once you have a successful configuration I recommend a test login. In addition, 
 
 1. In ``/etc/fail2ban/filter.d/nextcloud.conf`` add:
 
-   ```conf
+   ```plain
    [Definition]
    _groupsre = (?:(?:,?\s*"\w+":(?:"[^"]+"|\w+))*)
    failregex = ^\{%(_groupsre)s,?\s*"remoteAddr":"<HOST>"%(_groupsre)s,?\s*"message":"Login failed:
@@ -392,7 +392,7 @@ Once you have a successful configuration I recommend a test login. In addition, 
 
 Uncomment the following lines:
 
-```conf
+```plain
 unixsocket /run/redis/redis-server.sock
 unixsocketperm 770
 ```
@@ -401,7 +401,7 @@ unixsocketperm 770
 
 Add:
 
-```conf
+```plain
 requirepass a-very-strong-password-obviously-not-what-you-see-here--you-have-been-warned
 ```
 

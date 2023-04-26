@@ -42,7 +42,7 @@ A Debian preseed file preseed-arm-no-efi.cfg such as the one shown here, in the 
 to be the final image, not for the image to be exposed to a network (the intention is
 for the image to be fed to a Packer provisioning run).
 
-```config
+```plain
 # Contents of the preconfiguration file (for buster)
 # Localization
 # Preseeding only locale sets language, country and locale.
@@ -495,7 +495,7 @@ exit 0
 
 A file named ssh_config_buster such as the following in the preseed-dir subdirectory:
 
-```conf
+```plain
 # $OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
 
 # This is the sshd server system-wide configuration file. See

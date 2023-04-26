@@ -55,7 +55,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
 
 3. Add a file such as ``/etc/unbound/unbound.conf.d/interfaces.conf``:
 
-   ```conf
+   ```plain
    server:
        interface: 192.168.1.38
        interface: 127.0.0.1
@@ -65,7 +65,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
 
 4. Add a file such as ``/etc/unbound.conf.d/forwarding-servers.conf``:
 
-   ```conf
+   ```plain
    forward-zone:
        name: "."
        forward-host: protected.canadianshield.cira.ca
@@ -78,7 +78,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
 
 5. And another file: ``/etc/unbound.conf.d/disable-remote-control.conf``:
 
-   ```conf
+   ```plain
    remote-control:
        no
    ```
@@ -86,7 +86,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
    This should be the default, but better safe than sorry.
 6. For local hostnames you can add ``/etc/unbound/unbound.conf.d/lan-zone.conf`` as adjusted for your network. (For details see [the unbound.conf man page](https://unbound.docs.nlnetlabs.nl/en/latest/manpages/unbound.conf.html))
 
-   ```conf
+   ```plain
    server:
        domain-insecure: internal.example.net
        local-zone: "internal.example.net" transparent
@@ -96,7 +96,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
 
    and for 'reverse DNS' (number to name instead of name to number):
 
-   ```conf
+   ```plain
    server:
        local-zone: "1.168.192.in-addr.arpa." static
        local-data: "38.1.168.192.in-addr.arpa. 3600 IN PTR piunbound.internal.example.net."
@@ -127,7 +127,7 @@ In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecur
 
 1. Edit ``/etc/systemd/resolved.conf`` with contents such as (assuming your Pi's IP address is 192.168.1.38) and adjusted for your network:
 
-   ```conf
+   ```systemd
    [Resolve]
    DNS=192.168.1.38
    FallbackDNS=149.112.121.20#protected.canadianshield.cira.ca 149.112.122.20#protected.canadianshield.cira.ca
@@ -154,7 +154,7 @@ In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecur
 
 1. Configure the network (this assumes you have already disabled non-systemD network; doing so is out of scope for this article). In this example we edit ``/etc/systemd/network/enp3s0.conf`` (where ``enp3s0`` is the network device we are configuring). For WiFi and/or any number of complex things you can do with you network, you will need to refer to the SystemD documentation and/or other guides.
 
-   ```conf
+   ```systemd
    [Match]
    MACAddress=xx:xx:xx:00:00:00 ; Obviously use your actual MAC address
 
@@ -174,7 +174,7 @@ In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecur
 2. ``sudo networkctl reload``
 3. Edit ``/etc/systemd/resolved.conf`` with contents such as (adjusted for your network):
 
-   ```conf
+   ```systemd
    [Resolve]
    FallbackDNS=149.112.121.20#protected.canadianshield.cira.ca 149.112.122.20#protected.canadianshield.cira.ca
    DNSOverTLS=opportunistic

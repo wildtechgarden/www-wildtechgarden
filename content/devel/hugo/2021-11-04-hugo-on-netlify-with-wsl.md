@@ -78,7 +78,7 @@ card: true
 2. Create an ``~/.npmrc`` file that makes your NPM globally installed packages local to your user (to avoid require ``sudo`` to ``root`` to install global NPM packages).
    ``.npmrc``
 
-   ```conf
+   ```plain
    prefix = /home/daniel/npm-global
    ```
 
