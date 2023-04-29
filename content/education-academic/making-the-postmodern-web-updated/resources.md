@@ -119,6 +119,12 @@ requires either a Pro or Enterprise plan
 
 [Guide to Jamstack themes](https://jamstack.club)
 
+#### Examples of sites created using Hugo
+
+[A very slick website, by a very helpful web developer, built using Hugo](https://www.veriphor.com/)
+[User-contributed list of 'Cool sites that run Hugo'](https://discourse.gohugo.io/t/cool-sites-that-run-hugo/36815/)
+[Condensed version of list of 'Cool sites that run Hugo'](https://discourse.gohugo.io/t/cool-sites-that-run-hugo-condensed-version/43170/)
+
 ## SEO
 
 ### Website testing

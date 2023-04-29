@@ -116,6 +116,7 @@ LLDP
 LLMNR
 LOCALDEBS
 LOCALDIR
+LQIP
 LXDE
 Libet
 Lighttpd
@@ -589,6 +590,7 @@ isset
 isync
 itable
 jigdo
+jmoooring
 keepalive
 keepassxc
 keychain

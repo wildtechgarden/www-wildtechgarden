@@ -11,7 +11,7 @@ summary = """\
 To avoid confusion, here is a list of sites that are not 'us' and with whom \
 'we' have no affiliation, but which have a similar name.\
 """
-weight = 99000
+weight = 2000
 aliases = [
 	"/disambiguation/"
 ]
