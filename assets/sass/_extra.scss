@@ -3,28 +3,3 @@
 .chroma .c {
   color: #006000;
 }
-
-.main article {
-  display: block;
-
-  > .content {
-    &:has(iframe) {
-      width: 100%;
-
-      li {
-        max-width: unset;
-      }
-    }
-  }
-}
-
-.main article li > pre > code {
-  white-space: pre-wrap;
-}
-
-// DFD-Zen additions
-
-.main article pre {
-  max-height: unset;
-  max-width: 100%;
-}
