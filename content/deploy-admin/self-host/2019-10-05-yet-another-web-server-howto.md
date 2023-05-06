@@ -148,7 +148,7 @@ more suitable for getting Let’s Encrypt SSL certificates for your mail server.
     5. Perform ``restorecon -Rv /var/cache/lighttpd``
 6. For each static virtual host to serve, under
 /etc/lighttpd/vhosts-acme.d/ include a file such as
-www.example.com.conf (**NB**: The filename must end in .conf):
+`www.example.com.conf` (**NB**: The filename must end in .conf):
 
    ```plain
    $HTTP["host"] == "www.example.com" {
@@ -216,7 +216,8 @@ as lighttpd and make it executable
 #### Lighttpd configuration (Part 2)
 
 1. Create ACME / Let’s Encrypt verification directories (these will
-be internet accessible from per-vhost directories down (e.g. www.example.com in the example below will be the web root))
+be internet accessible from per-vhost directories down (e.g. `www.example.com`
+in the example below will be the web root))
 
    ```sh
    mkdir -p /var/www/vhosts-acme/www.example.com/.well-known
@@ -285,8 +286,8 @@ command, without --staging.
    include "/etc/lighttpd/vhosts.d/*.conf"
    ```
 
-3. And add a file /etc/lighttpd/vhosts.d/www.example.com.conf for
-each virtual host you are adding (in this case www.example.com)
+3. And add a file `/etc/lighttpd/vhosts.d/www.example.com.conf` for
+each virtual host you are adding (in this case `www.example.com`)
 that looks like:
 
    ```plain

@@ -134,7 +134,7 @@ Enter ``\l`` to see the list of databases, and ``\q`` to quit.
    1. Should report 'OK'
 2. ``gpg --import nextcloud.asc``
 3. ``gpg --verify nextcloud-21.0.1.tar.bz2.asc nextcloud-21.0.1.tar.bz2``
-   1. Should report 'Good signature from "Nextcloud Security \<security@nextcloud.com>" \[unknown]'
+   1. Should report '`Good signature from "Nextcloud Security <security@nextcloud.com>" \[unknown]`'
 4. ``gpg --keyserver keyserver.ubuntu.com --recv-keys D75899B9A724937A``
    1. Should report '1 processed, 1 unchanged`
 5. You no longer require the \*.sha256 or \*.asc files.

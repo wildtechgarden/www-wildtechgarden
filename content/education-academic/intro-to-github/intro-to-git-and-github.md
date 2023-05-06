@@ -41,7 +41,7 @@ These pages are based on a presentation I created for a group of fellow Makers a
 
 #### Git is Everywhere
 
-{{< img alt="Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)" src="/assets/images/github-use-by-country-1.png" >}}Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/
+{{< img alt="Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)" src="/assets/images/github-use-by-country-1.png" >}}Shading map of world with GitHub users and commits by country" caption="Shading map of world with GitHub users and commits by country _Image author_: Stefano De Sabbata, license: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 #### Why Git is Used
 
