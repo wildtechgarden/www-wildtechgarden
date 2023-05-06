@@ -36,17 +36,17 @@ Links to additional resources for ['Making the postmodern web'](_index.md)\
 
 [HTML: A good basis for accessibility - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
 
-[Plain HTML page; mice (view source)](https://mice.demo.wildtechgarden.com/only-mice.html)
+[Plain HTML page; mice (view source)](https://mice.demo.wildtechgarden.ca/only-mice.html)
 
 ### CSS
 
-[Mice page with CSS (view source)](https://mice.demo.wildtechgarden.com/css-mice.html)
+[Mice page with CSS (view source)](https://mice.demo.wildtechgarden.ca/css-mice.html)
 
 [CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ### JavaScript
 
-[Mice page with JavaScript (view source)](https://mice.demo.wildtechgarden.com)
+[Mice page with JavaScript (view source)](https://mice.demo.wildtechgarden.ca)
 
 [JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/javascript)
 
