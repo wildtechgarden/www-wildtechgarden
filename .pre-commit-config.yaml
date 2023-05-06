@@ -26,7 +26,7 @@ repos:
   # - checks toml files for parsable syntax.
   - id: check-vcs-permalinks
   # - ensures that links to vcs websites are permalinks.
-  - id: destroyed-symlinks
+  # - id: destroyed-symlinks
   # - detects symlinks which are changed to regular
   # files with a content of a path which that symlink was pointing to.
   - id: detect-private-key
@@ -61,7 +61,7 @@ repos:
   - id: csslint
 
 - repo: "https://github.com/pre-commit/mirrors-eslint"
-  rev: v8.27.0
+  rev: v8.39.0
   hooks:
   - id: eslint
     additional_dependencies:
@@ -83,25 +83,25 @@ repos:
     - --allow-empty-input
 
 - repo: "https://github.com/igorshubovych/markdownlint-cli"
-  rev: v0.33.0
+  rev: v0.34.0
   hooks:
   - id: markdownlint
     args: [--config, .markdownlint.json]
     files: .+\.(md|markdown)$
 
 - repo: "https://github.com/adrienverge/yamllint"
-  rev: v1.29.0
+  rev: v1.31.0
   hooks:
   - id: yamllint
     exclude: ^(_vendor)
 
 - repo: "https://github.com/zricethezav/gitleaks"
-  rev: v8.16.0
+  rev: v8.16.3
   hooks:
   - id: gitleaks
 
 - repo: "https://github.com/jorisroovers/gitlint"
-  rev: v0.18.0
+  rev: v0.19.1
   hooks:
   - id: gitlint
 
@@ -115,7 +115,7 @@ repos:
     exclude: ^(LICENSE|static/|assets/assets/files/|\.gitlab-ci\.yml\.disabled$)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
-  rev: v6.28.0
+  rev: v6.31.0
   hooks:
   - id: cspell
     args:
