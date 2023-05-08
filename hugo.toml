@@ -351,6 +351,23 @@ ignoreImports = true
 source = "README-assets"
 target = "assets/README-assets"
 
+[[module.imports]]
+path = "gitlab.com/danielfdickinson/dfd-zen-mp-workspace"
+ignoreConfig = true
+ignoreImports = true
+
+[[module.imports.mounts]]
+source = "multipass-instance-creation/README.md"
+target = "assets/README-multipass-instance-creation.md"
+
+[[module.imports.mounts]]
+source = "multipass-instance-creation/LICENSE"
+target = "content/devel/multipass-instance-creation/LICENSE"
+
+[[module.imports.mounts]]
+source = "multipass-instance-creation/vscode-dev.yaml"
+target = "content/devel/multipass-instance-creation/vscode-dev.yaml"
+
 [[module.mounts]]
 source = 'content'
 target = 'content'

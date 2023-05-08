@@ -141,6 +141,7 @@ Mbps
 Microformats
 Mornir
 Mppwd
+Multipass
 Multisite
 Munin
 NAND
@@ -418,6 +419,7 @@ desolder
 despeckle
 destbase
 destdir
+devcontainers
 devel
 devfs
 devpts
