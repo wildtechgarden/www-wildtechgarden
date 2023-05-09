@@ -47,6 +47,7 @@ repos:
     - --branch
     - "v[0-9].[0-9]" # yamllint disable-line
   - id: pretty-format-json
+    exclude: ^(layouts)
     # - Checks that all your JSON files are pretty. "Pretty"
     # here means that keys are sorted and indented.
     args: [--autofix, --indent, "	"]
@@ -112,7 +113,7 @@ repos:
     alias: ec
     args:
     - -no-color
-    exclude: ^(LICENSE|static/|assets/assets/files/|\.gitlab-ci\.yml\.disabled$)
+    exclude: ^(LICENSE|static/|assets/assets/files/|\.gitlab-ci\.yml\.disabled$|layouts/_default)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
   rev: v6.31.0

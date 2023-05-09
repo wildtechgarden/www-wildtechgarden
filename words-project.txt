@@ -593,6 +593,7 @@ isync
 itable
 jigdo
 jmoooring
+jsonify
 keepalive
 keepassxc
 keychain
