@@ -592,7 +592,7 @@ isset
 isync
 itable
 jigdo
-jmoooring
+jmooring
 jsonify
 keepalive
 keepassxc
@@ -963,6 +963,7 @@ setrlimit
 setsebool
 shellcheck
 shortcode
+shortcodes
 shosts
 showchildpages
 shrc
