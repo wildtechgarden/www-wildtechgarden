@@ -3,12 +3,10 @@ title = "Netlify pre-commit and other news"
 slug = "netlify-pre-commit-and-other-news"
 author = "Daniel F. Dickinson"
 description = """\
-Announcing `netlify-plugin-pre-commit` and some updates on my training and paid \
-work opportunities. (They've come through!)\
+Announcing `netlify-plugin-pre-commit`\
 """
 summary = """\
-Announcing `netlify-plugin-pre-commit` and some updates on my training and paid \
-work opportunities. (They've come through!)\
+Announcing `netlify-plugin-pre-commit`\
 """
 date = 2023-05-26T01:05:30-04:00
 publishDate = 2023-05-26T01:05:30-04:00
@@ -25,8 +23,7 @@ toc = true
 
 ## Preface
 
-Announcing `netlify-plugin-pre-commit` and some updates on my training and paid
-work opportunities. (They've come through!)
+Announcing `netlify-plugin-pre-commit`. (They've come through!)
 
 ## A side project while ramping up 'real' work
 
