@@ -19,5 +19,5 @@ tags:
     - web-design
 weight: 20700
 ---
-* I highly recommend reading the [Maintenance](https://wordpress.org/support/category/maintenance/) and [Security](https://wordpress.org/support/category/security/) section of the [WordPress Documentation](https://wordpress.org/support/).
+* I highly recommend reading the [Maintenance](https://wordpress.org/documentation/category/maintenance/) and [Security](https://wordpress.org/documentation/category/security/) section of the [WordPress Documentation](https://wordpress.org/documentation/).
 * If there is interest we could do another session on those topics.

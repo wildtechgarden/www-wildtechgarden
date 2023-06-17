@@ -216,7 +216,7 @@ container, you can do: ``docker run -it -v /your/build/directory:/home/[your-use
 
 ## Further Reading
 
-* <https://docs.docker.com/develop/develop-images/baseimages/>
+* <https://docs.docker.com/build/building/base-images/>
 * <https://wiki.osdev.org/GCC_Cross-Compiler>
 * <https://preshing.com/20141119/how-to-build-a-gcc-cross-compiler/>
 * <https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain>

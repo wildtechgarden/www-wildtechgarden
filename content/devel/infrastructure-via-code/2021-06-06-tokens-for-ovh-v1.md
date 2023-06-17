@@ -33,7 +33,7 @@ The first steps were taken following the [OVH Python library README](https://git
 
 ### Prerequisites
 
-Of course the first step was to create an 'Application Key' and 'Application Secret', as outlined in that README as well as '[First Steps with OVH API](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/)'.
+Of course the first step was to create an 'Application Key' and 'Application Secret', as outlined in that README as well as '[First Steps with OVH API](https://help.ovhcloud.com/csm/en-ca-api-getting-started-ovhcloud-api?id=kb_article_view&sysparm_article=KB0029722)'.
 
 Then it was necessary to create an ``ovh.conf`` file, which was kept in the same directory as the scripts:
 

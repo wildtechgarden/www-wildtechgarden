@@ -442,7 +442,7 @@ other options like [Restic](https://restic.net) (which I now use).
 
 ### OpenSSH server configuration documentation by Microsoft
 
-See also [Microsoft's Guide to Configuring OpenSSH Server](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration)
+See also [Microsoft's Guide to Configuring OpenSSH Server](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration)
 
 ### The rest, as suits your needs and preferences
 

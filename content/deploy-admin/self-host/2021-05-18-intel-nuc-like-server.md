@@ -35,7 +35,7 @@ Since the author has decided to use Ubuntu Server 20.04 this is quite easy.
 
 1. Download the install image from <https://releases.ubuntu.com/20.04/>
 2. Create a bootable USB stick
-   1. [From Ubuntu](https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-ubuntu)
+   1. [From Ubuntu](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu)
    2. [From  Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows)
    3. [From macOS](https://ubuntu.com/tutorials/create-a-usb-stick-on-macos)
 

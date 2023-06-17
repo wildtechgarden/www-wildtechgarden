@@ -33,7 +33,7 @@ Git is used extensively worldwide for many type of software and internet and oth
 
 ## Some Publishing Notes
 
-These pages are based on a presentation I created for a group of fellow Makers at the [MakerPlace](https://midlandlibrary.com/the-mpl-makerplace/) at the [Midland Public Library](https://midlandlibrary.com/) in [Midland, Ontario](https://www.midland.ca/). It is based on, but not a conversion of, a PowerPoint presentation. It would have taken as much work, or more, to convert what I used for the live presentation as I would need to add captions and narration to the videos (which in a web form are easily divided into screenshots with explanations) to satisfy my desire for an accessible website. In addition simply exporting a presentation to HTML5 tends not to be as browser agnostic as I would want.
+These pages are based on a presentation I created for a group of fellow Makers at the [MakerPlace](https://midlandlibrary.com/the-mpl-makerplace/) at the [Midland Public Library](https://midlandlibrary.com/) in [Midland, Ontario](https://www.midland.ca/en/index.aspx). It is based on, but not a conversion of, a PowerPoint presentation. It would have taken as much work, or more, to convert what I used for the live presentation as I would need to add captions and narration to the videos (which in a web form are easily divided into screenshots with explanations) to satisfy my desire for an accessible website. In addition simply exporting a presentation to HTML5 tends not to be as browser agnostic as I would want.
 
 ## Version Control and Beyond
 
@@ -156,7 +156,7 @@ Execute the commands in a regular PowerShell or Command Prompt
 ## Learn and Use Visual Studio Code
 
 1. Next you want launch Visual Studio Code, and read the ‘Welcome’ screen and follow the links that suit what you need to learn.
-2. Check out [Working with GitHub](https://code.visualstudio.com/docs/editor/github) on the Visual Studio Code website.
+2. Check out [Working with GitHub](https://code.visualstudio.com/docs/sourcecontrol/github) on the Visual Studio Code website.
 
 ## Learn and Use Git
 

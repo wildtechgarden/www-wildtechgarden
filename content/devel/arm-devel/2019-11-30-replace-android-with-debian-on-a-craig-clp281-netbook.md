@@ -354,5 +354,5 @@ due to unreliable flash erase blocks).
 
 * <https://kernelhacks.blogspot.com/2012/06/building-wm8650-netbook-kernel.html>
 * ~~``http://philherlihy.com/adventures-in-armel-debian-wheezy-udevdxxx-unable-to-receive-ctrl-connection-function-not-implemented/``~~
-* <https://github.com/vir91/wm8650-gpl-reference-kernel>
+* <https://github.com/rvolkov91/wm8650-gpl-reference-kernel>
 * <http://linux-mtd.infradead.org/faq/ubifs.html>

@@ -27,7 +27,7 @@ title: "Lightweight public Git self hosting"
 
 ## ARCHIVED
 
-While this remains extremely lightweight it doesn't allow the use of features like git-lfs, nor does it include CI/CD options. For the for former you may want to investigate something like [Gitea](https://docs.gitea.io) and for both the former and the latter you may want to try something like [Source Hut](https://sourcehut.org). Gitea is lighter than Source Hut but is 'just' Git hosting / issue tracking etc and doesn't include CI/CD.
+While this remains extremely lightweight it doesn't allow the use of features like git-lfs, nor does it include CI/CD options. For the for former you may want to investigate something like [Gitea](https://docs.gitea.io/en-us/) and for both the former and the latter you may want to try something like [Source Hut](https://sourcehut.org). Gitea is lighter than Source Hut but is 'just' Git hosting / issue tracking etc and doesn't include CI/CD.
 
 I have written an article about [Gitea on a Raspberry Pi](2021-05-13-gitea-pi) but now use Gitea in a docker container on [an Intel-NUC-like SBC as a server](2021-05-18-intel-nuc-like-server).
 

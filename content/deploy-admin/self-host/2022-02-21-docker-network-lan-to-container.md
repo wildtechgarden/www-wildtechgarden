@@ -21,7 +21,7 @@ frontCard: true
 
 Normally when using Docker one only wants specific unicast ports forwarded, so the standard Docker paradigm of using NAT to forward ports to the container works. However, when using Docker to containerize internal services like Samba (which needs a combination of unicast and broadcast UDP), LLMNR (Windows multicast address resolution), or mDNS aka Bonjour (Apple multicast address resolution) one may find that the standard Docker model is insufficient.
 
-If one doesn't need the Docker host, or virtual machines on the Docker host, to access the container then one can simply use [Docker ipvlan L2 networks](https://docs.docker.com/network/ipvlan/#ipvlan-l2-mode-example-usage).
+If one doesn't need the Docker host, or virtual machines on the Docker host, to access the container then one can simply use [Docker ipvlan L2 networks](https://docs.docker.com/network/drivers/ipvlan/#ipvlan-l2-mode-example-usage).
 
 For the exceptions, you might be interested in the configuration below.
 

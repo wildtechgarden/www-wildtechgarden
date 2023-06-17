@@ -31,7 +31,7 @@ showChildPages: false
 ### Some Thoughts
 
 * At this point we should think about what is required to meet our [target requirements](../_index.md#requirements-targeted).
-* We're going to put off a number of considerations as they depend on robust use of 'userdata' as we will be exploring the use of [Jinja](https://jinja.palletsprojects.com/) to template userdata later in the series.
+* We're going to put off a number of considerations as they depend on robust use of 'userdata' as we will be exploring the use of [Jinja](https://jinja.palletsprojects.com/en/3.1.x/) to template userdata later in the series.
 * At this point we're still concentrating on bringing up instances (and deleting old instances if needed).
 * We're also not making a 'Zero Downtime' project, where making changes is expected to result in no visible (even brief) disruption in service; that is overkill for our requirements.
 

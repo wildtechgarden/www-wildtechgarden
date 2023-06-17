@@ -447,13 +447,13 @@ password is password. **CHANGE THE PASSWORD ASAP**.
 
 * <https://kernelhacks.blogspot.com/2012/06/building-wm8650-netbook-kernel.html>
 * ~~``http://philherlihy.com/adventures-in-armel-debian-wheezy-udevdxxx-unable-to-receive-ctrl-connection-function-not-implemented/``~~ [No longer available]
-* <https://github.com/vir91/wm8650-gpl-reference-kernel>
+* <https://github.com/rvolkov91/wm8650-gpl-reference-kernel>
 
 ### Original Sources for the Kernel Git Repositories
 
 [Older projectgus WonderMedia 8650 GPLTarball — incomplete](https://www.projectgus.com/files/wm8650/KERNEL-DS_ANDROID_2.6.32_WM8650.110408.1903.tgz) or [Local copy of older projectgus WonderMedia 8650 GPL tarball — Incomplete](../../../assets/files/craig-clp281/KERNEL-DS_ANDROID_2.6.32_WM8650.110408.1903.tgz)
 
-[Newer Android WonderMedia 8650 GPL source](https://github.com/vir91/wm8650-gpl-reference-kernel) or [Local copy of newer Android WonderMedia 8650 GPL tarball](../../../assets/files/craig-clp281/torvalds-linux-wm8650-gpl-reference.tar.gz)
+[Newer Android WonderMedia 8650 GPL source](https://github.com/rvolkov91/wm8650-gpl-reference-kernel) or [Local copy of newer Android WonderMedia 8650 GPL tarball](../../../assets/files/craig-clp281/torvalds-linux-wm8650-gpl-reference.tar.gz)
 
 [Linux Backports 3.18.1-1 tarball](https://cdn.kernel.org/pub/linux/kernel/projects/backports/stable/v3.18.1/backports-3.18.1-1.tar.xz) or [Local copy of Linux Backport 3.18.1-1 tarball](../../../assets/files/craig-clp281/backports-3.18.1-1.tar.xz)
 
@@ -468,7 +468,7 @@ Neither tarball is the exact kernel source for the binary that shipped with the 
 In order to run Debian 7 (Wheezy) or later, the following patches to the
 provided kernel are required (patches use Unix style line endings (LF) unless otherwise noted):
 
-1. Patch the kernel so the the kernel build creates modules.builtin. (See <https://patchwork.kernel.org/patch/50131/raw/> or [Local copy of make kernel build generate modules.builtin](../../../assets/files/craig-clp281/kbuild-generate-modules.builtin.diff))
+1. Patch the kernel so the the kernel build creates modules.builtin. (See <https://patchwork.kernel.org/project/linux-kbuild/patch/1253891624-5816-1-git-send-email-mmarek@suse.cz/raw/> or [Local copy of make kernel build generate modules.builtin](../../../assets/files/craig-clp281/kbuild-generate-modules.builtin.diff))
 2. Patch various drivers (bug fixes). (See <https://download943.mediafire.com/p33g2o6n2isg/28xor4fr7ws1c11/wm8650_netbook.patch> or [Local copy of WM8650 GPL Tarball Driver Bug Fixes](../../../assets/files/craig-clp281/wm8650_netbook.patch)). Note the local copy uses Unix line endings (LF) but the patch on mediafire uses Windows line endings (CRLF).
 3. Patch to add sys\_accept4() (required for udev). See [Local copy of backport: wire up sys\_accept4() on ARM](../../../assets/files/craig-clp281/wire-up-accept4-on-arm.patch), or (but needs adjustment to work with this version of the kernel) ~~[backport: wire up sys\_accept4() on ARM]\(``http://philherlihy.com/adventures-in-armel-debian-wheezy-udevdxxx-unable-to-receive-ctrl-connection-function-not-implemented/%3E``)~~ [No longer available from original source].
 4. Patch to create /sys/fs/cgroup mountpoint. (See <https://github.com/kelvinlawson/meta-kirkwood/blob/master/recipes-kernel/linux/files/0001-cgroupfs-create-sys-fs-cgroup-to-mount-cgroupfs-on.patch>) or [Local copy of cgroupfs: create /sys/fs cgroup to mount cgroupfs on](../../../assets/files/craig-clp281/cgroupfs-create-sys-fs-cgroup.patch)

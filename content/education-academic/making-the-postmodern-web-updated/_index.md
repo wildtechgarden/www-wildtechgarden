@@ -266,7 +266,7 @@ speeds, which can negatively affect your search rankings.
 the [Hugo website](https://gohugo.io/)
 
 [There are many choices; see the top starred ones on
-GitHub.](https://www.staticgen.com/)
+GitHub.](https://jamstack.org/generators/)
 
 In addition to avoiding a database dependency:
 
@@ -282,7 +282,7 @@ forms, payments/stores.
 ## CMS based on SSG {#cms-based-on-ssg}
 
 * [Cloud Cannon](https://cloudcannon.com/)
-* [Netlify CMS](https://www.netlifycms.org/)
+* [Decap CMS](https://decapcms.org/)
 * [Tina Cloud](https://tina.io/)
 * [Vercel](https://vertcel.com/)
 * Quite useful to reduce the required technical skills required to use
@@ -323,7 +323,7 @@ of websites (especially the technical aspects).
 * Lighthouse can be used locally from the Chrome or Edge web developer
 tools (F12).
 * web.dev runs against live sites [such as this report on my tech
-site](https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.wildtechgarden.ca%2F)
+site](https://pagespeed.web.dev/analysis?url=https://www.wildtechgarden.ca/)
 * Also available for use as an API (e.g. for automated testing before
 going live).
 

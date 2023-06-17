@@ -33,7 +33,7 @@ my time for such projects will soon be in short supply.
 
 ### Description of `pre-commit` plugin for Netlify
 
-Speed up use of [pre-commit](https://www.pre-commit.com) with
+Speed up use of [pre-commit](https://pre-commit.com) with
 [Netlify](https://www.netlify.com) (especially by caching hook installation).
 
 ### What that means

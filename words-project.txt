@@ -50,6 +50,7 @@ DOJIGDO
 DONT
 Dani
 Datasource
+Decap
 Despeckle
 Devuan
 Dlrt

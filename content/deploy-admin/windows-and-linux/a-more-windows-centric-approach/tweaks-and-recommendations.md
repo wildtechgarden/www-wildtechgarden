@@ -123,7 +123,7 @@ If you've used BitLocker and used a USB drive to store the security information 
       * If you have a second ethernet NIC, I recommend creating second external network that does not share with the host (so it will no longer be visible in you host, but you will be able to use with virtual machines).
       * I also recommend moving the default Hyper-V Hard Drive location out of ``Public``.
     * Update WSL2 kernel to the [latest WSL2 kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-* For WSL or WSL2 users: Install a Linux distro and configure (see [Microsoft's Guide to Installing WSL and WSL2](https://docs.microsoft.com/en-us/windows/wsl/install)).
+* For WSL or WSL2 users: Install a Linux distro and configure (see [Microsoft's Guide to Installing WSL and WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)).
   * Once your distro is installed:
     * ``sudo apt update``
     * ``sudo apt upgrade``
@@ -202,7 +202,7 @@ Make 7-zip the default for filename extensions for which Windows doesn't have na
   Git Credential Manager for Windows with Git over HTTPS and using API keys, see
   [Git Credential Manager for Windows Configuration](https://microsoft.github.io/Git-Credential-Manager-for-Windows/Docs/Configuration.html)
 
-* See also [Microsoft's Managing OpenSSH Keys Page](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
+* See also [Microsoft's Managing OpenSSH Keys Page](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement)
 
 #### Enable the 'ssh-agent' Service
 
