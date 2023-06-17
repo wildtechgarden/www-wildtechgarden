@@ -12,7 +12,6 @@ rules:
   color-hex-case: lower
   color-hex-length: short
   color-named: never
-  color-no-hex: true
   color-no-invalid-hex: true
   declaration-bang-space-after: never
   declaration-bang-space-before: always
@@ -52,7 +51,7 @@ rules:
         - include
   media-feature-name-no-vendor-prefix: true
   media-feature-parentheses-space-inside: never
-  media-feature-range-notation: false
+  media-feature-range-notation: null
   no-descending-specificity: null
   no-missing-end-of-source-newline: true
   number-leading-zero: never
@@ -81,7 +80,7 @@ rules:
   scss/no-global-function-names: null
   scss/percent-placeholder-pattern: "^[a-z0-9-_]+$"
   # scss/selector-no-redundant-nesting-selector: true
-  selector-anb-no-unmatchable: false
+  selector-anb-no-unmatchable: null
   selector-class-pattern:
     - "^[a-z0-9\\-]+$"
     - message: Selector should be written in lowercase with hyphens (selector-class-pattern) # yamllint disable-line
