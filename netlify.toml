@@ -64,12 +64,14 @@ path = "about/contact/index.html"
 
 [[plugins.inputs.audits]]
 path = "about/search/index.html"
+performance = 0.8
 
 # [plugins.inputs.audits.thresholds]
 # seo = 0.8
 
 [[plugins.inputs.audits]]
 path = "deploy-admin/windows-and-linux/ubuntu-cloud-images-on-hyper-v/index.html"
+accessibility = 0.9
 
 # Production context: all deploys from the Production branch
 # set in your site’s Branches settings in the UI will inherit
