@@ -22,6 +22,7 @@
 		"./node_modules",
 		"./public",
 		"./resources",
+		"./requirements*.txt",
 		"./tests/scripts/**",
 		"./words-*.txt"
 	],

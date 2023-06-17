@@ -14,7 +14,8 @@ repos:
   rev: v4.4.0
   hooks:
   - id: check-added-large-files
-  # - Prevent giant files from being committed.
+    # - Prevent giant files from being committed.
+    exclude: ^(package-lock\.json$)
   - id: check-case-conflict
   # - checks for files that would conflict in
   #   case-insensitive filesystems.
@@ -47,7 +48,7 @@ repos:
     - --branch
     - "v[0-9].[0-9]" # yamllint disable-line
   - id: pretty-format-json
-    exclude: ^(layouts)
+    exclude: ^(layouts|package(-lock)?\.json$)
     # - Checks that all your JSON files are pretty. "Pretty"
     # here means that keys are sorted and indented.
     args: [--autofix, --indent, "	"]
@@ -62,7 +63,7 @@ repos:
   - id: csslint
 
 - repo: "https://github.com/pre-commit/mirrors-eslint"
-  rev: v8.39.0
+  rev: v8.42.0
   hooks:
   - id: eslint
     additional_dependencies:
@@ -91,13 +92,13 @@ repos:
     files: .+\.(md|markdown)$
 
 - repo: "https://github.com/adrienverge/yamllint"
-  rev: v1.31.0
+  rev: v1.32.0
   hooks:
   - id: yamllint
     exclude: ^(_vendor)
 
 - repo: "https://github.com/zricethezav/gitleaks"
-  rev: v8.16.3
+  rev: v8.17.0
   hooks:
   - id: gitleaks
 
@@ -113,7 +114,7 @@ repos:
     alias: ec
     args:
     - -no-color
-    exclude: ^(LICENSE|static/|assets/assets/files/|\.gitlab-ci\.yml\.disabled$|layouts/_default)
+    exclude: ^(LICENSE|static/|assets/assets/files/|\.gitlab-ci\.yml\.disabled$|layouts/_default|package(-lock)?\.json$)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
   rev: v6.31.0

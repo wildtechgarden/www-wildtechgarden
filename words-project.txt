@@ -797,6 +797,7 @@ nredirects
 nrpe
 nson
 nugetpackagemanager
+nvmrc
 ocdata
 oldlayout
 oldnew

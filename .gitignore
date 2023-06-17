@@ -8,3 +8,5 @@ node_modules
 .disabled-env
 /hugo-cache
 vendor/
+.git
+.netlify

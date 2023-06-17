@@ -1,0 +1,19 @@
+.main article:has(input) {
+  .content {
+    &--bottom {
+      max-width: 100%;
+    }
+  }
+}
+
+.footer a {
+  line-height: 1.75rem;
+  margin-block: 4px;
+  padding-block: 4px;
+}
+
+.sidebar .menu a {
+  line-height: 1.75rem;
+  margin-block: 4px;
+  padding-block: 4px;
+}
