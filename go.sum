@@ -10,5 +10,7 @@ gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.0-20230510124339-698eb53326e
 gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.0-20230510124339-698eb53326e9/go.mod h1:AyUJrDSjdGjVr6/kp6GPPnch2R6scbkld8s8ejhv2Fk=
 gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230604132238-4e9147fcf428 h1:pkXkp4RZDBF1lZERgoTMHrd2lUst4cmNgLqOZsByXO8=
 gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230604132238-4e9147fcf428/go.mod h1:3G+ArLf62CzowEkOe3OEkl2cbHtQByBGRfIHf4yevyQ=
+gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230617032054-085ee5c17989 h1:w1wI5aRnqGZ2q1hhBpKXBmHEOsyVldB88WAO/tLtgJY=
+gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230617032054-085ee5c17989/go.mod h1:3G+ArLf62CzowEkOe3OEkl2cbHtQByBGRfIHf4yevyQ=
 gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230617024621-ccf18ef4209e h1:QDav4tB2hQzi7fZrovSzAexYjNatmiFz50ZZiX37yHY=
 gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230617024621-ccf18ef4209e/go.mod h1:P6LZj4ajU+D7o5/+wOOL/iIi/yEed9KefZFtIZQZldw=
