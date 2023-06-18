@@ -27,7 +27,7 @@ weight: 10400
 
 ### Code
 
-The scripts described on this page are available in a Git repo @ <https://github.com/danielfdickinson/ivc-in-the-wtg-experiments>.
+The scripts described on this page are available in a Git repo @ <https://github.com/wildtechgarden/ivc-in-the-wtg-experiments>.
 
 ## First, Just a Template
 

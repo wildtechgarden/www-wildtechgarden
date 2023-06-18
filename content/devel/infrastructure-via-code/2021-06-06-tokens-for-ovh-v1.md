@@ -25,7 +25,7 @@ weight: 10200
 
 Before finding the source of the [issues with Terraform on OVH](https://www.danielfdickinson.ca/blog/terraforming-with-ovh-is-not-paradise/), a possible source of the dysfunction was thought to be with expired tokens. As such a couple of cross-platform token generation scripts using the Python bindings for the OVH API were tried.
 
-The scripts described on this page are available in a Git repo @ <https://github.com/danielfdickinson/ivc-in-the-wtg-experiments>
+The scripts described on this page are available in a Git repo @ <https://github.com/wildtechgarden/ivc-in-the-wtg-experiments>
 
 ## OVH API Token Issues?
 

@@ -46,7 +46,7 @@ Learning experiments in using bespoke code & data under version control to consi
 
 ### Code
 
-The various scripts and dummy configuration files are available in a Git repository @ <https://github.com/danielfdickinson/ivc-in-the-wtg-experiments>
+The various scripts and dummy configuration files are available in a Git repository @ <https://github.com/wildtechgarden/ivc-in-the-wtg-experiments>
 
 ### Why
 

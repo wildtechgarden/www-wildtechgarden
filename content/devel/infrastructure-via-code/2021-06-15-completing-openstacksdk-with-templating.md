@@ -51,4 +51,4 @@ In addition it is our finding that this approach involves more effort than if Te
 
 ### Code
 
-The scripts, configs, etc described on this page are available in a Git repo @ <https://github.com/danielfdickinson/ivc-in-the-wtg-experiments>.
+The scripts, configs, etc described on this page are available in a Git repo @ <https://github.com/wildtechgarden/ivc-in-the-wtg-experiments>.

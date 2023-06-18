@@ -32,7 +32,7 @@ Adding templating with the ability to add files to the instance and to run scrip
 
 ### Code
 
-The scripts described in this section are available in a Git repo @ <https://github.com/danielfdickinson/ivc-in-the-wtg-experiments>.
+The scripts described in this section are available in a Git repo @ <https://github.com/wildtechgarden/ivc-in-the-wtg-experiments>.
 
 ## Section Contents
 

@@ -34,7 +34,7 @@ The OpenStack SDK aims to replace use of individual OpenStack client libraries (
 
 Since it should theoretically make life easier for doing [Infrastructure via Code](_index.md), this is approach which which this learning journey has begun.
 
-The scripts described on this page are available in a Git repo @ <https://github.com/danielfdickinson/ivc-in-the-wtg-experiments>
+The scripts described on this page are available in a Git repo @ <https://github.com/wildtechgarden/ivc-in-the-wtg-experiments>
 
 ## Prerequisite Config
 
