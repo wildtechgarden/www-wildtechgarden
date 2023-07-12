@@ -1,7 +1,8 @@
 +++
 title = "Contact Daniel F. Dickinson"
 aliases =[
-	"/siteentry/contact/"
+	"/siteentry/contact/",
+	"/contact/"
 ]
 author = "Daniel F. Dickinson"
 description = "Contact form to reach Daniel F. Dickinson through Netlify"
