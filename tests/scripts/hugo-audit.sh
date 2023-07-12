@@ -24,12 +24,18 @@ if [ -z "${HUGO_CACHEDIR}" ]; then
 fi
 export HUGO_CACHEDIR
 
+HUGO_LOGLEVEL=info
+
+if [ -n "$NETLIFY_BUILD_DEBUG" ]; then
+	HUGO_LOGLEVEL=debug
+fi
+
 rm -rf "${SITEROOT}/public"
 
 echo "Building for audit in ${SITEROOT}/public for environment ${HUGO_ENV:-development}"
 
 # shellcheck disable=2086
-if HUGO_MINIFY_TDEWOLFF_HTML_KEEPCOMMENTS=true HUGO_ENABLEMISSINGTRANSLATIONPLACEHOLDERS=true HUGO_RESOURCEDIR="$(pwd)/resources" "$HUGO_COMMAND" $SITECONFIG --gc --buildDrafts --buildFuture --destination "${SITEROOT}/public" --source "${SITESRC}" --environment "${HUGO_ENV:-development}" ${BASEURL:+-b $BASEURL} && [ -s "${SITEROOT}/public/index.html" ]; then
+if HUGO_MINIFY_TDEWOLFF_HTML_KEEPCOMMENTS=true HUGO_ENABLEMISSINGTRANSLATIONPLACEHOLDERS=true HUGO_RESOURCEDIR="$(pwd)/resources" "$HUGO_COMMAND" $SITECONFIG --logLevel="$HUGO_LOGLEVEL" --gc --buildDrafts --buildFuture --destination "${SITEROOT}/public" --source "${SITESRC}" --environment "${HUGO_ENV:-development}" ${BASEURL:+-b $BASEURL} && [ -s "${SITEROOT}/public/index.html" ]; then
 	# If hugo build succeeds, it is possible audit issues are present, check further
 	# Check for problem indicators (see https://discourse.gohugo.io/t/audit-your-published-site-for-problems/35184)
 	set +e
