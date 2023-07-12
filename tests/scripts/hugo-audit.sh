@@ -22,9 +22,13 @@ fi
 if [ -z "${HUGO_CACHEDIR}" ]; then
 	HUGO_CACHEDIR="$(pwd)/hugo-cache"
 fi
-export HUGO_CACHEDIR
 
-HUGO_LOGLEVEL=info
+export HUGO_CACHEDIR
+mkdir -p "$HUGO_CACHEDIR"
+
+if [ -z "${HUGO_LOGLEVEL}" ]; then
+	HUGO_LOGLEVEL="info"
+fi
 
 if [ -n "$NETLIFY_BUILD_DEBUG" ]; then
 	HUGO_LOGLEVEL=debug
