@@ -6,7 +6,7 @@ github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 h1
 github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361/go.mod h1:8ArFjp0rvMTCvY0zPTv8nsKvDBJKvWJ1pyE2NJezQdI=
 gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.1 h1:GU7nuQxSbyWsF3KJgdq/p8mxtY6ratp4t3yEJtnoy9g=
 gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.1/go.mod h1:AyUJrDSjdGjVr6/kp6GPPnch2R6scbkld8s8ejhv2Fk=
-gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230712044715-7f41d3f453e9 h1:iW/Qq1OLyMdn5MqkBP3bRfpV6dZDmALEpJMhjtHRmXA=
-gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230712044715-7f41d3f453e9/go.mod h1:3G+ArLf62CzowEkOe3OEkl2cbHtQByBGRfIHf4yevyQ=
-gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230617024621-ccf18ef4209e h1:QDav4tB2hQzi7fZrovSzAexYjNatmiFz50ZZiX37yHY=
-gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.0.0-20230617024621-ccf18ef4209e/go.mod h1:P6LZj4ajU+D7o5/+wOOL/iIi/yEed9KefZFtIZQZldw=
+gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230715053044-1054923fe1b3 h1:GIus6zPnmsERKjPpzYs7SmbblAeGM2lplSXnqtfB0eg=
+gitlab.com/danielfdickinson/dfd-zen-mp-workspace v0.0.0-20230715053044-1054923fe1b3/go.mod h1:3G+ArLf62CzowEkOe3OEkl2cbHtQByBGRfIHf4yevyQ=
+gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.8.1 h1:S9Q19DylMSEqWyojWz3vXn7YV5f3rhLSBYC0w8ikz9Y=
+gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.8.1/go.mod h1:38Lf6wJk/slVZpDpPyeAZibwkYX2d9dIEC3yjF71T7M=
