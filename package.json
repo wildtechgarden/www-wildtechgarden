@@ -14,8 +14,8 @@
     "url": "git+https://gitlab.com/danielfdickinson/wildtechgarden.git"
   },
   "keywords": [
-	"computing",
-	"technology",
+    "computing",
+    "technology",
     "website"
   ],
   "author": "Daniel F. Dickinson",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://gitlab.com/danielfdickinson/wildtechgarden#readme",
   "devDependencies": {
-    "@netlify/plugin-lighthouse": "^4.1.1",
+    "@netlify/plugin-lighthouse": "^5.0.0",
     "html-validate": "^7.18.1",
     "hyperlink": "^5.0.4",
     "netlify-plugin-html-validate": "^1.1.1",
