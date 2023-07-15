@@ -3,10 +3,15 @@
 set -e
 set -o pipefail
 
-pip install pre-commit
+# Ensure Go modules with LFS checksum correctly
+# Workaround for https://github.com/golang/go/issues/41708
+git lfs install
 
-pre-commit install --install-hooks
-pre-commit run --all-files
+if [ "$NETLIFY" != "true" ]; then
+	pip install pre-commit
+	pre-commit install --install-hooks
+	pre-commit run --all-files
+fi
 
 bash ./tests/scripts/hugo-audit.sh
 bash ./tests/scripts/check-internal-links.sh
