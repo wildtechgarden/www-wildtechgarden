@@ -9,7 +9,7 @@ languageCode = "en-CA"
 paginate = 10
 paginatePath = "page"
 rssLimit = 20
-timeout = 500000
+timeout = "50000s"
 
 [taxonomies]
 tag = "tags"
@@ -268,35 +268,35 @@ disable = true
 [menu]
 [[menu.main]]
 name = "Home"
-pageref = "/"
+pageRef = "/"
 weight = 1
 [[menu.main]]
 name = "Building"
-pageref = "devel/"
+pageRef = "devel/"
 weight = 10
 [[menu.main]]
 name = "Ops"
-pageref = "deploy-admin/"
+pageRef = "deploy-admin/"
 weight = 20
 [[menu.main]]
 name = "Learning"
-pageref = "education-academic/"
+pageRef = "education-academic/"
 weight = 30
 [[menu.main]]
 name = "About"
-pageref = "about/"
+pageRef = "about/"
 weight = 60
 [[menu.main]]
 name = "Tags"
-pageref = "tags/"
+pageRef = "tags/"
 weight = 70
 [[menu.main]]
 name = "Series"
-pageref = "series/"
+pageRef = "series/"
 weight = 80
 [[menu.main]]
 name = "Search"
-pageref = "about/search"
+pageRef = "about/search"
 weight = 90
 
 [module]
@@ -352,7 +352,7 @@ source = "README-assets"
 target = "assets/README-assets"
 
 [[module.imports]]
-path = "gitlab.com/danielfdickinson/dfd-zen-mp-workspace"
+path = "github.com/wildtechgarden/dfd-multipass-vscode-instance"
 ignoreConfig = true
 ignoreImports = true
 
