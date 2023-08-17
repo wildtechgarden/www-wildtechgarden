@@ -6,7 +6,7 @@ github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 h1
 github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361/go.mod h1:8ArFjp0rvMTCvY0zPTv8nsKvDBJKvWJ1pyE2NJezQdI=
 github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.2 h1:D+G40J/s/D9Db0vCisruG2exu38EVSR4kykQ8zIcbac=
 github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.2/go.mod h1:rBXDSRu9vdWU236/mBlGXO3h7PNtZM0BROUVbwM9Om4=
-gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.1 h1:GU7nuQxSbyWsF3KJgdq/p8mxtY6ratp4t3yEJtnoy9g=
-gitlab.com/danielfdickinson/dfd-hugo-theme-zen v0.0.1/go.mod h1:AyUJrDSjdGjVr6/kp6GPPnch2R6scbkld8s8ejhv2Fk=
+github.com/wildtechgarden/zen-theme-hugo-wtg v0.0.3 h1:P7BQVkJTPmLYOnaUZiohzmWMsOQjlDq6BTEEvofVfnE=
+github.com/wildtechgarden/zen-theme-hugo-wtg v0.0.3/go.mod h1:miORKb7SvzpS5y9bOi6BtAcfIxKS49EQzlcHBEhFBeg=
 gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.8.1 h1:S9Q19DylMSEqWyojWz3vXn7YV5f3rhLSBYC0w8ikz9Y=
 gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.8.1/go.mod h1:38Lf6wJk/slVZpDpPyeAZibwkYX2d9dIEC3yjF71T7M=
