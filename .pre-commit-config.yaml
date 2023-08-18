@@ -63,7 +63,7 @@ repos:
   - id: csslint
 
 - repo: "https://github.com/pre-commit/mirrors-eslint"
-  rev: v8.42.0
+  rev: v8.47.0
   hooks:
   - id: eslint
     additional_dependencies:
@@ -85,7 +85,7 @@ repos:
     - --allow-empty-input
 
 - repo: "https://github.com/igorshubovych/markdownlint-cli"
-  rev: v0.34.0
+  rev: v0.35.0
   hooks:
   - id: markdownlint
     args: [--config, .markdownlint.json]
@@ -108,7 +108,7 @@ repos:
   - id: gitlint
 
 - repo: "https://github.com/editorconfig-checker/editorconfig-checker.python"
-  rev: 2.7.1
+  rev: 2.7.2
   hooks:
   - id: editorconfig-checker
     alias: ec
@@ -117,7 +117,7 @@ repos:
     exclude: ^(LICENSE|static/|assets/assets/files/|layouts/_default|package(-lock)?\.json$)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
-  rev: v6.31.0
+  rev: v7.0.0
   hooks:
   - id: cspell
     args:
