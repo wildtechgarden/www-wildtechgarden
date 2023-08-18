@@ -11,12 +11,10 @@ Announcing `netlify-plugin-pre-commit`\
 date = 2023-05-26T01:05:30-04:00
 publishDate = 2023-05-26T01:05:30-04:00
 tags = [
-	"hosting",
-	"opinion",
 	"sysadmin-devops",
 	"web-design"
 ]
-frontCard = true
+frontCard = false
 card = true
 toc = true
 +++

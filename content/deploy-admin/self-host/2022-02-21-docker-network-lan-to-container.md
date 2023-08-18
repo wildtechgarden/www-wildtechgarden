@@ -12,7 +12,7 @@ tags:
 summary: "When using Docker to containerize internal services like Samba, LLMNR, or mDNS a.k.a Bonjour one may find that the standard Docker model of using specific unicast ports forwards, is insufficient."
 description: "When using Docker with internal services like Samba, LLMNR, or mDNS/Bonjour, one may find the standard model of using specific ports forwards insufficient."
 card: true
-frontCard: true
+frontCard: false
 ---
 
 {{< details-toc >}}

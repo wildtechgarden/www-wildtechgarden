@@ -13,7 +13,7 @@ description: "How Artificial Intelligence can win at board games."
 tags:
     - theory
 card: true
-frontCard: true
+frontCard: false
 ---
 
 A presentation about how Artificial Intelligence can win at board games, which Daniel F. Dickinson presented during a Virtual Maker Meeting for the [Midland Public Library](https://midlandlibrary.com).

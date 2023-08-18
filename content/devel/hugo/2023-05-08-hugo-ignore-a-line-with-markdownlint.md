@@ -19,7 +19,7 @@ tags = [
 ]
 pageCanonical = false
 toCanonical = "https://discourse.gohugo.io/t/ignore-a-line-with-markdownlint/44269"
-frontCard = true
+frontCard = false
 card = true
 toc = true
 +++
