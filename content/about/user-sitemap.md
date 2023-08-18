@@ -3,7 +3,7 @@ aliases= [
 	"/allpages/",
 	"/archives/",
 	"/views/",
-	"/about/user-sitemap/"
+	"/about/usersitemap/"
 ]
 title = "Map of Wild Tech 'Garden'"
 description = "Hierarchical list of all pages on www.wildtechgarden.ca"
