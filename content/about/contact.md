@@ -1,14 +1,13 @@
 +++
-title = "Contact Daniel F. Dickinson"
+title = "Contact Wild Tech 'Garden'"
 aliases =[
 	"/siteentry/contact/",
 	"/contact/"
 ]
 author = "Daniel F. Dickinson"
-description = "Contact form to reach Daniel F. Dickinson through Netlify"
-summary = "Contact form to reach Daniel F. Dickinson through Netlify"
+description = "Contact form to reach Wild Tech 'Garden'"
+summary = "Contact form to reach Wild Tech 'Garden'"
 +++
+{{< mdl-disable "<!-- markdownlint-disable MD034 -->" >}}
 
-Contact form to reach Daniel F. Dickinson through Netlify
-
-{{< contact name="wildtechgarden_contact" netlify=true >}}
+{{< contact name="wildtechgarden_contact" customAction="https://formspree.io/f/xaygowqe" >}}
