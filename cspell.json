@@ -12,7 +12,6 @@
 		}
 	],
 	"ignorePaths": [
-		"./.gitlab-ci.yml",
 		"./LICENSE",
 		"./assets/assets/**",
 		"./assets/files/**",

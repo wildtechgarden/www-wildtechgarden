@@ -2,7 +2,8 @@
 
 ## Status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/debee226-426c-48e9-8dfa-2c2f6c29471c/deploy-status)](https://app.netlify.com/sites/wildtechgarden/deploys)
+[![pre-commit.ci
+status](https://results.pre-commit.ci/badge/github/wildtechgarden/www-wildtechgarden/main.svg)](https://results.pre-commit.ci/latest/github/wildtechgarden/www-wildtechgarden/main)
 
 ## Site
 
@@ -10,7 +11,7 @@
 
 ## Repository URL
 
-<https://gitlab.com/danielfdickinson/wildtechgarden>
+<https://github.com/wildtechgarden/www-wildtechgarden>
 
 -------
 
