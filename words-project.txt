@@ -1130,6 +1130,7 @@ workdir
 workrave
 wpxr
 writeback
+wtgdeml-wtg
 xbase
 xenstore
 xfce
