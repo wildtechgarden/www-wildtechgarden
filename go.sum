@@ -8,5 +8,7 @@ github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.3 h1:Qkq3IKXbEPUYEd
 github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.3/go.mod h1:rBXDSRu9vdWU236/mBlGXO3h7PNtZM0BROUVbwM9Om4=
 github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.2 h1:oHHfs2di2TZp1JO9zq2w0ijze5O7jU5YS2VrddUG/Us=
 github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.2/go.mod h1:/D1WIxbBSnjANubQnZWJS9vdi+xps8aXkE5XUziKHAI=
+github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.3 h1:fP3mwz25egbHQhFcVOQRGiqsu5EkOTFIbPeXKcvSS4g=
+github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.3/go.mod h1:/D1WIxbBSnjANubQnZWJS9vdi+xps8aXkE5XUziKHAI=
 github.com/wildtechgarden/zen-theme-hugo-wtg v0.0.5 h1:OuK44R/PiHEh9ZPlqqPwjkPaujOnI/v1oP3HmktUvrQ=
 github.com/wildtechgarden/zen-theme-hugo-wtg v0.0.5/go.mod h1:miORKb7SvzpS5y9bOi6BtAcfIxKS49EQzlcHBEhFBeg=
