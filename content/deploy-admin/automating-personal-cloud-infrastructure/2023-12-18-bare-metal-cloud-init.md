@@ -42,7 +42,7 @@ an example of the main install.
 
 ## Repository URL
 
-<https://gitlab.com/danielfdickinson/debian-bare-metal-cloud-init-dfd>
+<https://github.com/danielfdickinson/debian-bare-metal-cloud-init-dfd>
 
 ## Features and default configuration
 
@@ -65,7 +65,7 @@ this type of deployment, it is instead recommended to set up a proper MAAS
 ### Clone the repository
 
 ```bash
-git clone https://gitlab.com://gitlab.com/danielfdickinson/debian-bare-metal-cloud-init-dfd
+git clone https://gitlab.com://github.com/danielfdickinson/debian-bare-metal-cloud-init-dfd
 ```
 
 Then rename the files in the `nocloud` directory from `meta-data.sample`,
