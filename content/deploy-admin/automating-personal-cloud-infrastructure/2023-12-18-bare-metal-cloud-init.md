@@ -37,7 +37,7 @@ _Aside_: This method of deployment is much faster at actual deploy time than
 using a `debian-installer` based installation. Of course that is because adding
 packages, setting up users, etc, is work you've done ahead of time, and gets
 applied automagically while you (e.g.) have a coffee. See [my related Ansible
-repository](https://gitlab.com/danielfdickinson/debian-libvirt-ansible-dfd) for
+repository](https://github.com/danielfdickinson/debian-libvirt-ansible-dfd) for
 an example of the main install.
 
 ## Repository URL
@@ -65,7 +65,7 @@ this type of deployment, it is instead recommended to set up a proper MAAS
 ### Clone the repository
 
 ```bash
-git clone https://gitlab.com://github.com/danielfdickinson/debian-bare-metal-cloud-init-dfd
+git clone https://github.com/danielfdickinson/debian-bare-metal-cloud-init-dfd
 ```
 
 Then rename the files in the `nocloud` directory from `meta-data.sample`,
