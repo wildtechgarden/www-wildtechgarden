@@ -48,7 +48,7 @@ repos:
     - --branch
     - "v[0-9].[0-9]" # yamllint disable-line
   - id: pretty-format-json
-    exclude: ^(layouts|package(-lock)?\.json$)
+    exclude: ^(layouts|package(-lock)?\.json$|.vscode)
     # - Checks that all your JSON files are pretty. "Pretty"
     # here means that keys are sorted and indented.
     args: [--autofix, --indent, "	"]
@@ -114,7 +114,7 @@ repos:
     alias: ec
     args:
     - -no-color
-    exclude: ^(LICENSE|static/|assets/assets/files/|layouts/_default|package(-lock)?\.json$)
+    exclude: ^(LICENSE|static/|assets/assets/files/|layouts/_default|package(-lock)?\.json$|.vscode)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
   rev: v7.0.0

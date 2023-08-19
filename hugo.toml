@@ -284,10 +284,10 @@ weight = 90
 
 [module]
 # replacements = "github.com/wildtechgarden/zen-theme-hugo-wtg -> ../../zen-theme-hugo-wtg"
-# replacements = "gitlab.com/danielfdickinson/server-alpine-linux-docs4web -> ../../server-alpine-linux-docs4web"
+# replacements = "github.com/wildtechgarden/server-alpine-linux-docs4web -> ../../server-alpine-linux-docs4web"
 
 [[module.imports]]
-path = "gitlab.com/danielfdickinson/server-alpine-linux-docs4web"
+path = "github.com/wildtechgarden/server-alpine-linux-docs4web"
 
 [[module.imports.mounts]]
 source = 'src'

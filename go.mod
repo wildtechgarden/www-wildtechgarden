@@ -8,5 +8,5 @@ require (
 	github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 // indirect
 	github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.3 // indirect
 	github.com/wildtechgarden/zen-theme-hugo-wtg v0.0.5 // indirect
-	gitlab.com/danielfdickinson/server-alpine-linux-docs4web v0.8.1 // indirect
+	github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.2 // indirect
 )

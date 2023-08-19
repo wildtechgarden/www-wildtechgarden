@@ -17,7 +17,7 @@ will be used. (See above).
 
 'We' is the 'royal we' (because we don't like saying 'I' a lot and often we
 want speak in the first person), and 'I' am
-[@danielfdickinson](https://gitlab.com/danielfdickinson).
+[@danielfdickinson](https://www.danielfdickinson.ca).
 
 ## Note 3
 
