@@ -10,7 +10,7 @@ aliases:
     - /docs/arm-development/cross-build/fast-cross-compile-of-linux-2-6-for-armel/
     - /develop-design/arm-development/cross-build/fast-builds-of-old-software-for-armel-on-linux-x64-amd64/
     - /devel/fast-builds-of-old-software-for-armel-on-linux-x64-amd64/
-    - /devel/arm-devel/fast-builds-of-old-software-for-armel-on-linux-x64-amd64/
+    - /docs/devel/arm-devel/fast-builds-of-old-software-for-armel-on-linux-x64-amd64/
 author: Daniel F. Dickinson
 tags:
     - arm-devel

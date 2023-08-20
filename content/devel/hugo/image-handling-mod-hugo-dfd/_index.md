@@ -16,7 +16,7 @@ tags = [
 ]
 showChildPages = false
 pageCanonical = false
-toCanonical = "https://image-handling-mod.demo.wildtechgarden.ca/post/readme/"
+toCanonical = "https://image-handling-mod.wtg-demos.ca/post/readme/"
 
 [[cascade]]
 pageCanonical = false
