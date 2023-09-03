@@ -12,6 +12,7 @@ aliases:
     - /devel/intro-to-github/
     - /develop-design/29/introduction-to-git-and-github/
     - /docs/education-academic/intro-to-github/
+    - /education-academic/intro-to-github/introduction-to-git-and-github/
 author: Daniel F. Dickinson
 date: 2021-03-08T09:46:40+00:00
 publishDate: 2020-08-29T17:32:00+00:00
