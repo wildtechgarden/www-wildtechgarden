@@ -56,12 +56,6 @@ repos:
     exclude: ^(_vendor|assets/assets/files/)
     args: [--markdown-linebreak-ext=md]
 
-- repo: "https://github.com/pre-commit/mirrors-csslint"
-  rev: v1.0.5
-  # See https://github.com/CSSLint/csslint
-  hooks:
-  - id: csslint
-
 - repo: "https://github.com/pre-commit/mirrors-eslint"
   rev: v8.48.0
   hooks:
@@ -73,19 +67,20 @@ repos:
     - -c
     - .eslintrc.yaml
 
-- repo: "https://github.com/awebdeveloper/pre-commit-stylelint"
-  rev: 0.0.2
+- repo: "https://github.com/thibaudcolas/pre-commit-stylelint"
+  rev: v15.10.3
   hooks:
   - id: stylelint
     additional_dependencies:
-    - stylelint@15.7.0
+    - stylelint@^15.10.3
+    - stylelint-cli@1.3.0
     - stylelint-config-standard-scss@9.0.0
-    - stylelint-scss@5.0.1
+    - stylelint-scss@5.1.0
     args:
     - --allow-empty-input
 
 - repo: "https://github.com/igorshubovych/markdownlint-cli"
-  rev: v0.35.0
+  rev: v0.36.0
   hooks:
   - id: markdownlint
     args: [--config, .markdownlint.json]
@@ -117,7 +112,7 @@ repos:
     exclude: ^(LICENSE|static/|assets/assets/files/|layouts/_default|package(-lock)?\.json$|.vscode)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
-  rev: v7.0.1
+  rev: v7.3.0
   hooks:
   - id: cspell
     args:

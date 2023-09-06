@@ -399,8 +399,11 @@ This is basically a Debian system so the many guides for installing and configur
 **Enjoy!**
 
 [^1]:
-      *Should you choose to use the console (HDMI monitor and USB keyboard) there are a few things you should do, using the Raspberry Pi configuration tool: ``sudo raspi-config``, especially configure the local keyboard, network, and if applicable, wireless.
-      * Repeat: For Pi on the console rather than through SSH you should configure the keyboard layout using ``raspi-config`` before changing the password, if your keyboard is not a standard UK keyboard, because the Pi console keyboard layout defaults to the type used by the Raspberry Pi Foundation, a UK non-profit organization.
+     Should you choose to use the console (HDMI monitor and USB keyboard)
+     there are a few things you should do, using the Raspberry Pi configuration tool: ``sudo raspi-config``, especially configure the local keyboard, network,
+     and if applicable, wireless.  
+     Repeat: For Pi on the console rather than through SSH you should configure the keyboard layout using ``raspi-config`` before changing the password, if your keyboard is not a standard UK keyboard, because the Pi console keyboard
+     layout defaults to the type used by the Raspberry Pi Foundation, a UK non-profit organization.
 
 [^2]:
       We only enable this because ``smartmontools`` automatically pulls in mail configuration. For an internal (no public facing internet inbound access) server, it is not recommended to send mail to public mail servers, as it will likely be seen as spam. Further, because this article describes an unencrypted root filesystem, I do not recommend adding the use of authenticated SMTP in order to send mail as an email user you have on a public mail server. That is is your email password would be stored unencrypted on your root partition.
