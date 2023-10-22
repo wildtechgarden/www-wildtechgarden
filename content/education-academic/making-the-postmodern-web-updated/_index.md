@@ -121,7 +121,7 @@ optimization' (aka SEO) (which is about how to be found).
 
 ## HTML example {#html-example}
 
-* [View it live](https://mice.demo.wildtechgarden.ca/only-mice.html)
+* [View it live](https://www.mice.wtg-demos.ca/only-mice.html)
 * *Italicized teal text is optional.*
 * Optional text helps the browser properly interpret the 'encoding'
 and language / locale of the content.
@@ -161,7 +161,7 @@ accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
 * Usually an HTML page uses an element to pull in the CSS.
 * Can also include as a `<style>` element directly in the HTML
 * [The mice page with
-CSS](https://mice.demo.wildtechgarden.ca/css-mice.html)
+CSS](https://www.mice.wtg-demos.ca/css-mice.html)
 * Take a look at the page source to see how it's done.
 * [CSS overview](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
@@ -178,7 +178,7 @@ h1 {
 
 * Usually an HTML page uses an element to pull in the CSS.
 * Can also include as a `<script>` element directly in the HTML
-* [Mice page with JavaScript](https://mice.demo.wildtechgarden.ca/)
+* [Mice page with JavaScript](https://www.mice.wtg-demos.ca/)
 * Use the source, Luke (unknown OpenSource advocate)
 * [JavaScript
 overview](https://developer.mozilla.org/en-US/docs/Web/javascript)
