@@ -223,6 +223,7 @@ submitted = true # Show author and date information for a post.
 tables = true
 themeColor = "#acdcec" # Hex color value, used in meta tags, default "#ffffff".
 # useBaseURL = false
+rssIncludeFullArticle = true
 
 [params.author]
 name = "Daniel F. Dickinson"
