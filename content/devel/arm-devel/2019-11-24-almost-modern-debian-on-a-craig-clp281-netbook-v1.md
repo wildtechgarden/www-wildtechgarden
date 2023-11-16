@@ -170,7 +170,7 @@ For those who want to do a quick test I give you [a prebuilt WonderMedia 8650 2.
 On a system capable of building linux 2.6 armel kernels see the [cross building article on this site](2019-12-09-fast-builds-of-old-software-for-armel-on-linux-x64-amd64/) for information on how to set one up.
 
 ```sh
-git clone -b wmcshore-1.0 --depth 1 --recurse-submodules https://github.com/danielfdickinson.ca/wm8650-2.6-reference-kernel-build.git --shallow-submodules wm8650-linux-2.6
+git clone -b wmcshore-1.0 --depth 1 --recurse-submodules <repo_no_longer_exists> --shallow-submodules wm8650-linux-2.6
 ```
 
 #### Build the Kernel
@@ -472,8 +472,8 @@ provided kernel are required (patches use Unix style line endings (LF) unless ot
 2. Patch various drivers (bug fixes). (See <https://download943.mediafire.com/p33g2o6n2isg/28xor4fr7ws1c11/wm8650_netbook.patch> or [Local copy of WM8650 GPL Tarball Driver Bug Fixes](../../../assets/files/craig-clp281/wm8650_netbook.patch)). Note the local copy uses Unix line endings (LF) but the patch on mediafire uses Windows line endings (CRLF).
 3. Patch to add sys\_accept4() (required for udev). See [Local copy of backport: wire up sys\_accept4() on ARM](../../../assets/files/craig-clp281/wire-up-accept4-on-arm.patch), or (but needs adjustment to work with this version of the kernel) ~~[backport: wire up sys\_accept4() on ARM]\(``http://philherlihy.com/adventures-in-armel-debian-wheezy-udevdxxx-unable-to-receive-ctrl-connection-function-not-implemented/%3E``)~~ [No longer available from original source].
 4. Patch to create /sys/fs/cgroup mountpoint. (See <https://github.com/kelvinlawson/meta-kirkwood/blob/master/recipes-kernel/linux/files/0001-cgroupfs-create-sys-fs-cgroup-to-mount-cgroupfs-on.patch>) or [Local copy of cgroupfs: create /sys/fs cgroup to mount cgroupfs on](../../../assets/files/craig-clp281/cgroupfs-create-sys-fs-cgroup.patch)
-5. There are a number of patches only found in the v2.6.39/standard/wm8650-cshore branch of the Git repository located at <https://github.com/danielfdickinson/torvalds-linux>
-6. The build system from the GPL reference tarball above has been modified and stored in the <https://github.com/danielfdickinson/wm8650-gpl-reference-kernel-build>.
-7. A working configuration for the kernel and backports is located in the git repository at <https://github.com/danielfdickinson/wm8650-configs>.
+5. There are a number of patches only found in the v2.6.39/standard/wm8650-cshore branch of the Git repository located at ~~`https://github.com/danielfdickinson/torvalds-linux`~~ [repo now gone]
+6. The build system from the GPL reference tarball above has been modified and stored in the ~~`https://github.com/danielfdickinson/wm8650-gpl-reference-kernel-build`~~. [repo now gone]
+7. A working configuration for the kernel and backports is located in the git repository at ~~`https://github.com/danielfdickinson/wm8650-configs`~~. [repo now gone]
 
 P.S. No kittens were harmed in the making of this post.

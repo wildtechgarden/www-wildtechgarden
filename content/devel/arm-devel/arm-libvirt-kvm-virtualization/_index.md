@@ -104,7 +104,7 @@ unnecessarily).
   * Including armhf and armel machines of various ‘flavours’
   * Avoids the need to build a special cross-compilation toolchain
   * But…**SLOW**
-  * Better for doing things like building rootfs images, running scripts in ARM chroot that doesn’t work properly in Debian Buster on 64-bit amd64 (at least) using a method such as [using qemu-user-static and a Docker container](../2019-11-25-building-old-software-on-armel-on-linux-x64-amd64) due to a bug in the Linux kernel. See <https://bugs.launchpad.net/qemu/+bug/1805913>.
+  * Better for doing things like building rootfs images, running scripts in ARM chroot that doesn’t work properly in Debian Buster on 64-bit amd64 (at least) using a method such as using qemu-user-static and a Docker container due to a bug in the Linux kernel. See <https://bugs.launchpad.net/qemu/+bug/1805913>.
 * Using a chroot one can use toolchains for old distributions to compile really old software and kernels for ARM machines (for example old kernels with proprietary parts that are not available in source version) as if one were doing so natively.
 * Do note that because these are virtual machines, usually running on different architecture than the virtual host (i.e. not on ARM virtual hosts), performance will not be as high as a true native solution, but KVM ARM hardfloat allows us to use virtual machines with multiple emulated cores, which helps speed up things like compilation, if one uses parallel builds.
 * Debian for the guest operating system was selected because it has had (and continues to have) excellent support for 32-bit ARM architectures, and this has been true for a very long time.

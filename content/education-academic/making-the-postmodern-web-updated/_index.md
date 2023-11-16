@@ -284,7 +284,7 @@ forms, payments/stores.
 * [Cloud Cannon](https://cloudcannon.com/)
 * [Decap CMS](https://decapcms.org/)
 * [Tina Cloud](https://tina.io/)
-* [Vercel](https://vertcel.com/)
+* [Vercel](https://vercel.com/)
 * Quite useful to reduce the required technical skills required to use
 a static site generator
 * Like a managed dynamic CMS, these generally cost more than managing
