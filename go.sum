@@ -6,8 +6,6 @@ github.com/danielfdickinson/image-handling-mod-hugo-dfd v0.8.0-alpha.1 h1:HCYvc+
 github.com/danielfdickinson/image-handling-mod-hugo-dfd v0.8.0-alpha.1/go.mod h1:h+vNqbDFVmrcnlUq1GsWtKS3HWw7wLDqM1PahGQjSOY=
 github.com/danielfdickinson/image-handling-mod-hugo-dfd v0.8.0-beta.2 h1:Q9cD/SS24FrkbJygVyZg/XtI8uNvER/WK3xEp8Fvkj8=
 github.com/danielfdickinson/image-handling-mod-hugo-dfd v0.8.0-beta.2/go.mod h1:h+vNqbDFVmrcnlUq1GsWtKS3HWw7wLDqM1PahGQjSOY=
-github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361 h1:EtDR0V3i7HcP0XRuIHPTJ7+nHVEPnrfLRRRFLHNeFr0=
-github.com/danielfdickinson/wpxr-to-static v0.0.0-20221001033936-5b4221cbc361/go.mod h1:8ArFjp0rvMTCvY0zPTv8nsKvDBJKvWJ1pyE2NJezQdI=
 github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.5 h1:N4YCVUSTskAw561oAHP6FLxDDh1bySMoXfc7zepU3og=
 github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.5/go.mod h1:rBXDSRu9vdWU236/mBlGXO3h7PNtZM0BROUVbwM9Om4=
 github.com/wildtechgarden/dfd-multipass-vscode-instance v0.3.6 h1:NQ0fK8aqISLCH9vOhoxWWqdh4aQFHTrJ6DlY6ZdVdcU=
