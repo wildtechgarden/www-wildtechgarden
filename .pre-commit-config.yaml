@@ -57,7 +57,7 @@ repos:
     args: [--markdown-linebreak-ext=md]
 
 - repo: "https://github.com/pre-commit/mirrors-eslint"
-  rev: v8.52.0
+  rev: v8.53.0
   hooks:
   - id: eslint
     additional_dependencies:
@@ -87,7 +87,7 @@ repos:
     files: .+\.(md|markdown)$
 
 - repo: "https://github.com/adrienverge/yamllint"
-  rev: v1.32.0
+  rev: v1.33.0
   hooks:
   - id: yamllint
     exclude: ^(_vendor)
@@ -112,7 +112,7 @@ repos:
     exclude: ^(LICENSE|static/|assets/assets/files/|layouts/_default|package(-lock)?\.json$|.vscode)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
-  rev: v7.3.2
+  rev: v8.0.0
   hooks:
   - id: cspell
     args:
