@@ -409,7 +409,7 @@ pageRef = "about/search"
 weight = 90
 
 [module]
-# replacements = "github.com/wildtechgarden/zen-theme-hugo-wtg -> ../../zen-theme-hugo-wtg"
+# replacements = "gitlab.com/danielfdickinson/zen-theme-hugo-wtg -> ../../zen-theme-hugo-wtg"
 # replacements = "github.com/wildtechgarden/server-alpine-linux-docs4web -> ../../server-alpine-linux-docs4web"
 
 [[module.imports]]
@@ -491,7 +491,7 @@ source = "static"
 target = "static"
 
 [[module.imports]]
-path ="github.com/wildtechgarden/zen-theme-hugo-wtg"
+path ="gitlab.com/danielfdickinson/zen-theme-hugo-wtg"
 
 [[module.imports.mounts]]
 source = 'archetypes'
