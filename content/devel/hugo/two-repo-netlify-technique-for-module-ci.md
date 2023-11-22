@@ -17,7 +17,7 @@ tags = [
     "howtos",
     "web-design"
 ]
-frontCard = true
+frontCard = false
 card = true
 toc = true
 +++

@@ -19,7 +19,7 @@ tags = [
     "git",
     "howtos"
 ]
-frontCard = true
+frontCard = false
 card = true
 +++
 
