@@ -8,3 +8,5 @@ github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.4 h1:3dcmnlUYr+C2+wC
 github.com/wildtechgarden/server-alpine-linux-docs4web v0.8.4/go.mod h1:/D1WIxbBSnjANubQnZWJS9vdi+xps8aXkE5XUziKHAI=
 gitlab.com/danielfdickinson/zen-theme-hugo-wtg v0.1.0 h1:SxycqyzMuGLe7H1sLC2KhWdofRYPynxop0Def8kFST0=
 gitlab.com/danielfdickinson/zen-theme-hugo-wtg v0.1.0/go.mod h1:dvfB5L6MvuFhRFgCMLroR7YBJWtoEGLWLZpLo7SO5+8=
+gitlab.com/danielfdickinson/zen-theme-hugo-wtg v0.1.1 h1:+IHVUOUdoqYPBAZHMBQoYuWMZgLhh4oPVLYYAd9fGI0=
+gitlab.com/danielfdickinson/zen-theme-hugo-wtg v0.1.1/go.mod h1:dvfB5L6MvuFhRFgCMLroR7YBJWtoEGLWLZpLo7SO5+8=
