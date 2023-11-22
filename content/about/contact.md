@@ -1,5 +1,5 @@
 +++
-title = "Contact Wild Tech 'Garden'"
+title = "Contact Us"
 aliases =[
 	"/siteentry/contact/",
 	"/contact/"

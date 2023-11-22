@@ -4,7 +4,7 @@ aliases = [
 	"/accessibility/",
 	"/other/accessibility/"
 ]
-title = "Accessibility and Wild Tech 'Garden'"
+title = "Accessibility Statement"
 author = "Daniel F. Dickinson"
 date = 2021-10-15T05:57:11Z
 publishDate = 2021-10-15T05:57:11Z

@@ -72,6 +72,7 @@ breadcrumbSections = [
 	"devel",
 	"education-academic",
 	"series",
+	"site-news",
 	"tags"
 ]
 contact = "dfdpublic@wildtechgarden.ca"
@@ -91,7 +92,7 @@ image = "images/corner-rock-garden-pixelized-2400x1260-text-overlay.png" # Relat
 logo = true
 logoHeight = 32
 logoWidth = 32
-mainSections= ["deploy-admin", "devel", "education-academic"] # The sections you want to have listed on the front page # Default to the section with most content if not set.
+mainSections= ["deploy-admin", "devel", "site-news"] # The sections you want to have listed on the front page # Default to the section with most content if not set.
 mobileMenu = true # Turn on a mobile menu on small screens, default false.
 noImageConvert = false
 noSrcSetDefault = false
@@ -391,6 +392,10 @@ weight = 10
 name = "Ops"
 pageRef = "deploy-admin/"
 weight = 20
+[[menu.main]]
+name = "Site News"
+pageRef = "site-news/"
+weight = 30
 [[menu.main]]
 name = "About"
 pageRef = "about/"

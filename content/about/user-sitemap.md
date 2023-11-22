@@ -5,7 +5,7 @@ aliases= [
 	"/views/",
 	"/about/usersitemap/"
 ]
-title = "Map of Wild Tech 'Garden'"
+title = "Sitemap"
 description = "Hierarchical list of all pages on www.wildtechgarden.ca"
 summary = "Hierarchical list of all pages on this www.wildtechgarden.ca"
 +++
