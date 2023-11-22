@@ -49,6 +49,7 @@ notAlternative = true
 baseName = ""
 isPlainText = true
 mediaType = "text/htaccess"
+notAlternative = true
 
 [mediaTypes]
 [mediaTypes."text/htaccess"]
@@ -162,14 +163,23 @@ redirectsExtra = [
 	"301 /facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/",
 	"301 /post/facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/",
 	"301 /posts/facebook-meltdown/ https://www.danielfdickinson.ca/blog/facebook-meltdown/",
-	"301 /2020/11/29/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/",
-	"301 /backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/",
-	"301 /post/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/",
-	"301 /posts/backing-up-is-hard-to-do/ https://www.danielfdickinson.ca/blog/backing-up-is-hard-to-do/",
+	"301 /education-academic/dating-with-accelerators/ https://www.danielfdickinson/blog/dating-with-accelerators",
+	"301 /1992/10/28/dating-with-accelerators/ https://www.danielfdickinson/blog/dating-with-accelerators",
+	"301 /dating-with-accelerators/ https://www.danielfdickinson/blog/dating-with-accelerators",
+	"301 /post/dating-with-accelerators/ https://www.danielfdickinson/blog/dating-with-accelerators",
+	"301 /docs/education-academic/dating-with-accelerators/ https://www.danielfdickinson/blog/dating-with-accelerators",
 	"301 /2020/07/29/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/",
 	"301 /archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/",
 	"301 /post/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/",
 	"301 /posts/archives-a-conversion-from-docbook-sgml-3-x/ https://www.danielfdickinson.ca/blog/archives-conversion-from-docbook-sgml-3-x/",
+	"301 /education-academic/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /2020/09/20/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /post/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /deploy-admin/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /docs/sbc/raspberry-pi/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /sysadmin-devops/self-host/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
+	"301 /docs/education-academic/intro-to-raspberry-pi-os/ https://www.danielfdickinson.ca/blog/intro-to-raspberry-pi-os/",
 	"301 /develop-design/web-design-web-devel/test-theme-and-debug-tables/hugo-debug-tables-docs/ https://github.com/danielfdickinson/hugo-debug-tables",
 	"301 /devel/hugo-debug-tables-docs/  https://github.com/danielfdickinson/hugo-debug-tables",
 	"301 /devel/hugo/hugo-debug-tables-docs/  https://github.com/danielfdickinson/hugo-debug-tables",
@@ -186,7 +196,43 @@ redirectsExtra = [
 	"301 /devel/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme",
 	"301 /docs/devel/hugo/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme",
 	"301 /devel/hugo/hugo-dfd-demo-site-theme/ https://github.com/danielfdickinson/hugo-dfd-demo-site-theme",
+	"301 /education-academic/ancient-games-old-computers-and-new-tech/ https://www.danielfdickinson.ca/blog/ancient-games-old-computer-and-new-tech/",
+	"301 /post/ancient-games-old-computers-and-new-tech/ https://www.danielfdickinson.ca/blog/ancient-games-old-computer-and-new-tech/",
+	"301 /docs/education-academic/ancient-games-old-computers-and-new-tech/ https://www.danielfdickinson.ca/blog/ancient-games-old-computer-and-new-tech/",
+	"301 /education-academic/board-game-winning-ai/ https://www.danielfdickinson.ca/blog/board-game-winning-ai/",
+	"301 /post/board-game-winning-ai/ https://www.danielfdickinson.ca/blog/board-game-winning-ai/",
+	"301 /posts/board-game-winning-ai/ https://www.danielfdickinson.ca/blog/board-game-winning-ai/",
+	"301 /docs/education-academic/board-game-winning-ai/ https://www.danielfdickinson.ca/blog/board-game-winning-ai/",
+	"301 /education-academics/making-the-postmodern-web-updated/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/",
+	"301 /docs/education-academic/making-the-postmodern-web/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/",
+	"301 /education-academic/making-the-postmodern-web/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/",
+	"301 /docs/education-academic/making-the-postmodern-web-updated/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/",
+	"301 /education-academic/making-the-postmodern-web-updated/making-the-postmodern-web-updated/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/",
 	"301 /develop-design/web-design-web-devel/hugo-dfd-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd",
+	"301 /education-academics/making-the-postmodern-web-updated/resources/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/resources/",
+	"301 /education-academic/making-the-postmodern-web/resources/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/resources/",
+	"301 /docs/education-academic/making-the-postmodern-web/resources/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/resources/",
+	"301 /docs/education-academic/making-the-postmodern-web-updated/resources/ https://www.danielfdickinson.ca/docs/making-the-postmodern-web-updated/resources/",
+	"301 /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/",
+	"301 /2003/02/09/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/",
+	"301 /post/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/",
+	"301 /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/",
+	"301 /a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/",
+	"301 /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/",
+	"301 /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/",
+	"301 /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/",
+	"301 /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/definitions-for-zebra-and-sherlock/",
+	"301 /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/generate-random-problems/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/generate-random-problems/",
+	"301 /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/",
+	"301 /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/",
+	"301 /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/results-for-solving-zebra-and-sherlock/",
+	"301 /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/",
+	"301 /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/",
+	"301 /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/",
+	"301 /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/algorithms-for-solving-bcsp/",
+	"301 /education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/",
+	"301 /projects/old-school/undergraduate/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/",
+	"301 /docs/education-academic/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/ https://www.danielfdickinson.ca/docs/a-study-of-selected-algorithms-against-the-sherlock-and-zebra-problems/bibliography-and-appendices/",
 	"301 /develop-design/web-design-web-devel/hugo-dfd-microformats/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd",
 	"301 /devel/hugo-dfd-microformats/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd",
 	"301 /devel/hugo-dfd-metadata-central/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd",
@@ -201,6 +247,10 @@ redirectsExtra = [
 	"301 /docs/devel/hugo/hugo-metadata-images/ https://github.com/danielfdickinson/metadata-image-mod-hugo-dfd",
 	"301 /devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd",
 	"301 /docs/devel/link-handling-mod-hugo-dfd/ https://github.com/danielfdickinson/metadata-mod-hugo-dfd",
+	"410 /2020/11/29/backing-up-is-hard-to-do",
+	"410 /backing-up-is-hard-to-do",
+	"410 /post/backing-up-is-hard-to-do",
+	"410 /posts/backing-up-is-hard-to-do",
 	"410 /projects/defunct/armshorian/",
 	"410 /develop-design/arm-development/armshorian/",
 	"410 /devel/armshorian/",
@@ -267,7 +317,32 @@ redirectsExtra = [
 	"410 /2008/11/30/debian-custom-cd/",
 	"410 /docs/archived/debian-custom-media/",
 	"410 /sysadmin-devops/debian-custom-media/",
-	"410 /docs/deploy-admin/sysadmin-devops/debian-custom-media/"
+	"410 /docs/deploy-admin/sysadmin-devops/debian-custom-media/",
+	"410 /intro-to-github/*",
+	"410 /29/introduction-to-git-and-github/",
+	"410 /2020/08/29/introduction-to-git-and-github/",
+	"410 /post/introduction-to-git-and-github/",
+	"410 /posts/introduction-to-git-and-github/",
+	"410 /introduction-to-git-and-github/",
+	"410 /docs/development/git-github-gitea/introduction-to-git-and-github/*",
+	"410 /docs/development/git-github-gitea/intro-to-github/*",
+	"410 /develop-design/intro-to-github/*",
+	"410 /devel/intro-to-github/*",
+	"410 /develop-design/29/introduction-to-git-and-github/",
+	"410 /docs/education-academic/intro-to-github/*",
+	"410 /education-academic/intro-to-github/introduction-to-git-and-github/",
+	"410 /29/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /2020/08/29/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /post/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /docs/development/git-github-gitea/introduction-to-git-and-github/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /develop-design/intro-to-github/29/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /develop-design/intro-to-github/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /devel/intro-to-github/edit-test-website-ci-cd-lifecycle-demonstration/",
+	"410 /intro-to-github/edit-test-website-ci-cd-lifecycle/",
+	"410 /post/intro-to-github/edit-test-website-ci-cd-lifecycle/",
+	"410 /posts/intro-to-github/edit-test-website-ci-cd-lifecycle/",
+	"410 /docs/education-academic/intro-to-github/edit-test-website-ci-cd-lifecycle-demonstration/"
 ]
 relatedposts = true # Show related posts under a "See also" section, default false.
 sassTranspiler = "libsass" # The Sass transpiler to use, default "libsass".
@@ -316,10 +391,6 @@ weight = 10
 name = "Ops"
 pageRef = "deploy-admin/"
 weight = 20
-[[menu.main]]
-name = "Learning"
-pageRef = "education-academic/"
-weight = 30
 [[menu.main]]
 name = "About"
 pageRef = "about/"
