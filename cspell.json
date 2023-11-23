@@ -23,7 +23,9 @@
 		"./resources",
 		"./requirements*.txt",
 		"./tests/scripts/**",
-		"./words-*.txt"
+		"./words-*.txt",
+		"./*.geany",
+		"./.editorconfig"
 	],
 	"ignoreWords": [],
 	"language": "en,en-ca,en-gb",

@@ -37,6 +37,9 @@ trim_trailing_whitespace = false
 [*.txt]
 ignore = true
 
+[*.geany]
+end_of_line = crlf
+
 # For .sh files specific overrides may be necessary when using HEREDOCS or
 # the like
 # [{path/to/bad/*.sh,path/to/badcommand}]
