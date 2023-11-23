@@ -93,8 +93,8 @@ remove the files, which means we have two choices:
 2. Rewrite history to remove any reference to the large files
     1. Preserves history for the files you keep.
     2. Some consider rewriting history an
-    'Ultimate Evil{{< sup >}}TM{{< /sup >}}'
-    3. Others with branches of you repository will need to rebase
+    'Ultimate Evil'{{< sup >}}TM{{< /sup >}}
+    3. Others with branches of your repository will need to rebase
        **not** merge.
     4. It takes more work.
 
@@ -391,8 +391,6 @@ the `HUGO_VERSION` you specified.
 By requiring the Netlify status checks that will now be available in your
 branch protection settings, you can require that the Netlify build be
 successful before merging is allowed.
-
-{{< figure src="assets/images/github-branch-protection-require-netlify-deploy-success.png" caption="Screenshot showing GitHub branch protection for 'main' branch which requires Netlify deploy-preview to succeed" alt="Screenshot showing GitHub branch protection for 'main' branch which requires Netlify deploy-preview to succeed" >}}
 
 ## Remember to `git rebase` not `git merge` or `git pull` any existing branches
 
