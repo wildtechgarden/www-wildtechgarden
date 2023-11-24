@@ -562,6 +562,7 @@ hyperv
 iexclude
 iface
 ifdown
+iframes
 ifstatus
 iftop
 ifup

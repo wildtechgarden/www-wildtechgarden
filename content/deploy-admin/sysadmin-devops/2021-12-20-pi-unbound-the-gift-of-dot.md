@@ -46,7 +46,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
 
 ## Setup
 
-1. [Configure your Raspberry Pi as a server](../self-host/2020-09-08-raspberry-pi-os-for-a-server.md) using Pi OS based on Bullseye or Ubuntu Server 21.04 (Pi 2 or higher only) or similarly capable Linux system.
+1. [Configure your Raspberry Pi as a server](https://www.danielfdickinson.ca/blog/raspberry-pi-os-for-a-server/) using Pi OS based on Bullseye or Ubuntu Server 21.04 (Pi 2 or higher only) or similarly capable Linux system.
 2. Add the Unbound DNS resolver and the Unbound 'host' tool
 
    ```bash

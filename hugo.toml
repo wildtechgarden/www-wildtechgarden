@@ -347,6 +347,13 @@ redirectsExtra = [
 	"410 /devel/netlify-pre-commit-and-other-news/",
 	"410 /devel/multipass-instance-creation/"
 ]
+
+redirectMatches = [
+	"310 /deploy-admin/self-host/(.*) https://www.danielfdickinson.ca/blog/$1",
+	"310 /docs/deploy-admin/self-host/(.*) https://www.danielfdickinson.ca/blog/$1",
+	"310 /sysadmin-devops/self-host/(.*) https://www.danielfdickinson.ca/blog/$1"
+]
+
 relatedposts = true # Show related posts under a "See also" section, default false.
 sassTranspiler = "libsass" # The Sass transpiler to use, default "libsass".
 searchAllPages = true

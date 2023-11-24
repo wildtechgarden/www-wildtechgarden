@@ -1,0 +1,32 @@
+<IfModule mod_headers.c>
+	Header set Content-Security-Policy "default-src {{ site.BaseURL }}; object-src {{ site.BaseURL }}; script-src {{ site.BaseURL }} 'unsafe-inline' 'unsafe-eval'; style-src {{ site.BaseURL }} 'unsafe-inline'"
+	# If have PDFs or other embedded iframes
+	Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+ErrorDocument 404 /404.html
+ErrorDocument 410 /410/index.html
+RewriteEngine On
+{{- range site.Params.redirectsDomains }}
+RewriteCond %{HTTP_HOST} ^{{ . }}$
+RewriteRule ^(.*)$ {{ site.BaseURL }}$1 [QSA,END,R=301]
+{{- end }}
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,END,R=301]
+{{- range site.Pages -}}
+	{{- if .Aliases -}}
+	{{- $rTarget := .RelPermalink -}}
+		{{- range .Aliases -}}
+			{{- if strings.HasSuffix . "/" }}
+Redirect 301 {{ strings.TrimSuffix "/" . }} {{ $rTarget }}
+			{{- end }}
+Redirect 301 {{ . }} {{ $rTarget }}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+{{- range site.Params.redirectsExtra }}
+Redirect {{ . }}
+{{- end -}}
+{{- range site.Params.redirectMatches }}
+RedirectMatch {{ . }}
+{{- end -}}
