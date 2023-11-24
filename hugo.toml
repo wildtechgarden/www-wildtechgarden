@@ -349,9 +349,9 @@ redirectsExtra = [
 ]
 
 redirectMatches = [
-	"310 /deploy-admin/self-host/(.*) https://www.danielfdickinson.ca/blog/$1",
-	"310 /docs/deploy-admin/self-host/(.*) https://www.danielfdickinson.ca/blog/$1",
-	"310 /sysadmin-devops/self-host/(.*) https://www.danielfdickinson.ca/blog/$1"
+	"301 /deploy-admin/self-host/(.*) https://www.danielfdickinson.ca/blog/$1",
+	"301 /docs/deploy-admin/self-host/(.*) https://www.danielfdickinson.ca/blog/$1",
+	"301 /sysadmin-devops/self-host/(.*) https://www.danielfdickinson.ca/blog/$1"
 ]
 
 relatedposts = true # Show related posts under a "See also" section, default false.
