@@ -97,8 +97,8 @@ device too; you won’t need it).
 
 1. Boot the VM (e.g. using ‘Virtual Machine|Run’).
 2. It will drop to a UEFI shell.
-3. Execute ``bcfg add 0 FS0:EFI\debian\grubarm.efi "Linux"``
-4. Execute ``reset``
+3. Execute `bcfg boot add 0 FS0:EFI\debian\grubarm.efi "Linux"`
+4. Execute `reset`
 5. VM should reboot into Debian GNU/Linux.
 
 ## Boot at Will
