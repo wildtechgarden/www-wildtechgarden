@@ -7,7 +7,8 @@ aliases = [
 	"/devel/infrastructure-via-code/iac/",
 	"/projects/experimental-learning/infrastructure-via-code/",
 	"/develop-design/infrastructure-via-code/",
-	"/docs/devel/infrastructure-via-code/"
+	"/docs/devel/infrastructure-via-code/",
+	"/devel/infrastructure-via-code/"
 ]
 author = "Daniel F. Dickinson"
 description = """\
@@ -50,9 +51,14 @@ The various scripts and dummy configuration files are available in a Git reposit
 
 ### Why
 
-These meanderings were initiated due to the issues described in [Terraforming OVH Is Not Paradise](https://www.danielfdickinson/blog/terraforming-with-ovh-is-not-paradise/) in which [Terraform](https://www.terraform.io) developed issues after a relatively short time (\< two months) of using it to manage a personal infrastructure on OVH. This seems to be due to Terraform making the assumption that the unique id's for resources it manages are permanent and this assumption not holding true for the OVH API nor for OpenStack at OVH.
+These meanderings were initiated due to the issues described in 'Terraforming OVH Is Not Paradise' in which [Terraform](https://www.terraform.io)
+developed issues after a relatively short time (\< two months) of using it to manage a personal infrastructure on OVH. This seems to be due to
+Terraform making the assumption that the unique id's for resources it manages
+are permanent and this assumption not holding true for the OVH API nor for
+OpenStack at OVH.
 
-In addition, this has been a chance for the author to practise Python 3 programming since that isn't his strongest language.
+In addition, this has been a chance for the author to practise Python 3
+programming since that isn't his strongest language.
 
 ## Requirements Targeted
 

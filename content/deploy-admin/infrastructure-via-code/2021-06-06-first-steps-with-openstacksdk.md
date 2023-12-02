@@ -5,6 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/first-steps-with-openstacksdk/
     - /docs/devel/infrastructure-via-code/first-steps-with-openstacksdk/
     - /devel/first-steps-withopenstacksdk/
+    - /devel/infrastructure-via-code/first-steps-with-openstacksdk/
 title: "IvC: OpenStackSDK first steps"
 date: 2021-06-06T15:29:14-04:00
 publishDate: 2021-06-06T17:14:46-04:00

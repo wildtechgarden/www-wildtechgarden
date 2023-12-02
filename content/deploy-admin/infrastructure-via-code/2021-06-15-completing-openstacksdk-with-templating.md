@@ -5,6 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/completing-openstacksdk-with-templating/
     - /docs/devel/infrastructure-via-code/completing-openstacksdk-with-templating/
     - /devel/completing-openstacksdk-with-templating/
+    - /devel/infrastructure-via-code/completing-openstacksdk-with-templating/
 title: "IvC: Complete templating"
 date: 2021-06-15T21:50:11-04:00
 publishDate: 2021-06-25T02:25:11-04:00

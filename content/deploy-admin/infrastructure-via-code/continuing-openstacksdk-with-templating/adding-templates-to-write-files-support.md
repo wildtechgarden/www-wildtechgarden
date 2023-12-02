@@ -5,6 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/continuing-openstacksdk-with-templating/adding-templates-to-write-files-support/
     - /docs/devel/infrastructure-via-code/continuing-openstacksdk-with-templating/adding-templates-to-write-files-support/
     - /devel/continuing-openstacksdk-with-templating/adding-templates-to-write-files-support/
+    - /devel/infrastructure-via-code/continuing-openstacksdk-with-templating/adding-templates-to-write-files-support/
 title: "Combining templates with write_files support"
 date: 2021-06-13T19:29:29-04:00
 publishDate: 2021-06-15T19:17:10-04:00

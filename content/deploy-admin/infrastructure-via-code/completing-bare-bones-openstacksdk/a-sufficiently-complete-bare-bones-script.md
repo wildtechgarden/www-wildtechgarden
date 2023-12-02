@@ -5,6 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/completing-bare-bones-openstacksdk/a-sufficiently-complete-bare-bones-script/
     - /docs/devel/infrastructure-via-code/completing-bare-bones-openstacksdk/a-sufficiently-complete-bare-bones-script/
     - /devel/completing-bare-bones-openstacksdk/a-sufficiently-complete-bare-bones-script/
+    - /devel/infrastructure-via-code/completing-bare-bones-openstacksdk/a-sufficiently-complete-bare-bones-script/
 title: "A sufficiently complete bare bones script"
 date: 2021-06-07T11:30:33-04:00
 publishDate: 2021-06-08T15:47:23-04:00

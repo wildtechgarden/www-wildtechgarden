@@ -5,6 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/continuing-openstacksdk-with-templating/just-a-template/
     - /docs/devel/infrastructure-via-code/continuing-openstacksdk-with-templating/just-a-template/
     - /devel/continuing-openstacksdk-with-templating/just-a-template/
+    - /devel/infrastructure-via-code/continuing-openstacksdk-with-templating/just-a-template/
 title: "First, just a template"
 date: 2021-06-13T19:29:29-04:00
 publishDate: 2021-06-15T19:17:10-04:00

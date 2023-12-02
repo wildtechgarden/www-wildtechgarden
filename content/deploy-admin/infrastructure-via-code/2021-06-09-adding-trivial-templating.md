@@ -5,6 +5,7 @@ aliases:
     - /develop-design/infrastructure-via-code/adding-trivial-templating/
     - /docs/devel/infrastructure-via-code/adding-trivial-templating/
     - /devel/adding-trivial-templating/
+    - /devel/infrastructure-via-code/adding-trivial-templating/
 title: "IvC: Adding trivial templating"
 date: 2021-06-09T13:32:13-04:00
 publishDate: 2021-06-11T18:29:35-04:00

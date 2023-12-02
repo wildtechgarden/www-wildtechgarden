@@ -12,7 +12,7 @@ aliases:
     - /develop-design/infrastructure-via-code/continuing-openstacksdk-with-templating/
     - /docs/devel/infrastructure-via-code/continuing-openstacksdk-with-templating/
     - /devel/continuing-openstacksdk-with-templating/
-    - /devel/devel/infrastructure-via-code/continuing-openstack-with-templating/continuing-openstack-sdk-with-templating/
+    - /devel/infrastructure-via-code/continuing-openstack-with-templating/continuing-openstack-sdk-with-templating/
 series:
     - infrastructure-via-code-openstack
 tags:

@@ -11,6 +11,7 @@ aliases:
     - /docs/devel/infrastructure-via-code/completing-bare-bones-openstacksdk/
     - /devel/completing-bare-bones-openstacksdk/
     - /docs/devel/infrastructure-via-code/bare-bones-openstacksdk-completion/
+    - /devel/infrastructure-via-code/completing-bare-bones-openstacksdk/
 series:
     - infrastructure-via-code-openstack
 tags:
