@@ -1,7 +1,6 @@
 ---
 slug: using-xca-to-create-private-ssl-certificates
 aliases:
-    - /docs/sysadmin-devops/using-xca-to-create-private-ssl-certificates/
     - /sysadmin-devops/using-xca-to-create-private-ssl-certificates/
     - /deploy-admin/using-xca-to-create-private-ssl-certificates/
     - /docs/deploy-admin/sysadmin-devops/using-xca-to-create-private-ssl-certificates/

@@ -84,8 +84,8 @@ the project, and copyright and licensing.
 ### Viewing the code
 
 The code (less personalisation via private variables) for generating Daniel's
-base images is available in a
-[GitLab repository called 'DFD Debian VM images using Packer Qemu'](https://github.com/danielfdickinson/debian-qemu-packer-dfd).
+base images was available in a GitLab repository called 'DFD Debian VM images
+using Packer Qemu, but has since been removed.
 
 ## Code Discussion
 
@@ -114,14 +114,14 @@ system.
 	* bootcmd (shell commands to run early): Set the default `etckeeper` git
 		branch to `main`.
 	* runcmd (shell commands to after write_files, near the end of `cloud-init`).
-		See [variable settings (in the README for the code)](https://github.com/danielfdickinson/debian-qemu-packer-dfd/blob/main/README.md#variables)
+		See variable settings (in the README for the code)
 	* Make sure groups `adm`, `sudo`, 'and `sudonp` exist.
 	* Increase the size of the 'root' (`/`) partition to expand to fill all empty
 		space on the OS volume.
-	* Upgrade and install packages (see [variable settings (in the README for the
-		code)](https://github.com/danielfdickinson/debian-qemu-packer-dfd/blob/main/README.md#variables)) for the package list.
-	* SSH host key types to generate: Also see [variable settings (in the README
-		for the code)](https://github.com/danielfdickinson/debian-qemu-packer-dfd/blob/main/README.md#variables).
+	* Upgrade and install packages (see variable settings (in the README for the
+		code) for the package list.
+	* SSH host key types to generate: Also see variable settings (in the README
+		for the code).
 	* Create an admin user (member of the `adm`, `sudo`, and `sudonp` groups,
 		which grants the user extra permissions and allows the use of `sudo`).
 		Username, description, and SSH key (for image creation only) are defined
@@ -156,7 +156,7 @@ system.
 
 ### Variables (with their defaults)
 
-* See [README](https://github.com/danielfdickinson/debian-qemu-packer-dfd/blob/main/README.md#variables)
+* See README
 
 ## CI Discussion
 
