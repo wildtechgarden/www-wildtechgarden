@@ -214,7 +214,7 @@ creating the image.
 * The following is a very simple ansible playbook for demonstration purposes as the use of [Ansible](https://www.ansible.com/) is beyond the scope of this article.
 * Also note that [Packer can use many provisioners](https://developer.hashicorp.com/packer/docs/provisioners), so if you don’t like Ansible you have other choices.
 * **NB** Password *really* shouldn’t be included in playbooks.
-  * You should use the [ansible ‘vault’](https://docs.ansible.com/ansible/latest/user_guide/vault.html#playbooks-vault) with [encrypted passwords](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module).
+  * You should use the [ansible ‘vault’](https://docs.ansible.com/ansible/latest/vault_guide/index.html#playbooks-vault) with [encrypted passwords](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-generate-encrypted-passwords-for-the-user-module).
 * This playbook assumes you have an SSH public/private keypair in your home directory’s .ssh subdirectory. If this is not true, please generate one with ssh-keygen -t rsa.
 * You should name this ``playbook-armhf-no-efi-blog-example.yml``.
 
