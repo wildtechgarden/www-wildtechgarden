@@ -215,7 +215,7 @@ You can now exit the administrator powershell.
 #### Tweak according to common Windows and Linux setup
 
 * [Configure language and regional settings as appropriate](2021-04-24-common-windows-and-linux.md#configure-language-and-regional-settings-as-appropriate)
-* [Tweak the base install (before adding any software or apps) and settings to your preferred base configuration(2021-04-24-common-windows-and-linux.md#fn:2)
+* [Tweak the base install (before adding any software or apps) and settings to your preferred base configuration](2021-04-24-common-windows-and-linux.md#fn:2)
 * I also recommend creating a copy of your freshly installed virtual hard drive. (the virtual disk image on a typical Debian/Ubuntu system would be located in ``/var/lib/libvirt/images``) as well as the Libvirt configuration in ``/etc/libvirt``. It is presumed you know enough Linux, or can learn it elsewhere, to do this.
 
 #### Configure 'Network and Sharing', if applicable

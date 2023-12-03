@@ -22,6 +22,8 @@ summary: "These are some personal notes about setting up a very nice combined
 Windows and Linux productivity and development environment."
 ---
 
+{{< mdl-disable "<!-- markdownlint-disable MD046 -->" >}}
+
 {{< details-toc >}}
 
 ## Preface
@@ -467,25 +469,25 @@ cross-platform editor and development environment) is an important factor as wel
 [^2]: Specifics depend on you or your organization. A collection of things I
 like to ensure on a single user desktop is:
 
-* Use BitLocker hard drive encryption (enable the non-TPM option if necessary).
-* Require using of Ctrl-Alt-Del (**if** on real hardware) so you use the
-  'Secure Desktop' to enter credentials
-* Increase the UAC settings so you always are prompted for credentials
-  on the secure desktop, and never just click through for elevation to
-  Administrator access.
-* Set a soft lockout for too many password attempts.
-* Don't use a maximum password age (it causes more problems than it helps).
-* Enforce at least eight characters passwords with complexity requirements met.
-* For SMB encrypt all communications and require NTLMv2 (if you have a external device that is too old to support that, it's time to upgrade it, unless, perhaps, you are experimenting with a new OS that isn't mature enough to have implemented this yet).
-* Set a machine inactivity timeout (which doesn't rely on setting the screensaver per-user to ensure that the desktop will lock when not in use).
-* Use File History for backing up the folders for backing up your data.  It's not a bare metal restore option, but it makes sure you have your data backed up, as well as giving you the ability to go back to previous versions of files. Needless to say you should make sure your back up location is encrypted on disk. It is also important to use 'Advanced Options' and **check the Event Log for errors** on a regular basis.
-* Enable system checkpoints.
-* Once you've got a good base image, don't forget to make a system image.
+	* Use BitLocker hard drive encryption (enable the non-TPM option if necessary).
+	* Require using of Ctrl-Alt-Del (**if** on real hardware) so you use the
+	  'Secure Desktop' to enter credentials
+	* Increase the UAC settings so you always are prompted for credentials
+	  on the secure desktop, and never just click through for elevation to
+	  Administrator access.
+	* Set a soft lockout for too many password attempts.
+	* Don't use a maximum password age (it causes more problems than it helps).
+	* Enforce at least eight characters passwords with complexity requirements met.
+	* For SMB encrypt all communications and require NTLMv2 (if you have a external device that is too old to support that, it's time to upgrade it, unless, perhaps, you are experimenting with a new OS that isn't mature enough to have implemented this yet).
+	* Set a machine inactivity timeout (which doesn't rely on setting the screensaver per-user to ensure that the desktop will lock when not in use).
+	* Use File History for backing up the folders for backing up your data.  It's not a bare metal restore option, but it makes sure you have your data backed up, as well as giving you the ability to go back to previous versions of files. Needless to say you should make sure your back up location is encrypted on disk. It is also important to use 'Advanced Options' and **check the Event Log for errors** on a regular basis.
+	* Enable system checkpoints.
+	* Once you've got a good base image, don't forget to make a system image.
 
 [^3]: In my opinion, there are two main conditions under which one would not use WSL2:
 
-* One's machine (or virtual machine) doesn't support WSL2 (e.g. due to missing CPU features).
-* One needs the bare metal virtualization mode of a hypervisor other than Hyper-V (e.g. if you need VMWare or VirtualBox with their native virtualization rather than the Hyper-V compatible virtualization).
+	* One's machine (or virtual machine) doesn't support WSL2 (e.g. due to missing CPU features).
+	* One needs the bare metal virtualization mode of a hypervisor other than Hyper-V (e.g. if you need VMWare or VirtualBox with their native virtualization rather than the Hyper-V compatible virtualization).
 
 [^4]: Actually, while not recommended, it is possible to use VcXsrv or Xming (X
       servers for Windows) in order to be also be able to run X11 apps from
