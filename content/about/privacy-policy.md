@@ -22,9 +22,9 @@ toCanonical = "https://www.danielfdickinson.ca/about/privacy-policy/"
 
 ## Hosting service privacy policy
 
-This site is hosted on [Netlify](https://www.netlify.com/privacy/) which means
-their [privacy policy](https://www.netlify.com/privacy/) affects you, the
-reader.
+This site is hosted on [OVHcloud](https://www.ovhcloud.com/en-ca/). This means your
+IP address, browser, other industry standard web server logs are preserved and
+kept available. I am not aware of a specific limits on retention of these logs.
 
 ### Contact Form
 
