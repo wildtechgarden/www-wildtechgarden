@@ -37,13 +37,13 @@ Oh, and you get DNSSEC for free with this!
 ### What is DNSSEC and why should you want it?
 
 >DNSSEC is an end-to-end security layer designed to ensure secure communication throughout the domain name system. DNSSEC provides a layer of authentication so that an end user has certain assurances that they are reaching the actual website.
-> — From [DNSSEC: Securing the domain name system](https://www.cira.ca/dnssec-securing-domain-name-system) on [CIRA's Website](https://www.cira.ca/) (CIRA is the Canadian Internet Registration Authority).
+> — From [DNSSEC: Securing the domain name system](https://www.cira.ca/en/dnssec-securing-domain-name-system) on [CIRA's Website](https://www.cira.ca/) (CIRA is the Canadian Internet Registration Authority).
 
 ### Limitations
 
 These technologies do not prevent the provider of the DNS service you are using from seeing your IP address and/or logging your queries; the job of DoT (and an alternative technology called DNS over HTTP or 'DoH') is keep the traffic private while in transit between you and the provider. The job of DNSSEC is to authenticate that you are connecting to the actual site you think you are (that is, it is a signing mechanism not an encryption mechanism).
 
-In my case, as a Canadian I have the availability of the [Canadian Shield](https://www.cira.ca/cybersecurity-services/canadian-shield) service by [CIRA](https://www.cira.ca/), which I quite frankly find more trustworthy than random servers offering privacy services, especially ones that do so for free. While there are enough folks who would be willing and able to offer such services for free on a small scale out of an honest belief it is a good thing, in the absence of trustworthy audits or verification of the service, or some credible business model for offering it at scale (and especially then I'd want a trustworthy audit) I would be less convinced of the value of using DoT/DoH instead of the DNS servers offered by my ISP (which do support DNSSEC). That said, if you don't have the option (or trust) of CIRA, a quick search will reveal a number of DNS providers offering DNSSEC and DoT servers. I leave it to you to decide who you are willing to trust with your DNS data.
+In my case, as a Canadian I have the availability of the [Canadian Shield](https://www.cira.ca/cybersecurity-services/canadian-shield) service by [CIRA](https://www.cira.ca/en/), which I quite frankly find more trustworthy than random servers offering privacy services, especially ones that do so for free. While there are enough folks who would be willing and able to offer such services for free on a small scale out of an honest belief it is a good thing, in the absence of trustworthy audits or verification of the service, or some credible business model for offering it at scale (and especially then I'd want a trustworthy audit) I would be less convinced of the value of using DoT/DoH instead of the DNS servers offered by my ISP (which do support DNSSEC). That said, if you don't have the option (or trust) of CIRA, a quick search will reveal a number of DNS providers offering DNSSEC and DoT servers. I leave it to you to decide who you are willing to trust with your DNS data.
 
 ## Setup
 
@@ -75,7 +75,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
        forward-ssl-upstream: yes
    ```
 
-   In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecurity-services/canadian-shield) as our 'upstream' DNS servers. You will likely wish to adjust to servers applicable to your situation.
+   In this example we use the [CIRA Canadian Shield](https://www.cira.ca/en/cybersecurity-services/canadian-shield) as our 'upstream' DNS servers. You will likely wish to adjust to servers applicable to your situation.
 
 5. And another file: ``/etc/unbound.conf.d/disable-remote-control.conf``:
 
@@ -108,7 +108,7 @@ In my case, as a Canadian I have the availability of the [Canadian Shield](https
 
 ### Configure your router
 
-This varies from router to router, but some [general instructions](https://www.cira.ca/cybersecurity-services/canadian-shield/configure) [CIRA](https://www.cira.ca/) provides (in the 'Home router/gateway' section) can be used, except that instead of using the Canadian Shield DNS addresses you use only your Unbound Pi IP address. For those who are alert, you will realize the CIRA addresses (or equivalent if you are not using CIRA's servers, above) are already used in the Unbound configuration and therefore will by used by systems that use your Pi. It will simply be through the Pi instead of through the router (with the addition of using DNS over TLS and DNSSEC).
+This varies from router to router, but some [general instructions](https://www.cira.ca/en/cybersecurity-services/canadian-shield/configure) [CIRA](https://www.cira.ca/) provides (in the 'Home router/gateway' section) can be used, except that instead of using the Canadian Shield DNS addresses you use only your Unbound Pi IP address. For those who are alert, you will realize the CIRA addresses (or equivalent if you are not using CIRA's servers, above) are already used in the Unbound configuration and therefore will by used by systems that use your Pi. It will simply be through the Pi instead of through the router (with the addition of using DNS over TLS and DNSSEC).
 
 ### Configure Windows, smartphones and other devices
 
@@ -124,7 +124,7 @@ This is a special case and, for a Linux laptop, has the benefit that you can con
 
 The first configuration we cover is for the case where the network setup is managed outside SystemD (such as the typical use of NetworkManager by most distributions used on a laptop). You can also use this config on the Unbound Pi.
 
-In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecurity-services/canadian-shield) as our 'upstream' DNS servers. You will likely wish to adjust to servers applicable to your situation.
+In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecurity-services/en/canadian-shield) as our 'upstream' DNS servers. You will likely wish to adjust to servers applicable to your situation.
 
 1. Edit ``/etc/systemd/resolved.conf`` with contents such as (assuming your Pi's IP address is 192.168.1.38) and adjusted for your network:
 
@@ -151,7 +151,7 @@ In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecur
 
 #### Option 2: DNS and Network via SystemD
 
-In this example we use the [CIRA Canadian Shield](https://www.cira.ca/cybersecurity-services/canadian-shield) as our 'upstream' DNS servers. You will likely wish to adjust to servers applicable to your situation.
+In this example we use the [CIRA Canadian Shield](https://www.cira.ca/en/cybersecurity-services/canadian-shield) as our 'upstream' DNS servers. You will likely wish to adjust to servers applicable to your situation.
 
 1. Configure the network (this assumes you have already disabled non-systemD network; doing so is out of scope for this article). In this example we edit ``/etc/systemd/network/enp3s0.conf`` (where ``enp3s0`` is the network device we are configuring). For WiFi and/or any number of complex things you can do with you network, you will need to refer to the SystemD documentation and/or other guides.
 
