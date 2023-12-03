@@ -1,5 +1,5 @@
 +++
-title = "2023-12-02: Main restructure complete"
+title = "Wild Tech 'Garden' Dec 2, 2023: Main restructure complete"
 author = "Daniel F. Dickinson"
 description = """\
 Main content restructuring is now complete. To do is changing the theme, and \
