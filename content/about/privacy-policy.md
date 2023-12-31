@@ -10,8 +10,6 @@ publishDate = 2021-01-17T19:02:07+00:00
 title = "Privacy Policy"
 description = "Informal privacy policy for www.wildtechgarden.ca, such as it is."
 summary = "Informal privacy policy for www.wildtechgarden.ca, such as it is."
-pageCanonical = false
-toCanonical = "https://www.danielfdickinson.ca/about/privacy-policy/"
 +++
 
 ## Who we are
