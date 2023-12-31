@@ -1,4 +1,5 @@
 +++
+# cspell:ignore DFD's mkdosfs archi squashf archis
 slug = "bare-metal-cloud-init"
 aliases = [
 	"/docs/deploy-admin/automating-personal-cloud-infrastructure/bare-metal-cloud-init/",
@@ -31,47 +32,50 @@ card = true
 
 {{< details-toc >}}
 
-The base configuration is very basic and aims to act like an OVH Debian 11
-(Bullseye) dedicated server's base configuration.
+Daniel F. Dickinson's Cloud-Init deployment for a bare-metal host for a
+'personal infrastructure'. This repository provides the base configuration
+upon which Ansible will build.
+
+The base configuration is very basic and aims to act like an OVH Debian 12
+(Bookworm) dedicated server's base configuration.
+
+This repository should not include any private or even particularly personalised
+information in unencrypted form, and is designed for DFD's uses, so likely not
+a 'plug and play' option for others. It is Daniel's hope, however, that it still
+proves informative and
+useful.
 
 _Aside_: This method of deployment is much faster at actual deploy time than
-using a `debian-installer` based installation. Of course that is because adding
-packages, setting up users, etc, is work you've done ahead of time, and gets
-applied automagically while you (e.g.) have a coffee. See [my related Ansible
-repository](https://github.com/danielfdickinson/debian-libvirt-ansible-dfd) for
-an example of the main install.
+using a `debian-installer` based installation. Of course that is because
+adding packages, setting up users, etc, is work you've done ahead of time, and
+gets applied automagically while you (e.g.) have a coffee. See [my old related
+Ansible
+repository](https://github.com/danielfdickinson/debian-libvirt-ansible-dfd)
+for an example of the main install.
 
-## Repository URL
+## Metadata
 
-<https://github.com/danielfdickinson/debian-bare-metal-cloud-init-dfd>
+### Repository URL
+
+<https://gitlab.com/danielfdickinson/debian-bare-metal-cloud-init-dfd>
 
 ## Features and default configuration
 
 * Sample files for a
-	[`NoCloud`](https://cloudinit.readthedocs.io/en/20.4.1/topics/datasources/nocloud.html)
+	[`NoCloud`](https://cloudinit.readthedocs.io/en/22.4.2/topics/datasources/nocloud.html)
 	partition for a bare-metal server deployed using a 'cloud' image and
 	cloud-init data.
 * Currently a documentation rather than code project.
 	* (Daniel's initial plan was to automate more complex user-data, but
 	that proves unnecessary for the basic configuration that is being imitated).
 
-## Using the repository
+## Using this repository
 
-The repository is meant for the case where you are only rarely deploying on
-physical hosts (in Daniel's case the goal is to 'pre-test' deployments that will
-be on dedicated servers on OVH for the real deal). If one frequently needs to do
-this type of deployment, it is instead recommended to set up a proper MAAS
-(Metal As A Service) environment.
-
-### Clone the repository
-
-```bash
-git clone https://github.com/danielfdickinson/debian-bare-metal-cloud-init-dfd
-```
-
-Then rename the files in the `nocloud` directory from `meta-data.sample`,
-`network-config.sample`, and `user-data.sample` to `meta-data`,
-`network-config`, and `user-data`, respectively.
+This repository is meant for the case where you are only rarely deploying on
+physical hosts (in Daniel's case the goal is to create local 'pre-test'
+deployments that will be on dedicated servers on OVH for the real deal). If one
+frequently needs to do this type of deployment, it is instead recommended to
+set up a proper MaaS (Metal As A Service) environment.
 
 ### Preparing the 'cloud-init' (cloud-config) data
 
@@ -84,36 +88,165 @@ Then rename the files in the `nocloud` directory from `meta-data.sample`,
 
 ### Deploying on the host
 
-1. Obtain a Debian 'generic' cloud image such as
-<https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.tar.xz>
+1. Prepare media with the `cloud-init` data
+
+	On a linux-compatible media:
+
+	1. Copy `meta-data`, `network-config`, and `user-data` to the media
+	2. Safely remove the media
+
+2. Obtain a Debian 'generic' cloud image such as
+<https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.tar.xz>
 	If you will have a network available when accessing the target host's
 	storage you may be able to download the image directly onto the desired
 	disk. For example you could do (assuming the host's root partition belongs on
 	/dev/sdb):
 
 	```bash
-	curl https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-generic-amd64.tar.xz | tar -O -xJf - disk.raw | dd of=/dev/sdb bs=1M
+	curl -L https://cloud.debian.org/images/cloud/bookworm/latest/debian-12-generic-amd64.tar.xz | tar -O -xJf - disk.raw | dd of=/dev/sdb bs=1M
 	```
 
 	* **Note** that using this technique writes a whole disk image to the target
 	disk, not a single partition or individual files.
 	* **Note 2** If you have access to the storage hardware by itself, you may
-	not need to	boot the system. If the system needs to be booted to access the
+	not needed to boot the system. If the system needs to be booted to access the
 	hardware, a system rescue image such as <https://www.system-rescue.org/>
 	can be help. The rescue image can also be handy for other command line
 	system recovery situations).
 
-2. At the _end_ of the boot _disk_ (not partition) add a small FAT32 partition
+	An example procedure for this step, when you need to boot the system to
+	access the hardware, might be:
+
+	1. Boot the system using a recovery CD (e.g. [System Rescue
+	CD](https://www.system-rescue.org/))
+	2. Use `lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT` to generate a list
+	disks and partitions on the system, e.g.:
+
+		```plaintext
+			NAME      SIZE FSTYPE            LABEL    UUID                                 MOUNTPOINT
+		sda     931.5G
+		├─sda1  930.5G ext4                       e346a5d8-de78-48eb-c987-67d86b231f10 /
+		├─sda14     3M
+		└─sda15   124M vfat                       3A93-FAF0                            /boot/efi
+		sdb    1.7G iso966 RESCUE905 2023-01-31-01-59-58-00
+		├─sdb1 730M iso966 RESCUE905 2023-01-31-01-59-58-00
+		└─sdb2 1.4M vfat             FE87-33BA
+		```
+
+	3. Identify the rescue disk (in this case `sdb`) and the target disk (in this
+	case `sda`).
+	4. Configure the network if is not automatically configured. (If you do not
+	have a network at this stage you will need to place the debian cloud image on
+	media such as a USB flash drive).
+	5. Since the target disk is `/dev/sda` (note that we add `/dev` in front of
+	disk name we identified above) we issue a command such as:
+
+		```bash
+		curl -L https://cloud.debian.org/images/cloud/bookworm/20231218-1609/debian-12-generic-amd64-20231228-1609.tar.xz | tar -O -xJf - disk.raw | dd of=/dev/sda bs=1M
+		```
+
+		* Without a network, assuming you copied the debian cloud image to a
+		linux-compatible media, and the media is detected as `/dev/sdc`, you would
+		instead issue:
+
+			```bash
+			mount /dev/sdc /mnt
+			tar -O -xJf /mnt/debian-12-generic-amd64-20231228-1609.tar.xz disk.raw | dd of=/dev/sda bs=1M
+			umount /mnt
+			```
+
+3. At the _end_ of the boot _disk_ (not partition) add a small FAT32 partition
 	with the filesystem volume label `CIDATA`. In that partition you should add
 	the files `meta-data`, `user-data`, and optional `network-config` to the root
-	of the filesystem. For more information see the [cloud-init 20.4.1 'NoCloud'
-	documentation](https://cloudinit.readthedocs.io/en/20.4.1/topics/datasources/nocloud.html).
-	(We follow the 20.4.1 documentation because that is the version used with
-	Debian Bullseye cloud images).
+	of the filesystem. For more information see the [cloud-init 22.4.2 'NoCloud
+	documentation](https://cloudinit.readthedocs.io/en/22.4.2/topics/datasources/nocloud.html).
+	(We follow the 22.4.2 documentation because that is the version used with
+	Debian Bookworm cloud images).
 
-## Example install session and first boot
+	An example procedure that you would use following the steps to extract the
+	debian cloud image, could be:
 
-``` text
+	1. Execute: `parted /dev/sda`
+	2. See (for example):
+
+		```plaintext
+		GNU Parted 3.5
+		Using /dev/sda
+		Welcome to GNU Parted! Type 'help' to view a list of commands.
+
+		```
+
+	3. Enter: print
+	4. See:
+
+		```plaintext
+		Warning: Not all of the space available to /dev/sda appears to be used, you can
+		fix the GPT to use all of the space (an extra 1949330864 blocks) or continue
+		with the current setting?
+		Fix/Ignore?
+		```
+
+	5. Type: `f` to fix the partition table
+	6. See (for example):
+
+		```plaintext
+		Model: ATA BFL38292432 (scsi)
+		Disk /dev/sda: 1000GB
+		Sector size (logical/physical): 512B/512B
+		Partition Table: gpt
+		Disk Flags:
+
+		Number Start    End       Size      File system  Name  Flags
+		14     1049kB   4194kB    3146kB    bios_grub
+		15     4194kB    134MB    130MB     fat16              boot, esp
+		1       134MB   2147MB   2013MB     ext4
+		```
+
+	7. Enter: `mkpart "" fat32 -1G -1`
+	8. Enter: `quit`
+	9. Format the partition as FAT32 with label `CIDATA` using:
+
+		```bash
+		mkdosfs -F 32 -n CIDATA /dev/sda2
+		```
+
+	10. Insert your media with the `cloud-init` files
+	11. Use `lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT` to identify the
+	partition containing the `cloud-init` files
+	12. Assuming `/dev/sdc1` has the `cloud-init` files use:
+
+		```bash
+		mount /dev/sdc1 /mnt
+		```
+
+	13. Copy the `cloud-init` files to the partition you created (e.g.
+	`/dev/sda2`):
+
+		```bash
+		mkdir /tmp/mnt
+		mount /dev/sda2 /tmp/mnt
+		cp /mnt/{meta-data,network-config,user-data} /tmp/mnt/
+		umount /tmp/mnt
+		umount /mnt
+		```
+
+4.	Reboot to apply the `cloud-init` config and then login.
+	1. Ideally, attach a serial connection to the new Debian host
+	2. On a console that has the other end of the serial connection watch the
+	boot messages after you type:
+
+		```bash
+		reboot
+		```
+
+		on the new Debian host.
+	3. `cloud-init` should set up the system as you defined and now you should
+	be able to SSH into the new Debian host, or access it via serial console or
+	keyboard, video, and mouse console.
+
+5. {{< details summary="Example install (for Debian Bullseye) followed by first boot" >}}
+
+```plaintext
 GNU GRUB  version 2:2.06.r334.g340377470-1
 +----------------------------------------------------------------------------+
 |  Boot SystemRescue using default options                                   |
@@ -175,7 +308,7 @@ sysrescue login: root (automatic login)
 
 [root@sysrescue ~]# lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME   SIZE FSTYPE LABEL     UUID              MOUNTPOINT
-loop0  656.6M squash                          /run/xxxx
+loop0  656.6M squash                          /run/archi
 sda    931.5G
 ├─sda1 930.5G ext4           e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2 953M vfat   CIDATA    0E6B-8C93
@@ -195,9 +328,9 @@ sdh    1.7G iso966 RESCUE905 2023-01-31-01-59-58-00
 sr0    1024M
 
 [root@sysrescue ~]# eject /dev/sdh
-[root@sysrescue ~]# lsblk -oeNAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
+[root@sysrescue ~]# lsblk -oe NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME   SIZE FSTYPE LABEL     UUID              MOUNTPOINT
-loop0  656.6M squash                          /run/xxxx
+loop0  656.6M squash                          /run/archi
 sda    931.5G
 ├─sda1 930.5G ext4           e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2 953M vfat   CIDATA    0E6B-8C93
@@ -214,7 +347,7 @@ sdg    0B
 sr0    1024M
 [root@sysrescue ~]# lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME   SIZE FSTYPE LABEL     UUID              MOUNTPOINT
-loop0  656.6M squash                          /run/xxxx
+loop0  656.6M squash                          /run/archi
 sda    931.5G
 ├─sda1 930.5G ext4           e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2 953M vfat   CIDATA    0E6B-8C93
@@ -306,7 +439,7 @@ tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,size=3180068k,nr_inode
 tar -O -xvJf debian-11-generic-amd64-20230124-1270.tar.xz disk.raw | dd of=/dev/mkdirs/media
 lsblk -o NAME,SIZE,FSTYPE,LABEL,UUID,MOUNTPOINT
 NAME    SIZE    FSTYPE  LABEL         UUID             MOUNTPOINT
-loop0    656.6M squashfs                              /run/archiso
+loop0    656.6M squashf                               /run/archis
 sda      931.5G
 ├─sda1     1.9G ext4                    e9d180ca-4d05-4e4f-b99e-8c49d6ff5ee7
 ├─sda2     953M vfat    CIDATA        9B59-C16F
@@ -368,7 +501,7 @@ Welcome to Debian GNU/Linux 11 (bullseye)!
 [...]
 [  OK  ] Finished Raise network interfaces.
 [  OK  ] Reached target Network.
-	Starting Initial cloud-ini&hellip; (metadata service crawler)...
+	Starting Initial cloud-init (metadata service crawler)...
 [   20.902510] cloud-init[727]: Cloud-init v. 20.4.1 running 'init' at Tue, 31 Jan 2023 14:49:11 +0000. Up 20.87 seconds.
 [   20.924705] cloud-init[727]: ci-info: +++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
 [   20.951306] cloud-init[727]: ci-info: +--------+------+------------------------------+--------------+--------+-------------------+
@@ -400,3 +533,5 @@ dlcicl01 login:
 
 dlcicl01 login:
 ```
+
+{{< /details >}}
