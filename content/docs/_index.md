@@ -1,6 +1,6 @@
 +++
 title = "Documentation"
-slug = "decs"
+slug = "docs"
 aliases = [
 	"/develop-design/",
 	"/docs/devel/",
