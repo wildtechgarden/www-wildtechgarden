@@ -57,7 +57,7 @@ repos:
     args: [--markdown-linebreak-ext=md]
 
 - repo: "https://github.com/pre-commit/mirrors-eslint"
-  rev: v8.53.0
+  rev: v9.0.0-alpha.0
   hooks:
   - id: eslint
     additional_dependencies:
@@ -68,7 +68,7 @@ repos:
     - .eslintrc.yaml
 
 - repo: "https://github.com/thibaudcolas/pre-commit-stylelint"
-  rev: v15.11.0
+  rev: v16.1.0
   hooks:
   - id: stylelint
     additional_dependencies:
@@ -80,7 +80,7 @@ repos:
     - --allow-empty-input
 
 - repo: "https://github.com/igorshubovych/markdownlint-cli"
-  rev: v0.37.0
+  rev: v0.38.0
   hooks:
   - id: markdownlint
     args: [--config, .markdownlint.json]
@@ -93,7 +93,7 @@ repos:
     exclude: ^(_vendor)
 
 - repo: "https://github.com/zricethezav/gitleaks"
-  rev: v8.18.0
+  rev: v8.18.1
   hooks:
   - id: gitleaks
 
@@ -112,7 +112,7 @@ repos:
     exclude: ^(LICENSE|static/|assets/assets/files/|layouts/_default|package(-lock)?\.json$|.vscode)
 
 - repo: "https://github.com/streetsidesoftware/cspell-cli"
-  rev: v8.0.0
+  rev: v8.3.0
   hooks:
   - id: cspell
     args:
