@@ -2,8 +2,8 @@
 
 ## Status
 
-[![pre-commit.ci
-status](https://results.pre-commit.ci/badge/github/wildtechgarden/www-wildtechgarden/main.svg)](https://results.pre-commit.ci/latest/github/wildtechgarden/www-wildtechgarden/main)
+ARCHIVED and moved to GitLab with a new theme:
+<https://gitlab.com/danielfdickinson/pp-wildtechgarden>
 
 ## Site
 
@@ -11,7 +11,7 @@ status](https://results.pre-commit.ci/badge/github/wildtechgarden/www-wildtechga
 
 ## Repository URL
 
-<https://github.com/wildtechgarden/www-wildtechgarden>
+Moved to GitLab with a new theme: <https://gitlab.com/danielfdickinson/pp-wildtechgarden>
 
 -------
 
